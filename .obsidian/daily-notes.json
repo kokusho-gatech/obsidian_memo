@@ -1,0 +1,6 @@
+{
+  "template": "Zettelkasten/Templates/DailyNoteTemplate",
+  "folder": "Zettelkasten/40_Daily",
+  "format": "YYMMDD",
+  "autorun": true
+}
