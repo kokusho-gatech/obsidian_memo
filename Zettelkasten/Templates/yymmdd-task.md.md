@@ -1,6 +1,8 @@
 ---
-tags: daily-note/task
-creation-date: {{date:YYYY-MM-DD}}
+tags:
+  - daily-note/task
+creation-date:
+  "{ date:YYYY-MM-DD }":
 ---
 
 # 📅 {{date:YYYY年M月D日}} のタスク
