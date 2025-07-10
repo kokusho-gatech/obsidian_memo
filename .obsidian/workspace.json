@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "DailyNoteTemplate"
             }
+          },
+          {
+            "id": "ba098982c1e91629",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/Templates/DailyNoteTemplate.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DailyNoteTemplate"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 320.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -205,12 +219,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d44e25d065bdf9c5",
+  "active": "2c5aec5436d8a775",
   "lastOpenFiles": [
-    "Zettelkasten/Templates/WeeklyNoteTemplate.md",
-    "Zettelkasten/Templates/MonthlyNoteTemplate.md",
-    "Untitled.md",
     "Zettelkasten/Templates/DailyNoteTemplate.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "Zettelkasten/Templates/MonthlyNoteTemplate.md",
+    "Zettelkasten/Templates/WeeklyNoteTemplate.md",
     "Zettelkasten/40_Daily/250711.md",
     "Zettelkasten/20_LiteratureNote/kindle/(音声DL付)起きてから寝るまで英語表現1000 起きてから寝るまでシリーズ.md",
     "Untitled",
@@ -252,7 +267,6 @@
     "slidev/node_modules/@slidev/theme-bricks/assets/page-2.svg",
     "slidev/node_modules/@slidev/theme-bricks/assets/page-1.svg",
     "slidev/node_modules/@slidev/theme-bricks/README.md",
-    "slidev/node_modules/@slidev/theme-bricks/example.md",
-    "slidev/node_modules/@slidev/theme-bricks/CHANGELOG.md"
+    "slidev/node_modules/@slidev/theme-bricks/example.md"
   ]
 }
