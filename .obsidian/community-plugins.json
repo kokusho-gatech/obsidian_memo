@@ -1,5 +1,6 @@
 [
   "obsidian-kindle-plugin",
   "line-notes-sync",
-  "obsidian-git"
+  "obsidian-git",
+  "templater-obsidian"
 ]

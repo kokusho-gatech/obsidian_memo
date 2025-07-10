@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/20_LiteratureNote/kindle/雄司-Kaggleで勝つデータ分析の技術.md",
+                "file": "Zettelkasten/40_Daily/<% tp.date.now(\"YYYYMMDD\") %>.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "雄司-Kaggleで勝つデータ分析の技術"
+              "title": "<% tp.date.now(\"YYYYMMDD\") %>"
             }
           }
         ]
@@ -177,11 +177,14 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-kindle-plugin:Sync your Kindle highlights": false,
-      "line-notes-sync:Sync LINE messages": false
+      "line-notes-sync:Sync LINE messages": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "851759e5698dceb8",
+  "active": "2c5aec5436d8a775",
   "lastOpenFiles": [
+    "Zettelkasten/20_LiteratureNote/kindle/雄司-Kaggleで勝つデータ分析の技術.md",
+    "Zettelkasten/40_Daily/<% tp.date.now(\"YYYYMMDD\") %>.md",
     "Zettelkasten/20_LiteratureNote/kindle/明仁-現場で使える Django の教科書《基礎編》［4.2 LTS 対応版］.md",
     "Zettelkasten/20_LiteratureNote/kindle/篤夫-志高く 孫正義正伝　新版.md",
     "Zettelkasten/20_LiteratureNote/kindle/東大ケーススタディ研究会-東大生が書いた　問題を解く力を鍛えるケース問題ノート―５０の厳選フレームワークで、どんな難問もスッキリ「地図化」！ 「東大生が書いたノート」シリー.md",
@@ -225,8 +228,6 @@
     "slidev/node_modules/typescript/SECURITY.md",
     "slidev/node_modules/typescript/README.md",
     "slidev/node_modules/caniuse-lite/README.md",
-    "slidev/node_modules/lodash-es/release.md",
-    "slidev/node_modules/lodash-es/README.md",
-    "slidev/node_modules/langium/README.md"
+    "slidev/node_modules/lodash-es/release.md"
   ]
 }
