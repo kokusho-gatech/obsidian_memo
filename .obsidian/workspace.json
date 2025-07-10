@@ -11,10 +11,14 @@
             "id": "851759e5698dceb8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/20_LiteratureNote/篤夫-志高く 孫正義正伝　新版.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "篤夫-志高く 孫正義正伝　新版"
             }
           }
         ]
@@ -178,6 +182,7 @@
   },
   "active": "851759e5698dceb8",
   "lastOpenFiles": [
+    "Zettelkasten/20_LiteratureNote/田辺祐希-モテる「LINE」の技術.md",
     "Zettelkasten/30_FeelingNote/20250710-LINE.md",
     "Zettelkasten/30_FeelingNote/2025-07-10-569288826112180244.md",
     "Welcome.md",
