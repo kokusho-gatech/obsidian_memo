@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f70b9a6aa11189bc",
+        "id": "77e71f4446ab660a",
         "type": "tabs",
         "children": [
           {
-            "id": "9f7c72b191f9e547",
+            "id": "d63c7a46e06ad104",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/Templates/DailyNoteTemplate.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "DailyNoteTemplate"
             }
           }
         ]
@@ -176,12 +180,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2c5aec5436d8a775",
+  "active": "d63c7a46e06ad104",
   "lastOpenFiles": [
-    "Untitled",
     "Zettelkasten/Templates/MonthlyNoteTemplate.md",
     "Zettelkasten/Templates/WeeklyNoteTemplate.md",
     "Zettelkasten/Templates/DailyNoteTemplate.md",
+    "Untitled",
     "Welcome.md",
     "2025-07-11.md",
     "Untitled.canvas",
@@ -209,7 +213,6 @@
     "slidev/node_modules/@slidev/theme-bricks/components/Polygon5.vue",
     "slidev/node_modules/@slidev/theme-bricks/components/Polygon4.vue",
     "slidev/node_modules/@slidev/theme-bricks/components/Polygon3.vue",
-    "slidev/node_modules/@slidev/theme-bricks/components/Polygon2.vue",
     "slidev/node_modules/@slidev/theme-bricks/assets/page-7.svg",
     "slidev/node_modules/@slidev/theme-bricks/assets/page-9.svg",
     "slidev/node_modules/@slidev/theme-bricks/assets/page-8.svg",
