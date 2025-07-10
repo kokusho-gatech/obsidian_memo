@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/<% tp.date.now(\"YYYYMMDD\") %>.md",
+                "file": "Zettelkasten/Templates/templete.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "<% tp.date.now(\"YYYYMMDD\") %>"
+              "title": "templete"
             }
           }
         ]
@@ -183,8 +183,11 @@
   },
   "active": "2c5aec5436d8a775",
   "lastOpenFiles": [
-    "Zettelkasten/20_LiteratureNote/kindle/雄司-Kaggleで勝つデータ分析の技術.md",
+    "Zettelkasten/Templates",
+    "Zettelkasten/40_Daily/Untitled.md",
+    "Zettelkasten/Templates/templete.md",
     "Zettelkasten/40_Daily/<% tp.date.now(\"YYYYMMDD\") %>.md",
+    "Zettelkasten/20_LiteratureNote/kindle/雄司-Kaggleで勝つデータ分析の技術.md",
     "Zettelkasten/20_LiteratureNote/kindle/明仁-現場で使える Django の教科書《基礎編》［4.2 LTS 対応版］.md",
     "Zettelkasten/20_LiteratureNote/kindle/篤夫-志高く 孫正義正伝　新版.md",
     "Zettelkasten/20_LiteratureNote/kindle/東大ケーススタディ研究会-東大生が書いた　問題を解く力を鍛えるケース問題ノート―５０の厳選フレームワークで、どんな難問もスッキリ「地図化」！ 「東大生が書いたノート」シリー.md",
@@ -195,7 +198,6 @@
     "Zettelkasten/20_LiteratureNote/kindle/Tsubota-一九八四年.md",
     "Zettelkasten/20_LiteratureNote/kindle/Naoto-一万円でオシャレになる方法.md",
     "Zettelkasten/10_Parmanentnote/slidev_自動化手順まとめ.md",
-    "Zettelkasten/40_Daily/Untitled.md",
     "slidev/node_modules/@slidev/theme-bricks/LICENSE",
     "slidev/node_modules/@slidev/theme-bricks/components/Polygon9.vue",
     "slidev/node_modules/@slidev/theme-bricks/components/Polygon8.vue",
@@ -226,8 +228,6 @@
     "slidev/node_modules/mermaid/README.zh-CN.md",
     "slidev/node_modules/mermaid/README.md",
     "slidev/node_modules/typescript/SECURITY.md",
-    "slidev/node_modules/typescript/README.md",
-    "slidev/node_modules/caniuse-lite/README.md",
-    "slidev/node_modules/lodash-es/release.md"
+    "slidev/node_modules/typescript/README.md"
   ]
 }
