@@ -75,4 +75,75 @@ AIに依頼する際は、
 - サーバー起動の有無
 などを明確に伝えると、より正確な自動化が可能です。
 
+---
+
+## 7. Slidevのインストール方法
+
+### 1. プロジェクトごとにインストール（推奨）
+```
+npm init slidev@latest
+```
+対話形式でプロジェクト名やテーマを選択できます。
+
+### 2. 既存プロジェクトでslidevを追加
+```
+npm install --save-dev @slidev/cli
+```
+
+### 3. グローバルインストール（非推奨）
+```
+npm install -g @slidev/cli
+```
+
+---
+
+## 8. 指定できる主なテーマ名
+
+- default
+- seriph
+- apple-basic
+- apple-raw
+- shibuya
+- sakura
+- serif
+- simple
+- windicss
+- fun
+- league
+- dark
+- uncover
+- bricks
+- peach
+- avocad
+- panda
+- cyberpunk
+- navy
+- sakura
+- seriph
+- apple-basic
+- apple-raw
+
+※テーマはnpmで追加インストールも可能です。詳細は[Slidev公式テーマギャラリー](https://sli.dev/resources/theme-gallery)参照。
+
+---
+
+## 9. Slidevの主なショートカット
+
+| キー操作                | 機能                         |
+|-------------------------|------------------------------|
+| → / space               | 次のスライド・アニメーション |
+| ← / shift + space       | 前のスライド・アニメーション |
+| ↑                       | 前のスライド                 |
+| ↓                       | 次のスライド                 |
+| p                       | プレゼンターモード           |
+| o                       | オーバービューモード         |
+| f                       | フルスクリーン               |
+| esc                     | フルスクリーン解除           |
+| c                       | コメント（ノート）表示       |
+| s                       | スライドのソースを開く       |
+| g                       | スライドジャンプ             |
+| /                       | 検索                        |
+
+---
+
 （この手順メモは自動生成されました） 
