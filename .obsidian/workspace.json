@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-07-11.md",
+                "file": "Zettelkasten/Templates/Daily.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-11"
+              "title": "Daily"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,11 +180,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "851759e5698dceb8",
+  "active": "2c5aec5436d8a775",
   "lastOpenFiles": [
-    "Untitled.canvas",
+    "Welcome.md",
     "2025-07-11.md",
-    "Zettelkasten/Templates/yymmdd-task.md.md",
+    "Untitled.canvas",
+    "Zettelkasten/20_LiteratureNote/kindle/モテる「LINE」の技術.md",
+    "Zettelkasten/Templates/Daily.md",
     "Zettelkasten/Templates/Untitled.md",
     "Zettelkasten/40_Daily/Untitled.md",
     "Zettelkasten/Templates",
@@ -227,7 +228,6 @@
     "slidev/node_modules/fsevents/README.md",
     "slidev/node_modules/monaco-editor/README.md",
     "slidev/node_modules/monaco-editor/CHANGELOG.md",
-    "slidev/node_modules/mermaid/README.zh-CN.md",
-    "slidev/node_modules/mermaid/README.md"
+    "slidev/node_modules/mermaid/README.zh-CN.md"
   ]
 }
