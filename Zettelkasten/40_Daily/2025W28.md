@@ -1,6 +1,6 @@
 ---
 tags:
-  - daily-note/task
+  - weekly-note/task
 creation-date:
   "{ date:YYYY-MM-DD }":
 ---

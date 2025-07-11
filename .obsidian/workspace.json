@@ -13,26 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/Templates/DailyNoteTemplate.md",
+                "file": "Zettelkasten/40_Daily/250711.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DailyNoteTemplate"
-            }
-          },
-          {
-            "id": "d44e25d065bdf9c5",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "250711"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -151,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zettelkasten/30_FeelingNote/20250710-LINE.md",
+                "file": "Zettelkasten/40_Daily/250711.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 20250710-LINE"
+              "title": "Outline of 250711"
             }
           },
           {
@@ -181,12 +170,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -203,13 +191,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d44e25d065bdf9c5",
+  "active": "d63c7a46e06ad104",
   "lastOpenFiles": [
-    "Zettelkasten/40_Daily/2025W28.md",
-    "Zettelkasten/40_Daily/250711.md",
-    "Untitled.canvas",
-    "Zettelkasten/Templates/DailyNoteTemplate.md",
     "Zettelkasten/Templates/MonthlyNoteTemplate.md",
+    "Zettelkasten/40_Daily/2025W28.md",
+    "Zettelkasten/20_LiteratureNote/kindle/(音声DL付)起きてから寝るまで英語表現1000 起きてから寝るまでシリーズ.md",
+    "Zettelkasten/40_Daily/250711.md",
+    "Zettelkasten/40_Daily/250715.md",
+    "Zettelkasten/40_Daily/250712.md",
+    "Zettelkasten/Templates/DailyNoteTemplate.md",
+    "slidev/node_modules/@unocss/vite/node_modules/picomatch/README.md",
+    "Untitled.canvas",
     "Zettelkasten/Templates/WeeklyNoteTemplate.md",
     "Untitled.md",
     "Zettelkasten/40_Daily/20250711-task.md",
@@ -217,7 +209,6 @@
     "Zettelkasten/Templates/20250711-task.md",
     "Untitled",
     "Untitled 1.md",
-    "Zettelkasten/20_LiteratureNote/kindle/(音声DL付)起きてから寝るまで英語表現1000 起きてから寝るまでシリーズ.md",
     "Welcome.md",
     "2025-07-11.md",
     "Zettelkasten/20_LiteratureNote/kindle/モテる「LINE」の技術.md",
@@ -231,8 +222,6 @@
     "Zettelkasten/20_LiteratureNote/kindle/東大ケーススタディ研究会-東大生が書いた　問題を解く力を鍛えるケース問題ノート―５０の厳選フレームワークで、どんな難問もスッキリ「地図化」！ 「東大生が書いたノート」シリー.md",
     "Zettelkasten/20_LiteratureNote/kindle/天田士郎-色々なPythonのライブラリを「知る」ための本.md",
     "Zettelkasten/20_LiteratureNote/kindle/吉博-今さら聞けない！政治のキホンが２時間で全部頭に入る 今さら聞けない！２時間で全部頭に入るシリーズ.md",
-    "Zettelkasten/20_LiteratureNote/kindle/トニー野中-世界の大富豪２０００人がこっそり教える「人に好かれる」極意.md",
-    "Zettelkasten/20_LiteratureNote/kindle/こうへい-AWS認定資格 クラウドプラクティショナーの教科書.md",
     "slidev/node_modules/@slidev/theme-bricks/LICENSE",
     "slidev/node_modules/@slidev/theme-bricks/components/Polygon9.vue",
     "slidev/node_modules/@slidev/theme-bricks/components/Polygon8.vue",
