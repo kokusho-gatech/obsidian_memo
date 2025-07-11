@@ -1,11 +1,11 @@
 {
   "showGettingStartedBanner": true,
-  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedDailyNoteSettings": true,
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
-    "format": "YYYYMMDD",
-    "template": "Zettelkasten/Templates/DailyNoteTemplate.md",
+    "format": "YYMMDD",
     "folder": "Zettelkasten/40_Daily",
+    "template": "Zettelkasten/Templates/DailyNoteTemplate",
     "enabled": true
   },
   "weekly": {

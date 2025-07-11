@@ -27,30 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/Templates/DailyNoteTemplate.md",
+                "file": "Zettelkasten/40_Daily/20250711-task.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DailyNoteTemplate"
-            }
-          },
-          {
-            "id": "ba098982c1e91629",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zettelkasten/40_Daily/250711-task.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "250711-task"
+              "title": "20250711-task"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -203,7 +189,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,15 +203,18 @@
       "command-palette:Open command palette": false,
       "obsidian-kindle-plugin:Sync your Kindle highlights": false,
       "line-notes-sync:Sync LINE messages": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "2c5aec5436d8a775",
+  "active": "d44e25d065bdf9c5",
   "lastOpenFiles": [
-    "Untitled",
-    "Zettelkasten/40_Daily/20250711-task.md",
     "Zettelkasten/40_Daily/250711-task.md",
+    "Zettelkasten/40_Daily/250711.md",
+    "Zettelkasten/40_Daily/20250711-task.md",
     "Zettelkasten/Templates/DailyNoteTemplate.md",
+    "Zettelkasten/Templates/20250711-task.md",
+    "Untitled",
     "Untitled.md",
     "Untitled 1.md",
     "Zettelkasten/Templates/MonthlyNoteTemplate.md",
@@ -248,7 +238,6 @@
     "Zettelkasten/20_LiteratureNote/kindle/こうへい-AWS認定資格 クラウドプラクティショナーの教科書.md",
     "Zettelkasten/20_LiteratureNote/kindle/Tsubota-一九八四年.md",
     "Zettelkasten/20_LiteratureNote/kindle/Naoto-一万円でオシャレになる方法.md",
-    "Zettelkasten/10_Parmanentnote/slidev_自動化手順まとめ.md",
     "slidev/node_modules/@slidev/theme-bricks/LICENSE",
     "slidev/node_modules/@slidev/theme-bricks/components/Polygon9.vue",
     "slidev/node_modules/@slidev/theme-bricks/components/Polygon8.vue",
