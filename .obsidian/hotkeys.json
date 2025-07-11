@@ -14,5 +14,13 @@
       ],
       "key": "W"
     }
+  ],
+  "calendar:show-calendar-view": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "C"
+    }
   ]
 }
