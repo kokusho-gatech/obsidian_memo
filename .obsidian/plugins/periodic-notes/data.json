@@ -1,0 +1,32 @@
+{
+  "showGettingStartedBanner": true,
+  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "format": "YYYYMMDD",
+    "template": "Zettelkasten/Templates/DailyNoteTemplate.md",
+    "folder": "Zettelkasten/40_Daily",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "YYYY[W]ww",
+    "template": "Zettelkasten/Templates/WeeklyNoteTemplate.md",
+    "folder": "Zettelkasten/40_Daily",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "",
+    "template": "",
+    "folder": ""
+  },
+  "quarterly": {
+    "format": "",
+    "template": "",
+    "folder": ""
+  },
+  "yearly": {
+    "format": "",
+    "template": "",
+    "folder": ""
+  }
+}
