@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/Templates/DailyNoteTemplate.md",
+                "file": "Zettelkasten/40_Daily/250711.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DailyNoteTemplate"
+              "title": "250711"
             }
           }
         ],
@@ -219,14 +219,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2c5aec5436d8a775",
+  "active": "ba098982c1e91629",
   "lastOpenFiles": [
+    "Zettelkasten/40_Daily/20250711-task.md",
+    "Zettelkasten/40_Daily/250711.md",
     "Zettelkasten/Templates/DailyNoteTemplate.md",
     "Untitled.md",
     "Untitled 1.md",
     "Zettelkasten/Templates/MonthlyNoteTemplate.md",
     "Zettelkasten/Templates/WeeklyNoteTemplate.md",
-    "Zettelkasten/40_Daily/250711.md",
     "Zettelkasten/20_LiteratureNote/kindle/(音声DL付)起きてから寝るまで英語表現1000 起きてから寝るまでシリーズ.md",
     "Untitled",
     "Welcome.md",
@@ -266,7 +267,6 @@
     "slidev/node_modules/@slidev/theme-bricks/assets/page-3.svg",
     "slidev/node_modules/@slidev/theme-bricks/assets/page-2.svg",
     "slidev/node_modules/@slidev/theme-bricks/assets/page-1.svg",
-    "slidev/node_modules/@slidev/theme-bricks/README.md",
-    "slidev/node_modules/@slidev/theme-bricks/example.md"
+    "slidev/node_modules/@slidev/theme-bricks/README.md"
   ]
 }
