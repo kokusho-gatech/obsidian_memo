@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.5
+    "width": 238.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -192,7 +192,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d63c7a46e06ad104",
+  "active": "2c5aec5436d8a775",
   "lastOpenFiles": [
     "Zettelkasten/10_Parmanentnote/slidev_自動化手順まとめ.md",
     "Zettelkasten/20_LiteratureNote/web/Obsidian Plugins Periodic Notes｜Pouhon 1.md",
