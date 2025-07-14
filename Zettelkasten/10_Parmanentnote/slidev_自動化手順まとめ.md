@@ -1,3 +1,6 @@
+---
+タグ: #Slidev #自動化 #Zettelkasten #スライド #Obsidian
+---
 # ZettelkastenメモをSlidevスライドに反映・起動する手順まとめ
 
 ---
