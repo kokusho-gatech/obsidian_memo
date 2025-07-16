@@ -11,14 +11,10 @@
             "id": "75aaacbc12f5e55f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_doc/ManagementController.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ManagementController"
+              "title": "New tab"
             }
           }
         ]
@@ -194,6 +190,7 @@
   },
   "active": "75aaacbc12f5e55f",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/supplier_doc/ManagementController.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/UnprocessedMailsController.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/HomeController.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/HealthCheckController.md",
@@ -205,7 +202,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_doc/IntermediaryDomainsController.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/SaleManagementInfosController.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/ArticleItem.md",
-    "Zettelkasten/10_Parmanentnote/supplier_doc/ManagementController.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/LabelsController.md",
     "Zettelkasten/10_Parmanentnote/Obsidianタグ命名規則.md",
     "Zettelkasten/10_Parmanentnote/obsidian_shortcut_collection.md",
