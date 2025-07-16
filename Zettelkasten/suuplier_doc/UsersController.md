@@ -4,15 +4,18 @@
 このコントローラは、[[User]]モデルのユーザー管理（一覧表示、詳細表示、新規作成、編集、削除、Gmail認証など）を担当します。管理者権限の有無によってアクセス制御が行われます。
 
 ## 処理フロー
+
 ```mermaid
+
 graph TD
-  A[ユーザー一覧(index)] -->|管理者のみ新規作成可| B[新規作成(new, create)]
-  A --> C[ユーザー詳細(show)]
-  A --> D[編集(edit, update)]
-  C --> E[Gmail認証(authorize_gmail)]
-  C --> F[Gmail認証解除(clear_gmail_authorization)]
-  G[ログイン(login)] -->|未ログイン| H[Google OAuth2認証へリダイレクト]
-  G -->|ログイン済み| C
+  A["ユーザー一覧(index)"] -->|"管理者のみ新規作成可"| B["新規作成(new, create)"]
+  A --> C["ユーザー詳細(show)"]
+  A --> D["編集(edit, update)"]
+  C --> E["Gmail認証(authorize_gmail)"]
+  C --> F["Gmail認証解除(clear_gmail_authorization)"]
+  G["ログイン(login)"] -->|"未ログイン"| H["Google OAuth2認証へリダイレクト"]
+  G -->|"ログイン済み"| C
+  
 ```
 
 ## アクション一覧
