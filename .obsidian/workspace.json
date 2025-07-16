@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/Obsidianタグ命名規則.md",
+                "file": "Zettelkasten/30_FleetingNote/査定自動化の進め方.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Obsidianタグ命名規則"
+              "title": "査定自動化の進め方"
             }
           }
         ]
@@ -194,7 +194,12 @@
   },
   "active": "d3d1b69befff2c29",
   "lastOpenFiles": [
+    "Zettelkasten/30_FleetingNote/20250712-LINE.md",
+    "Zettelkasten/30_FleetingNote/20250712-LINE_1.md",
+    "Zettelkasten/30_FleetingNote/20250716-LINE.md",
+    "Zettelkasten/30_FleetingNote/査定自動化の進め方.md",
     "Zettelkasten/40_Daily/250716.md",
+    "Zettelkasten/10_Parmanentnote/Obsidianタグ命名規則.md",
     "TaskList.md",
     "データ.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/User.md",
@@ -208,10 +213,6 @@
     "Zettelkasten/20_LiteratureNote/kindle/トニー野中-世界の大富豪２０００人がこっそり教える「人に好かれる」極意.md",
     "Zettelkasten/20_LiteratureNote/kindle/Kaggleで勝つデータ分析の技術.md",
     "Zettelkasten/20_LiteratureNote/kindle/AWS認定資格 クラウドプラクティショナーの教科書.md",
-    "Zettelkasten/30_FleetingNote/20250716-LINE.md",
-    "Zettelkasten/30_FleetingNote/20250712-LINE.md",
-    "Zettelkasten/30_FleetingNote/20250712-LINE_1.md",
-    "Zettelkasten/30_FleetingNote/査定自動化の進め方.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/ConsumptionTaxVersion.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/Building.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/Approval.md",
@@ -219,7 +220,6 @@
     "SalesContractTemplate.md",
     "schema.rb.md",
     "Bank.md",
-    "User.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc",
     "Pasted image 20250714124924.png",
     "Pasted image 20250714124951.png",
