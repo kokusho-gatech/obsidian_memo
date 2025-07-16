@@ -1,5 +1,6 @@
 ---
-tags: kindle
+tags:
+  - kindle
 kindle-sync:
   bookId: '51980'
   title: 現場で使える Django の教科書《基礎編》［4.2 LTS 対応版］

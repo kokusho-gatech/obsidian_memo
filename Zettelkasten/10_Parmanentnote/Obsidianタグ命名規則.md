@@ -1,10 +1,8 @@
 ---
 tags:
-  - タグ命名
-  - ガイドライン
+  - tag-naming
+  - guideline
   - obsidian
-  - 運用ルール
-  - メタ
 ---
 
 # Obsidianタグ命名規則

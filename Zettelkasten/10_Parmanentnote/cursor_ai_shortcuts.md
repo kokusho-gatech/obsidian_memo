@@ -2,8 +2,7 @@
 tags:
   - cursor
   - ai
-  - ショートカット
-  - 開発効率化
+  - shortcut
   - obsidian
 ---
 # CursorでAIを活用するためのショートカット集

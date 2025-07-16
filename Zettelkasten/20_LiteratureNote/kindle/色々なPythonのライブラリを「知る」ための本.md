@@ -1,5 +1,6 @@
 ---
-tags: kindle
+tags:
+  - kindle
 kindle-sync:
   bookId: '65089'
   title: 色々なPythonのライブラリを「知る」ための本
