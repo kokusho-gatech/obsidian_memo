@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_db_structure.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_controllers_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "supplier_db_structure"
+              "title": "supplier_controllers_index"
             }
           }
         ]
@@ -194,8 +194,9 @@
   },
   "active": "75aaacbc12f5e55f",
   "lastOpenFiles": [
-    "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_by_RENOSY_全体像まとめ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_db_structure.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_controllers_index.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_by_RENOSY_全体像まとめ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ValuationHistory.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Valuation.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PriorValuationResult.md",
@@ -219,7 +220,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SalesDestinationArticle.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SalesDestination.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SalesContractTemplate.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/DocusignFile.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs",
     "Zettelkasten/supplier_doc",
