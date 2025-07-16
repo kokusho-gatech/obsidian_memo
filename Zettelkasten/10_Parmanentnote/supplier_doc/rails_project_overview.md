@@ -14,7 +14,7 @@
     - [[Kaminari]]：ページネーション（ページ分割表示）を実現。
     - [[CarrierWave]]・[[Cloudinary]]：ファイルアップロード・画像管理。
     - [[Omniauth-google-oauth2]]：Googleアカウントによる認証。
-    - [[PaperTrail]]：データの変更履歴を記録。
+    - [[PaperTrail]]：[[データ]]の変更履歴を記録。
     - [[Ransack]]：検索機能を簡単に実装。
     - [[Redis]]：キャッシュやジョブキューの管理。
     - [[Puma]]：Webサーバー。
