@@ -7,7 +7,7 @@
 ```mermaid
 graph TD
   A["リクエスト受信"] -->|before_action| B["認証・権限チェック"]
-  B --> C{アクション分岐}
+  B --> C{"アクション分岐"}
   C -->|show| D1["物件詳細取得→[[articles/show.html.erb]]表示"]
   C -->|create| D2["新規物件作成→リダイレクト"]
   C -->|update| D3["物件情報更新→保存・コメント追加→JSON返却"]
