@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "13d85a94f5dc2f06",
+        "id": "ae9ce5af7b233a8a",
         "type": "tabs",
         "children": [
           {
-            "id": "76e2be80d764bbde",
+            "id": "d3d1b69befff2c29",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_doc/models.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_doc/Building.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "models"
+              "title": "Building"
             }
           }
         ]
@@ -192,35 +192,35 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "76e2be80d764bbde",
+  "active": "d3d1b69befff2c29",
   "lastOpenFiles": [
-    "Bank.md",
-    "Zettelkasten/30_FleetingNote/20250712-LINE_1.md",
-    "Zettelkasten/10_Parmanentnote/slidev_自動化手順まとめ.md",
-    "Zettelkasten/10_Parmanentnote/obsidian_shortcut_collection.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/BuildingConfirmation.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/User.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/PaymentRequest.md",
+    "User.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/models.md",
-    "Zettelkasten/10_Parmanentnote/cursor_ai_shortcuts.md",
-    "Zettelkasten/00_Indexnote/TaskList.md",
-    "データ.md",
-    "Zettelkasten/10_Parmanentnote/supplier_doc/rails_project_overview.md",
-    "Zettelkasten/40_Daily/250716.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/SalesDestinationArticle.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/SalesDestination.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/OwnrInfo.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/Janitor.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/LoanAgent.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/Approval.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/SettlementAgent.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/Salesperson.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/Manager.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/Prefecture.md",
     "Devise.md",
-    "schema.rb.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/rails_project_overview.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/PriorValuation.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/Building.md",
+    "SalesContractTemplate.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/SalesContractField.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/ConsumptionTaxVersion.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/SaleManagementInfo.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/Valuation.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/SalesInfo.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/NegotiationHistory.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc",
-    "Zettelkasten/10_Parmanentnote/supplier_doc.md",
-    "Zettelkasten/Templates/DailyNoteTemplate.md",
-    "Zettelkasten/40_Daily/250715.md",
-    "20250715.md",
-    "250717.md",
-    "2025-07-15.md",
-    "前日のノート.md",
-    "Zettelkasten/30_FleetingNote/20250712-LINE.md",
-    "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
-    "Zettelkasten/40_Daily/2025W28.md",
-    "Zettelkasten/20_LiteratureNote/kindle/(音声DL付)起きてから寝るまで英語表現1000 起きてから寝るまでシリーズ.md",
-    "TaskList.md",
-    "today.md",
-    "Zettelkasten/Templates/WeeklyNoteTemplate.md",
     "Pasted image 20250714124924.png",
     "Pasted image 20250714124951.png",
     "Zettelkasten/00_Indexnote/タグ一覧",
