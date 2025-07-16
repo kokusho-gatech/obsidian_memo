@@ -5,8 +5,10 @@ creation-date: <% tp.date.now("YYYY-MM-DD") %>
 
 # <% tp.date.now("YYYY-MM-DD") %>
 
- [[前日のノート]]
+ 
 
+[[<% tp.date.now("YYYYMMDD", -1) %>]]
+[[<% tp.date.now("YYYYMMDD", -1) %>]]
 ## TODO
 - [x] 
 - [x] 

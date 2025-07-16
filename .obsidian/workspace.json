@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250716.md",
+                "file": "Zettelkasten/Templates/DailyNoteTemplate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "250716"
+              "title": "DailyNoteTemplate"
             }
           },
           {
@@ -35,7 +35,8 @@
               "title": "250716"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,11 +207,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "87fcdda159ac335b",
+  "active": "3c585399dc6d9e8e",
   "lastOpenFiles": [
-    "Zettelkasten/Templates/DailyNoteTemplate.md",
-    "Zettelkasten/40_Daily/250716.md",
     "Zettelkasten/40_Daily/250715.md",
+    "Zettelkasten/40_Daily/250716.md",
+    "20250715.md",
+    "Zettelkasten/Templates/DailyNoteTemplate.md",
+    "2025-07-15.md",
     "前日のノート.md",
     "Zettelkasten/30_FleetingNote/20250712-LINE.md",
     "Zettelkasten/00_Indexnote/TaskList.md",
@@ -232,8 +235,6 @@
     "Zettelkasten/20_LiteratureNote/kindle/マーティ・ケーガン、佐藤真治、関満徳、神月謙一-INSPIRED 熱狂させる製品を生み出すプロダクトマネジメント.md",
     "Zettelkasten/20_LiteratureNote/kindle/こうへい-AWS認定資格 クラウドプラクティショナーの教科書.md",
     "Zettelkasten/20_LiteratureNote/kindle/Naoto-一万円でオシャレになる方法.md",
-    "Zettelkasten/20_LiteratureNote/kindle/INSPIRED 熱狂させる製品を生み出すプロダクトマネジメント.md",
-    "Zettelkasten/20_LiteratureNote/kindle/THE MODEL（MarkeZine BOOKS） マーケティング・インサイドセールス・営業・カスタマーサクセスの共業プロセス.md",
     "Pasted image 20250714124924.png",
     "Pasted image 20250714124951.png",
     "Zettelkasten/00_Indexnote/タグ一覧",
