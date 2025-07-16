@@ -1,5 +1,10 @@
 ---
-タグ: #Cursor #AI #ショートカット #開発効率化 #Obsidian
+tags:
+  - cursor
+  - ai
+  - ショートカット
+  - 開発効率化
+  - obsidian
 ---
 # CursorでAIを活用するためのショートカット集
 

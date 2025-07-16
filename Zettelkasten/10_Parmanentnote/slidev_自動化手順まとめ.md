@@ -1,5 +1,10 @@
 ---
-タグ: #Slidev #自動化 #Zettelkasten #スライド #Obsidian
+tags:
+  - slidev
+  - 自動化
+  - zettelkasten
+  - obsidian
+  - スライド
 ---
 # ZettelkastenメモをSlidevスライドに反映・起動する手順まとめ
 
