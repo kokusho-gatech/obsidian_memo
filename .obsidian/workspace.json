@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/slidev_自動化手順まとめ.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_doc/controllers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "slidev_自動化手順まとめ"
+              "title": "controllers"
             }
           }
         ]
@@ -194,6 +194,7 @@
   },
   "active": "75aaacbc12f5e55f",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/slidev_自動化手順まとめ.md",
     "Zettelkasten/10_Parmanentnote/Obsidianタグ命名規則.md",
     "Zettelkasten/10_Parmanentnote/obsidian_shortcut_collection.md",
     "Zettelkasten/10_Parmanentnote/cursor_ai_shortcuts.md",
@@ -219,7 +220,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_doc/Jbuilder.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/Puma.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/PaperTrail.md",
-    "Zettelkasten/10_Parmanentnote/supplier_doc/Cloudinary.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc",
     "Pasted image 20250714124924.png",
     "Pasted image 20250714124951.png",
