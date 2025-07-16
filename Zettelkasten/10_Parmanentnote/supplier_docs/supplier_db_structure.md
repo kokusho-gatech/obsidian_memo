@@ -4,9 +4,9 @@
 
 | モデル名 | 主な役割 | 主要な関連 |
 |---|---|---|
-| User | [[ユーザー]]情報を管理 | has_many :articles, has_many :approvals, has_many :intermediary_companies, ... |
-| Article | [[物件]]情報を管理 | belongs_to :user, has_many :article_items, has_many :negotiation_histories, ... |
-| ArticleItem | 物件に紐づく[[書類]]情報 | belongs_to :article, belongs_to :item, has_many :article_item_files, ... |
+| [[definitions/User|User]] | [[ユーザー]]情報を管理 | has_many :articles, has_many :approvals, has_many :intermediary_companies, ... |
+| [[definitions/Article|Article]] | [[物件]]情報を管理 | belongs_to :user, has_many :article_items, has_many :negotiation_histories, ... |
+| [[definitions/ArticleItem|ArticleItem]] | 物件に紐づく[[書類]]情報 | belongs_to :article, belongs_to :item, has_many :article_item_files, ... |
 | Item | 書類種別マスタ | has_many :article_items |
 | Approval | [[仕入稟議]]申請管理 | belongs_to :article, belongs_to :user, has_one :approval_detail, has_many :approval_status_histories |
 | ApprovalDetail | 稟議の詳細情報 | belongs_to :approval |
