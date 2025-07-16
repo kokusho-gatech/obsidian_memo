@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_doc/SalesDestinationArticle.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_doc/ArticleItem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SalesDestinationArticle"
+              "title": "ArticleItem"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321.5
+    "width": 329.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -194,6 +194,12 @@
   },
   "active": "75aaacbc12f5e55f",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/supplier_doc/ManagementController.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/LabelsController.md",
+    "Zettelkasten/10_Parmanentnote/Obsidianタグ命名規則.md",
+    "Zettelkasten/10_Parmanentnote/obsidian_shortcut_collection.md",
+    "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
+    "Zettelkasten/10_Parmanentnote/supplier_doc/SalesDestinationArticle.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/rails_project_overview.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/PurchaseContractsController.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/PriorValuation.md",
@@ -214,13 +220,7 @@
     "Zettelkasten/10_Parmanentnote/supplier_doc/Building.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/ArticlesController.md",
     "Zettelkasten/10_Parmanentnote/supplier_doc/UsersController.md",
-    "Zettelkasten/supplier_doc/UsersController.md",
     "Zettelkasten/supplier_doc",
-    "Zettelkasten/10_Parmanentnote/supplier_doc/ArticleItem.md",
-    "Zettelkasten/10_Parmanentnote/supplier_doc/Article.md",
-    "Zettelkasten/suuplier_doc/UsersController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_doc/User.md",
-    "users/index.html.erb.md",
     "users",
     "Zettelkasten/suuplier_doc",
     "Zettelkasten/10_Parmanentnote/supplier_doc",
