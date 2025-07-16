@@ -7,8 +7,7 @@ creation-date: <% tp.date.now("YYYY-MM-DD") %>
 
  
 
-[[<% tp.date.now("YYYYMMDD", -1) %>]]
-[[<% tp.date.now("YYYYMMDD", -1) %>]]
+前日のデイリーNote: [[<% tp.date.now("YYMMDD", -1) %>]]
 ## TODO
 - [x] 
 - [x] 
