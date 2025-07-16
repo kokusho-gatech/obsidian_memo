@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250716.md",
+                "file": "Zettelkasten/Templates/DailyNoteTemplate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "250716"
+              "title": "DailyNoteTemplate"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "today.md",
+                "file": "Zettelkasten/Templates/DailyNoteTemplate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "today"
+              "title": "DailyNoteTemplate"
             }
           }
         ],
@@ -210,12 +210,12 @@
   "active": "3c585399dc6d9e8e",
   "lastOpenFiles": [
     "Zettelkasten/40_Daily/250716.md",
-    "Zettelkasten/30_FleetingNote/20250712-LINE_1.md",
-    "today.md",
     "Zettelkasten/Templates/DailyNoteTemplate.md",
-    "Zettelkasten/40_Daily/250715.md",
-    "Zettelkasten/Templates/WeeklyNoteTemplate.md",
     "Zettelkasten/Templates/MonthlyNoteTemplate.md",
+    "Zettelkasten/Templates/WeeklyNoteTemplate.md",
+    "today.md",
+    "Zettelkasten/30_FleetingNote/20250712-LINE_1.md",
+    "Zettelkasten/40_Daily/250715.md",
     "slidev/node_modules/ms/license.md",
     "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
     "Zettelkasten/10_Parmanentnote/Obsidianタグ命名規則.md",

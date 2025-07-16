@@ -1,10 +1,10 @@
 ---
 tags: daily-note/task
-creation-date: 2025-07-11
+creation-date: <% tp.date.now("YYYY-MM-DD") %>
 ---
 
 
-# 📅 2025年7月11日 のタスク
+# 📅  <% tp.date.now("YYYY-MM-DD") %> のタスク
 
 ## ✨ 今日の目標 (Top 3)
 > 今日これだけは必ず終わらせる、という最も重要なタスクを3つ書き出しましょう。
@@ -27,30 +27,3 @@ creation-date: 2025-07-11
 ### 夕方以降
 - [ ] 
 - [ ]
-
-
-<%* 
-const thisDay = this.app.workspace.getActiveFile().basename;
-const start = moment(thisDay).valueOf();
-const end = moment(start).endOf('day').valueOf();
-
-const isCreated = (file, start, end) => file.stat
-	&& file.stat.ctime >= start
-	&& file.stat.ctime <= end;
-// 公開ノートのルール。ここでは『_』ではじまるパスのファイルでなく、拡張子がmdであるものとしているが、利用者にとって都合のいい条件にする
-const isPublicNote = (file) => !file.path.startsWith("_") && file.extension === "md";
-
-const files = Object.values(this.app.vault.fileMap);
-
-tR += `
-
-----
-
-## Created
-
-${files
-    .filter(x => isCreated(x, start, end) && isPublicNote(x))
-    .map(x => `- [[${x.basename}]]`)
-    .join("\n")}
-`
-%>
