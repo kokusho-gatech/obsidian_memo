@@ -263,3 +263,232 @@ erDiagram
 ---
 
 （この他のテーブルも必要に応じて追記してください） 
+
+---
+
+## 全モデル名リスト（ファイル・クラス名ベース/サブディレクトリ含む）
+
+- year_month.rb
+- yield_calculator.rb
+- zenrin_map.rb
+- valuation.rb
+- valuation_history.rb
+- unmounted_article_item_file.rb
+- user.rb
+- suggested_rental_price.rb
+- supplier.rb
+- supplier_mail.rb
+- system_setting.rb
+- tax.rb
+- sales_properties_sheet_field.rb
+- sales_term.rb
+- salesperson.rb
+- sanitize_building_name.rb
+- settlement_agent.rb
+- shooting_info.rb
+- sales_contract_template.rb
+- sales_destination.rb
+- sales_destination_article.rb
+- sales_info.rb
+- sale_maisoku_progress.rb
+- sale_management_info.rb
+- sale_price_calculator.rb
+- sales_contract_field.rb
+- sales_contract_file.rb
+- purchase_contract.rb
+- sale_approval.rb
+- pdf.rb
+- prefecture.rb
+- price_prediction.rb
+- prior_valuation.rb
+- other_company_negotiation.rb
+- ownr_info.rb
+- payment_request.rb
+- payment_request_comment.rb
+- manager.rb
+- mst_jusyo_jp.rb
+- negotiation_history.rb
+- negotiation_schedule.rb
+- notifier.rb
+- item.rb
+- janitor.rb
+- jikoshintaku.rb
+- jikoshintaku_article.rb
+- label.rb
+- lancers_operator.rb
+- loan_agent.rb
+- mail_body_extractor.rb
+- intermediary_company.rb
+- intermediary_domain.rb
+- intermediary_staff.rb
+- intermediary_staff_user.rb
+- grow_year_month_formatter.rb
+- incomplete_document.rb
+- input.rb
+- file_published_date.rb
+- file_tab.rb
+- file_tab_collection.rb
+- docusign_file.rb
+- docusign_info.rb
+- document_progress_label.rb
+- current.rb
+- data_maintainer.rb
+- document_manager.rb
+- document_progress.rb
+- consumption_tax_version.rb
+- cash_flow_calculator.rb
+- cash_flow_criterion_article.rb
+- cash_flow_criterion_calculator.rb
+- comment.rb
+- business_partner.rb
+- buyback_reason.rb
+
+### サブディレクトリ（抜粋）
+
+#### input/
+- valuation_certificate.rb
+- consulting_outsourcing_agreement.rb
+- pamphlet.rb
+- report_of_important_info_survey.rb
+- sales_agreement_ab.rb
+- sales_agreement_on_purchase.rb
+- tenant_lease_agreement.rb
+- compensation_payment_agreement.rb
+- confirmation.rb
+- compare.rb
+- check.rb
+- base.rb
+- certified_copy.rb
+
+#### input/check/
+- pamphlet.rb
+- report_of_important_info_survey.rb
+- sales_agreement_ab.rb
+- sales_agreement_on_purchase.rb
+- tenant_lease_agreement.rb
+- valuation_certificate.rb
+- base.rb
+- certified_copy.rb
+- compensation_payment_agreement.rb
+- consulting_outsourcing_agreement.rb
+
+#### input/confirmation/
+- tenant_lease_agreement.rb
+- valuation_certificate.rb
+- pamphlet.rb
+- report_of_important_info_survey.rb
+- sales_agreement_ab.rb
+- sales_agreement_on_purchase.rb
+- base.rb
+- certified_copy.rb
+- compensation_payment_agreement.rb
+- consulting_outsourcing_agreement.rb
+
+#### input/compare/
+- compensation_payment_agreement.rb
+- report_of_important_info_survey.rb
+- sales_agreement_on_purchase.rb
+- tenant_lease_agreement.rb
+- certified_copy.rb
+
+#### input/certified_copy/
+- form.rb
+- land_address.rb
+
+#### users/
+- setting.rb
+
+#### user/
+- authorizer.rb
+
+#### types/
+- type_date_time_with_zone.rb
+
+#### tech_building/
+- building_image.rb
+- advertisement_railway_station.rb
+- building.rb
+- building_file.rb
+- building_files_fetcher.rb
+
+#### negotiation_history/
+- presenter.rb
+
+#### valuation_history/
+- presenter.rb
+
+#### sale_approval/
+- status_history.rb
+- create_form.rb
+- detail.rb
+
+#### sales_contract_files/
+- renosy_wide_sublease_management_fee.rb
+- sales_agreement.rb
+- transfer_request_form.rb
+- vacancy_guarantee_agreement.rb
+- presentation_of_important_info_collection_agency_pro.rb
+- ...（多数）
+
+#### prior_valuation/
+- index_form.rb
+- result.rb
+- create_form.rb
+
+#### purchase_contract/
+- cancellation.rb
+- transaction_register.rb
+
+#### payment_request/
+- send_to_flow.rb
+- update_form.rb
+
+#### document_progresses/
+- api_client.rb
+- api_response_formatter.rb
+- card_list_builder.rb
+
+#### certified_copy/
+- ...
+
+#### shiho_shoshi/
+- registration_document_builder.rb
+  - registration_documents/
+    - base.rb
+    - normal.rb
+    - orix.rb
+
+#### sale_maisoku/
+- pdf_generator.rb
+
+#### sale_maisoku_progress/
+- status_manager.rb
+
+#### notifiers/
+- rental_price_assessment_request.rb
+- valuation_certificate_required_articles.rb
+- ownr_bring_back_contract_files.rb
+
+#### csv/
+- generator.rb
+- prior_valuation.rb
+- purchase_contract.rb
+
+#### validator/
+- date.rb
+
+#### form/
+- negotiation_history.rb
+- valuation_histories.rb
+
+#### google_api/
+- authorizer.rb
+- gmail.rb
+
+#### document_reader/maisoku/
+- article_response_formatter.rb
+- article_updater.rb
+
+---
+
+> ※このリストはファイル名ベースです。クラス名・役割・関連は順次追記します。 
