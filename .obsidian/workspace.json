@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#書類重複Pj",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -207,7 +208,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3c585399dc6d9e8e",
+  "active": "676cc44b049dcb24",
   "lastOpenFiles": [
     "Zettelkasten/10_Parmanentnote/obsidian_shortcut_collection.md",
     "Zettelkasten/30_FleetingNote/査定自動化の進め方.md",
