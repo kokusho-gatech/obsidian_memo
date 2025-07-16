@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/Templates/Addcurrenttime.md",
+                "file": "Zettelkasten/40_Daily/250716.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Addcurrenttime"
+              "title": "250716"
             }
           }
         ],
@@ -209,9 +209,9 @@
   },
   "active": "3c585399dc6d9e8e",
   "lastOpenFiles": [
-    "Zettelkasten/Templates/DailyNoteTemplate.md",
-    "Zettelkasten/Templates/Addcurrenttime.md",
+    "Zettelkasten/Templates/InsertTime.md",
     "Zettelkasten/40_Daily/250716.md",
+    "Zettelkasten/Templates/DailyNoteTemplate.md",
     "Zettelkasten/40_Daily/250715.md",
     "Zettelkasten/40_Daily/250714.md",
     "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
