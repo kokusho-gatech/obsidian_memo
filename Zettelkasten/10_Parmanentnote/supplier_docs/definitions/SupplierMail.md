@@ -1,21 +1,28 @@
-# SupplierMailモデル定義詳細
+# SupplierMail
 
-- **定義場所**: `app/models/supplier_mail.rb:2`
-- **主な役割**: 査定メール管理
+## 役割
+査定メール管理を行うモデル。
 
-## 主要な関連（定義元行番号付き）
-- `belongs_to :contact_person, class_name: 'User'` (`supplier_mail.rb:5`)
-- `belongs_to :intermediary_company` (`supplier_mail.rb:6`)
-- `belongs_to :intermediary_staff` (`supplier_mail.rb:7`)
-- `belongs_to :intermediary_domain` (`supplier_mail.rb:8`)
-- `has_many :attachments` (`supplier_mail.rb:9`)
-- `has_many :articles` (`supplier_mail.rb:10`)
+## 主なリレーション
+- belongs_to: [[User]]（contact_person）
+- belongs_to: [[IntermediaryCompany]]
+- belongs_to: [[IntermediaryStaff]]
+- belongs_to: [[IntermediaryDomain]]
+- has_many: [[Attachment]]
+- has_many: [[Article]]
 
-## supplier_mailsテーブル定義（抜粋）
+## テーブル定義
 
-| カラム名 | データ型 | 備考 | 定義場所 |
-|---|---|---|---|
-| id | bigint | 主キー | db/schema.rb:? |
-| contact_person_id | integer | 査定担当者ID | db/schema.rb:? |
-| intermediary_company_id | integer | 仲介会社ID | db/schema.rb:? |
-| ... | ... | ... | ... | 
+| カラム名 | データ型 | 備考 |
+|---|---|---|
+| id | bigint | 主キー |
+| contact_person_id | integer | 査定担当者ID（userへの外部キー） |
+| intermediary_company_id | integer | 仲介会社ID（intermediary_companyへの外部キー） |
+| intermediary_staff_id | integer | 仲介担当者ID（intermediary_staffへの外部キー） |
+| intermediary_domain_id | integer | 仲介ドメインID（intermediary_domainへの外部キー） |
+| created_at | datetime | null: false |
+| updated_at | datetime | null: false |
+
+## 出典
+- schema.rb: supplier_mails テーブル定義
+- モデル: app/models/supplier_mail.rb 

@@ -1,16 +1,23 @@
-# IntermediaryCompanyモデル定義詳細
+# IntermediaryCompany
 
-- **定義場所**: `app/models/intermediary_company.rb:2`
-- **主な役割**: 仲介会社マスタ
+## 役割
+仲介会社マスタを管理するモデル。
 
-## 主要な関連（定義元行番号付き）
-- `has_many :intermediary_staffs` (`intermediary_company.rb:?`)
-- ...（他にもあれば全て記載）
+## 主なリレーション
+- has_many: [[IntermediaryStaff]]
+- belongs_to: [[User]]
 
-## intermediary_companiesテーブル定義（抜粋）
+## テーブル定義
 
-| カラム名 | データ型 | 備考 | 定義場所 |
-|---|---|---|---|
-| id | bigint | 主キー | db/schema.rb:1610 |
-| name | string | 仲介会社名 | db/schema.rb:? |
-| ... | ... | ... | ... | 
+| カラム名 | データ型 | 備考 |
+|---|---|---|
+| id | bigint | 主キー |
+| name | string | 仲介会社名（null: false） |
+| user_id | integer | GA担当者（userへの外部キー） |
+| monthly_handing_number | integer | 1ヶ月の取り扱い件数 |
+| created_at | datetime | null: false |
+| updated_at | datetime | null: false |
+
+## 出典
+- schema.rb: intermediary_companies テーブル定義
+- モデル: app/models/intermediary_company.rb 

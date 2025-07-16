@@ -1,20 +1,30 @@
-# Approvalモデル定義詳細
+# Approval
 
-- **定義場所**: `app/models/approval.rb:2`
-- **主な役割**: 稟議申請管理
+## 役割
+稟議申請管理を行うモデル。
 
-## 主要な関連（定義元行番号付き）
-- `belongs_to :article` (`approval.rb:?`)
-- `belongs_to :user` (`approval.rb:?`)
-- `has_one :approval_detail` (`approval.rb:?`)
-- `has_many :approval_status_histories` (`approval.rb:?`)
-- ...（他にもあれば全て記載）
+## 主なリレーション
+- belongs_to: [[Article]]
+- belongs_to: [[User]]
+- has_one: [[ApprovalDetail]]
+- has_many: [[ApprovalStatusHistory]]
 
-## approvalsテーブル定義（抜粋）
+## テーブル定義
 
-| カラム名 | データ型 | 備考 | 定義場所 |
-|---|---|---|---|
-| id | bigint | 主キー | db/schema.rb:119 |
-| article_id | integer | article_id | db/schema.rb:120 |
-| user_id | integer | user_id | db/schema.rb:121 |
-| ... | ... | ... | ... | 
+| カラム名 | データ型 | 備考 |
+|---|---|---|
+| id | bigint | 主キー |
+| article_id | integer | 物件ID（articleへの外部キー） |
+| user_id | integer | ユーザーID（userへの外部キー） |
+| name | string | 稟議書（carrierwaveでマウントするカラム） |
+| change_name | string | 変更稟議事情説明書（carrierwaveでマウントするカラム） |
+| status | integer | 稟議のステータス |
+| kintone_id | integer | kintone上でのID |
+| no | integer | 稟議申請回数。2以降は変更稟議。 |
+| comment | text | コメント |
+| created_at | datetime | null: false |
+| updated_at | datetime | null: false |
+
+## 出典
+- schema.rb: approvals テーブル定義
+- モデル: app/models/approval.rb 

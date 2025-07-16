@@ -1,17 +1,24 @@
-# Attachmentモデル定義詳細
+# Attachment
 
-- **定義場所**: `app/models/attachment.rb:2`
-- **主な役割**: メール添付ファイル管理
+## 役割
+メール添付ファイルを管理するモデル。
 
-## 主要な関連（定義元行番号付き）
-- `belongs_to :supplier_mail` (`attachment.rb:?`)
-- `belongs_to :article` (`attachment.rb:?`)
+## 主なリレーション
+- belongs_to: [[SupplierMail]]
+- belongs_to: [[Article]]
 
-## attachmentsテーブル定義（抜粋）
+## テーブル定義
 
-| カラム名 | データ型 | 備考 | 定義場所 |
-|---|---|---|---|
-| id | bigint | 主キー | db/schema.rb:698 |
-| supplier_mail_id | integer | 査定メールID | db/schema.rb:? |
-| article_id | integer | 物件ID | db/schema.rb:? |
-| ... | ... | ... | ... | 
+| カラム名 | データ型 | 備考 |
+|---|---|---|
+| id | bigint | 主キー |
+| supplier_mail_id | integer | 査定メールID（supplier_mailへの外部キー） |
+| article_id | integer | 物件ID（articleへの外部キー） |
+| file_name | string | ファイル名 |
+| file_size | integer | ファイルサイズ |
+| created_at | datetime | null: false |
+| updated_at | datetime | null: false |
+
+## 出典
+- schema.rb: attachments テーブル定義
+- モデル: app/models/attachment.rb 

@@ -1,17 +1,24 @@
-# ConsumptionTaxVersionモデル定義詳細
+# ConsumptionTaxVersion
 
-- **定義場所**: `app/models/consumption_tax_version.rb:2`
-- **主な役割**: 消費税計算履歴
+## 役割
+消費税計算履歴を管理するモデル。
 
-## 主要な関連（定義元行番号付き）
-- `belongs_to :article` (`consumption_tax_version.rb:9`)
-- `belongs_to :user` (`consumption_tax_version.rb:10`)
+## 主なリレーション
+- belongs_to: [[Article]]
+- belongs_to: [[User]]
 
-## consumption_tax_versionsテーブル定義（抜粋）
+## テーブル定義
 
-| カラム名 | データ型 | 備考 | 定義場所 |
-|---|---|---|---|
-| id | bigint | 主キー | db/schema.rb:920 |
-| article_id | integer | 物件ID | db/schema.rb:? |
-| user_id | integer | ユーザーID | db/schema.rb:? |
-| ... | ... | ... | ... | 
+| カラム名 | データ型 | 備考 |
+|---|---|---|
+| id | bigint | 主キー |
+| article_id | integer | 物件ID（articleへの外部キー） |
+| user_id | integer | ユーザーID（userへの外部キー） |
+| version | integer | バージョン番号 |
+| tax_amount | integer | 消費税額 |
+| created_at | datetime | null: false |
+| updated_at | datetime | null: false |
+
+## 出典
+- schema.rb: consumption_tax_versions テーブル定義
+- モデル: app/models/consumption_tax_version.rb 

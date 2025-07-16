@@ -1,18 +1,25 @@
-# IntermediaryStaffモデル定義詳細
+# IntermediaryStaff
 
-- **定義場所**: `app/models/intermediary_staff.rb:2`
-- **主な役割**: 仲介担当者
+## 役割
+仲介担当者を管理するモデル。
 
-## 主要な関連（定義元行番号付き）
-- `belongs_to :intermediary_company` (`intermediary_staff.rb:8`)
-- `has_many :intermediary_staff_users, dependent: :destroy` (`intermediary_staff.rb:9`)
-- `has_many :users, through: :intermediary_staff_users` (`intermediary_staff.rb:10`)
-- ...（他にもあれば全て記載）
+## 主なリレーション
+- belongs_to: [[IntermediaryCompany]]
+- has_many: [[IntermediaryStaffUser]]
+- has_many: [[User]]（through: :intermediary_staff_users）
 
-## intermediary_staffsテーブル定義（抜粋）
+## テーブル定義
 
-| カラム名 | データ型 | 備考 | 定義場所 |
-|---|---|---|---|
-| id | bigint | 主キー | db/schema.rb:1658 |
-| intermediary_company_id | integer | 仲介会社ID | db/schema.rb:? |
-| ... | ... | ... | ... | 
+| カラム名 | データ型 | 備考 |
+|---|---|---|
+| id | bigint | 主キー |
+| intermediary_company_id | integer | 仲介会社ID（intermediary_companyへの外部キー） |
+| name | string | 担当者名 |
+| email | string | メールアドレス |
+| phone | string | 電話番号 |
+| created_at | datetime | null: false |
+| updated_at | datetime | null: false |
+
+## 出典
+- schema.rb: intermediary_staffs テーブル定義
+- モデル: app/models/intermediary_staff.rb 
