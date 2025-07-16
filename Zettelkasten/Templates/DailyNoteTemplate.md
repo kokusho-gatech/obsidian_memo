@@ -3,27 +3,25 @@ tags: daily-note/task
 creation-date: <% tp.date.now("YYYY-MM-DD") %>
 ---
 
+# <% tp.date.now("YYYY-MM-DD") %>
 
-# 📅  <% tp.date.now("YYYY-MM-DD") %> のタスク
-
-## ✨ 今日の目標 (Top 3)
-> 今日これだけは必ず終わらせる、という最も重要なタスクを3つ書き出しましょう。
-
+## TODO
 - [ ] 
 - [ ] 
 - [ ] 
 
-## ✅ タスクリスト
-> 上記以外のタスクをすべて書き出します。
+## MEMO
+- <% tp.date.now("HH:mm") %> ：
+- <% tp.date.now("HH:mm") %> ：
 
-### 午前
-- [ ] 
-- [ ] 
+## JOURNAL
+- <% tp.date.now("HH:mm") %> ：
+- <% tp.date.now("HH:mm") %> ：
 
-### 午後
-- [ ] 
-- [ ] 
+## STUDY
+- <% tp.date.now("HH:mm") %> ：
+- <% tp.date.now("HH:mm") %> ：
 
-### 夕方以降
-- [ ] 
-- [ ]
+## EXPERIENCE
+- <% tp.date.now("HH:mm") %> ：
+- <% tp.date.now("HH:mm") %> ：
