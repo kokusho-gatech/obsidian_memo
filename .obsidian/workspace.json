@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250716.md",
+                "file": "Zettelkasten/00_Indexnote/TaskList.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "250716"
+              "title": "TaskList"
             }
           },
           {
@@ -222,8 +222,8 @@
   },
   "active": "fd1126f093a7c243",
   "lastOpenFiles": [
-    "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
     "Zettelkasten/40_Daily/250716.md",
+    "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
     "Zettelkasten/40_Daily/2025W28.md",
     "Zettelkasten/00_Indexnote/TaskList.md",
     "Zettelkasten/40_Daily/250715.md",
