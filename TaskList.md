@@ -1,5 +1,5 @@
 
 
-```dataview.js
-
+```dataviewjs
+dv.list(dv.pages().map(d=>d.file.path))
 ```
