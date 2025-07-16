@@ -1,14 +1,19 @@
+#  未完了タスク
+```dataview
+TASK  
+WHERE !completed
 
-```dataviewjs
-dv.table(
-  ["file", "status"],
-  dv.pages()
-    .map(p => [
-        dv.fileLink(p.file.path, false, p.file.frontmatter.title),
-        p.file.frontmatter.status
-    ])
-)
+
 ```
+group by file.link
+```
+```
+group by file.link
+```
+```
+
+
+
 
 
 
