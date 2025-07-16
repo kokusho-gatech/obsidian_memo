@@ -6,9 +6,9 @@ creation-date: <% tp.date.now("YYYY-MM-DD") %>
 # <% tp.date.now("YYYY-MM-DD") %>
 
 ## TODO
-- [ ] 
-- [ ] 
-- [ ] 
+- [x] 
+- [x] 
+- [x] 
 
 ## MEMO
 - <% tp.date.now("HH:mm") %> ：

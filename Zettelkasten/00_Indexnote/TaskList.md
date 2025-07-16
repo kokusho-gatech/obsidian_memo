@@ -1,14 +1,12 @@
 #  未完了タスク
 ```dataview
 TASK  
-WHERE !completed
+WHERE !completed and file.text != ""
+group by file.link
+
+```
 
 
-```
-group by file.link
-```
-```
-group by file.link
 ```
 ```
 
