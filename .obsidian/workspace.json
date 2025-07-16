@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 334.5
+    "width": 281.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -194,11 +194,14 @@
   },
   "active": "75aaacbc12f5e55f",
   "lastOpenFiles": [
-    "UsersPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/LatestApprovalEditPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_by_RENOSY_全体像まとめ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_controllers_index.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_db_structure.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/Supplier_Pages_Index.md",
+    "UsersPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PriorValuationEditPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PriorValuationsPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_controllers_index.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/LatestSaleApprovalsController.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ForSaleMaisokusController.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Articles__PriorValuationsController.md",
@@ -217,9 +220,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UnassociatedPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentNgPage.md",
     "AssessmentEditPage.md",
-    "AssessmentPage.md",
-    "AssessmentNgPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
     "definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs",
