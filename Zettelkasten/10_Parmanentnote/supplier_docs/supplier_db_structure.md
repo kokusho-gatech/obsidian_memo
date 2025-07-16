@@ -8,49 +8,49 @@
 | [[Article]]                          | [[物件]]情報を管理          | belongs_to :user, has_many :article_items, has_many :negotiation_histories, ...                                           |
 | [[ArticleItem]]                      | 物件に紐づく[[書類]]情報       | belongs_to :article, belongs_to :item, has_many :article_item_files, ...                                                  |
 | [[Item]]                             | 書類種別マスタ              | has_many :article_items                                                                                                   |
-| Approval                             | [[仕入稟議]]申請管理         | belongs_to :article, belongs_to :user, has_one :approval_detail, has_many :approval_status_histories                      |
-| ApprovalDetail                       | 稟議の詳細情報              | belongs_to :approval                                                                                                      |
-| ApprovalStatusHistory                | 稟議のステータス履歴           | belongs_to :approval, belongs_to :actor (User), has_one :approval_status_history_comment                                  |
-| ApprovalStatusHistoryComment         | ステータス履歴のコメント         | belongs_to :approval_status_history, belongs_to :user                                                                     |
-| NegotiationHistory                   | [[交渉履歴]]             | belongs_to :article                                                                                                       |
-| SaleApproval                         | [[販売稟議]]             | belongs_to :article, has_many :status_histories, has_one :detail                                                          |
-| SaleApproval::StatusHistory          | 販売稟議のステータス履歴         | belongs_to :sale_approval, belongs_to :actor (User), has_one :comment                                                     |
-| SaleApproval::StatusHistory::Comment | ステータス履歴のコメント         | belongs_to :sale_approval_status_history, belongs_to :user                                                                |
-| SaleApproval::Detail                 | 販売稟議の詳細              | belongs_to :sale_approval                                                                                                 |
-| IntermediaryCompany                  | [[仲介会社]]マスタ          | has_many :intermediary_staffs, belongs_to :user                                                                           |
-| IntermediaryStaff                    | 仲介担当者                | belongs_to :intermediary_company, has_many :intermediary_staff_users, has_many :users, through: :intermediary_staff_users |
-| IntermediaryStaffUser                | 仲介担当者とユーザーの中間        | belongs_to :intermediary_staff, belongs_to :user                                                                          |
-| IntermediaryDomain                   | 仲介会社ドメイン             | belongs_to :intermediary_company, belongs_to :user                                                                        |
-| SupplierMail                         | 査定メール管理              | belongs_to :contact_person (User), belongs_to :intermediary_company, has_many :attachments, has_many :articles            |
-| Attachment                           | メール添付ファイル            | belongs_to :supplier_mail, belongs_to :article                                                                            |
-| ConsumptionTaxVersion                | [[消費税計算]]履歴          | belongs_to :article, belongs_to :user                                                                                     |
-| PaymentRequest                       | [[支払い依頼]]            | belongs_to :article, belongs_to :user, has_many :payment_request_comments                                                 |
-| PaymentRequestComment                | 支払い依頼のコメント           | belongs_to :payment_request                                                                                               |
-| SaleMaisokuProgress                  | [[販売用マイソク作成進捗]]      | belongs_to :article, belongs_to :creator (User), belongs_to :checker (User)                                               |
-| SaleManagementInfo                   | [[発表管理]]             | belongs_to :article, belongs_to :bank                                                                                     |
-| SalesContractField                   | [[契約書関連項目]]          | belongs_to :article, belongs_to :sales_contract_template                                                                  |
-| SalesContractFile                    | [[契約書ファイル]]          | belongs_to :sales_contract_field, has_many :docusign_files                                                                |
-| DocusignFile                         | [[DocuSignファイル]]     | belongs_to :sales_contract_file                                                                                           |
-| SalesContractTemplate                | [[契約書テンプレート]]        | -                                                                                                                         |
-| SalesDestination                     | [[卸先事業マスタ]]          | has_many :sales_destination_articles                                                                                      |
-| SalesDestinationArticle              | 卸先事業と物件の中間           | belongs_to :sales_destination, belongs_to :article                                                                        |
-| SalesInfo                            | [[発表詳細]]             | belongs_to :article                                                                                                       |
-| SalesPropertiesSheetField            | [[販売物件管理スプレッドシート項目]] | belongs_to :article                                                                                                       |
-| Building                             | [[建物マスタ]]            | has_many :articles                                                                                                        |
-| BuildingConfirmation                 | [[建物情報確認]]           | belongs_to :article, belongs_to :user                                                                                     |
-| Janitor                              | [[建物管理員]]            | belongs_to :article                                                                                                       |
-| Jikoshintaku                         | [[自己信託マスタ]]          | has_many :jikoshintaku_articles, has_many :articles, through: :jikoshintaku_articles                                      |
-| JikoshintakuArticle                  | 自己信託と物件の中間           | belongs_to :jikoshintaku, belongs_to :article                                                                             |
-| OwnrInfo                             | [[OWNRアプリ情報]]        | belongs_to :article                                                                                                       |
-| Comment                              | [[コメント]]             | belongs_to :article, belongs_to :user                                                                                     |
-| Label                                | [[ラベル]]              | -                                                                                                                         |
-| BusinessPartner                      | [[ビジネスパートナー]]        | has_many :users                                                                                                           |
-| Prefecture                           | [[都道府県マスタ]]          | has_many :intermediary_companies                                                                                          |
-| PricePrediction                      | [[価格推定結果]]           | belongs_to :article                                                                                                       |
-| PriorValuation                       | [[事前評価]]             | belongs_to :article, belongs_to :user                                                                                     |
-| PriorValuationResult                 | [[事前評価結果]]           | belongs_to :prior_valuation, belongs_to :bank                                                                             |
-| Valuation                            | [[銀行評価]]             | belongs_to :article, belongs_to :bank                                                                                     |
-| ValuationHistory                     | [[銀行評価履歴]]           | belongs_to :valuation                                                                                                     |
+| [[Approval]]                             | [[仕入稟議]]申請管理         | belongs_to :article, belongs_to :user, has_one :approval_detail, has_many :approval_status_histories                      |
+| [[ApprovalDetail]]                       | 稟議の詳細情報              | belongs_to :approval                                                                                                      |
+| [[ApprovalStatusHistory]]                | 稟議のステータス履歴           | belongs_to :approval, belongs_to :actor (User), has_one :approval_status_history_comment                                  |
+| [[ApprovalStatusHistoryComment]]         | ステータス履歴のコメント         | belongs_to :approval_status_history, belongs_to :user                                                                     |
+| [[NegotiationHistory]]                   | [[交渉履歴]]             | belongs_to :article                                                                                                       |
+| [[SaleApproval]]                         | [[販売稟議]]             | belongs_to :article, has_many :status_histories, has_one :detail                                                          |
+| [[SaleApproval::StatusHistory]]          | 販売稟議のステータス履歴         | belongs_to :sale_approval, belongs_to :actor (User), has_one :comment                                                     |
+| [[SaleApproval::StatusHistory::Comment]] | ステータス履歴のコメント         | belongs_to :sale_approval_status_history, belongs_to :user                                                                |
+| [[SaleApproval::Detail]]                 | 販売稟議の詳細              | belongs_to :sale_approval                                                                                                 |
+| [[IntermediaryCompany]]                  | [[仲介会社]]マスタ          | has_many :intermediary_staffs, belongs_to :user                                                                           |
+| [[IntermediaryStaff]]                    | 仲介担当者                | belongs_to :intermediary_company, has_many :intermediary_staff_users, has_many :users, through: :intermediary_staff_users |
+| [[IntermediaryStaffUser]]                | 仲介担当者とユーザーの中間        | belongs_to :intermediary_staff, belongs_to :user                                                                          |
+| [[IntermediaryDomain]]                   | 仲介会社ドメイン             | belongs_to :intermediary_company, belongs_to :user                                                                        |
+| [[SupplierMail]]                         | 査定メール管理              | belongs_to :contact_person (User), belongs_to :intermediary_company, has_many :attachments, has_many :articles            |
+| [[Attachment]]                           | メール添付ファイル            | belongs_to :supplier_mail, belongs_to :article                                                                            |
+| [[ConsumptionTaxVersion]]                | [[消費税計算]]履歴          | belongs_to :article, belongs_to :user                                                                                     |
+| [[PaymentRequest]]                       | [[支払い依頼]]            | belongs_to :article, belongs_to :user, has_many :payment_request_comments                                                 |
+| [[PaymentRequestComment]]                | 支払い依頼のコメント           | belongs_to :payment_request                                                                                               |
+| [[SaleMaisokuProgress]]                  | [[販売用マイソク作成進捗]]      | belongs_to :article, belongs_to :creator (User), belongs_to :checker (User)                                               |
+| [[SaleManagementInfo]]                   | [[発表管理]]             | belongs_to :article, belongs_to :bank                                                                                     |
+| [[SalesContractField]]                   | [[契約書関連項目]]          | belongs_to :article, belongs_to :sales_contract_template                                                                  |
+| [[SalesContractFile]]                    | [[契約書ファイル]]          | belongs_to :sales_contract_field, has_many :docusign_files                                                                |
+| [[DocusignFile]]                         | [[DocuSignファイル]]     | belongs_to :sales_contract_file                                                                                           |
+| [[SalesContractTemplate]]                | [[契約書テンプレート]]        | -                                                                                                                         |
+| [[SalesDestination]]                     | [[卸先事業マスタ]]          | has_many :sales_destination_articles                                                                                      |
+| [[SalesDestinationArticle]]              | 卸先事業と物件の中間           | belongs_to :sales_destination, belongs_to :article                                                                        |
+| [[SalesInfo]]                            | [[発表詳細]]             | belongs_to :article                                                                                                       |
+| [[SalesPropertiesSheetField]]            | [[販売物件管理スプレッドシート項目]] | belongs_to :article                                                                                                       |
+| [[Building]]                             | [[建物マスタ]]            | has_many :articles                                                                                                        |
+| [[BuildingConfirmation]]                 | [[建物情報確認]]           | belongs_to :article, belongs_to :user                                                                                     |
+| [[Janitor]]                              | [[建物管理員]]            | belongs_to :article                                                                                                       |
+| [[Jikoshintaku]]                         | [[自己信託マスタ]]          | has_many :jikoshintaku_articles, has_many :articles, through: :jikoshintaku_articles                                      |
+| [[JikoshintakuArticle]]                  | 自己信託と物件の中間           | belongs_to :jikoshintaku, belongs_to :article                                                                             |
+| [[OwnrInfo]]                             | [[OWNRアプリ情報]]        | belongs_to :article                                                                                                       |
+| [[Comment]]                              | [[コメント]]             | belongs_to :article, belongs_to :user                                                                                     |
+| [[Label]]                                | [[ラベル]]              | -                                                                                                                         |
+| [[BusinessPartner]]                      | [[ビジネスパートナー]]        | has_many :users                                                                                                           |
+| [[Prefecture]]                           | [[都道府県マスタ]]          | has_many :intermediary_companies                                                                                          |
+| [[PricePrediction]]                      | [[価格推定結果]]           | belongs_to :article                                                                                                       |
+| [[PriorValuation]]                       | [[事前評価]]             | belongs_to :article, belongs_to :user                                                                                     |
+| [[PriorValuationResult]]                 | [[事前評価結果]]           | belongs_to :prior_valuation, belongs_to :bank                                                                             |
+| [[Valuation]]                            | [[銀行評価]]             | belongs_to :article, belongs_to :bank                                                                                     |
+| [[ValuationHistory]]                     | [[銀行評価履歴]]           | belongs_to :valuation                                                                                                     |
 | ...                                  | ...                  | ...                                                                                                                       |
 
 > ※一部省略。サブディレクトリ（input, users, types, v1等）や特殊用途モデルも含めて随時追記してください。
