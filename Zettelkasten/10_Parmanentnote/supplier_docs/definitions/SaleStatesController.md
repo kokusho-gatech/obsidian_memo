@@ -1,23 +1,17 @@
-# SaleStatesController
+# SaleStatesController（Articles::SaleStatesController）
 
-> 本来のクラス名は Articles::SaleStatesController です
+## 概要
+- 物件の販売状態を更新するコントローラー。
+- `/articles/:id/sale_states` で利用。
 
----
+## アクション一覧
 
-## アクション一覧と詳細
-
-### `update` (出典: app/controllers/articles/sale_states_controller.rb:6)
-
-* **機能概要:**
-  物件の販売状態を更新。
-* **処理フロー:**
-    1. ArticleをIDで取得（:7）
-    2. Handlerを生成しexecuteで更新（:8-13）
-    3. 成功/失敗時はフラッシュ・リダイレクト（:14-16）
-* **返すもの:**
-    - リダイレクト
+### update（6-16行目）
+- **受け取るもの**: params[:id], params[:article][:sale_state]
+- **処理内容**: Articleを取得し、Handlerで販売状態を更新。
+- **返すもの**: フラッシュメッセージ、リダイレクト
 
 ---
 
-## 関連リンク
+[コントローラー一覧に戻る](../supplier_controllers_index.md)
  
