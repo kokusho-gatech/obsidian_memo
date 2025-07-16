@@ -1,21 +1,20 @@
-# Item
+# Prefecture
 
 ## 役割
-書類種別マスタを管理するモデル。
+都道府県マスタを管理するモデル。
 
 ## 主なリレーション
-- has_many: [[ArticleItem]]
+- has_many: [[IntermediaryCompany]]
 
 ## テーブル定義
 
 | カラム名 | データ型 | 備考 |
 |---|---|---|
 | id | bigint | 主キー |
-| name | string | 書類名 |
-| description | text | 書類説明 |
+| name | string | 都道府県名 |
 | created_at | datetime | null: false |
 | updated_at | datetime | null: false |
 
 ## 出典
-- schema.rb: items テーブル定義
-- モデル: app/models/item.rb 
+- schema.rb: prefectures テーブル定義
+- モデル: app/models/prefecture.rb 

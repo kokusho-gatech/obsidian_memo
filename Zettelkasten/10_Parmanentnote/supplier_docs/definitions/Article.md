@@ -1,30 +1,35 @@
-# Articleモデル定義詳細
+# Article
 
-- **定義場所**: `app/models/article.rb:8`
-- **主な役割**: 物件情報を管理
+## 役割
+物件情報を管理するモデル。
 
-## 主要な関連（定義元行番号付き）
-- `belongs_to :building` (`article.rb:19`)
-- `has_many :comments, dependent: :destroy` (`article.rb:20`)
-- `has_many :approvals` (`article.rb:21`)
-- `has_one :target_approval, ...` (`article.rb:22`)
-- `has_one :payment_request` (`article.rb:23`)
-- `has_one :attachment, dependent: :destroy` (`article.rb:24`)
-- `has_one :supplier_mail, through: :attachment` (`article.rb:25`)
-- `belongs_to :creator, class_name: 'User'` (`article.rb:26`)
-- `belongs_to :user` (`article.rb:27`)
-- `has_many :valuations, inverse_of: :article` (`article.rb:28`)
-- ...（他にも多数。全て記載）
+## 主なリレーション
+- belongs_to: [[User]]
+- has_many: [[ArticleItem]]
+- has_many: [[NegotiationHistory]]
+- has_many: [[Approval]]
+- has_many: [[PaymentRequest]]
+- has_many: [[SaleMaisokuProgress]]
+- has_many: [[SaleManagementInfo]]
+- has_many: [[SalesContractField]]
+- has_one: [[SalesInfo]]
+- has_one: [[SalesPropertiesSheetField]]
+- has_many: [[BuildingConfirmation]]
+- has_one: [[Janitor]]
+- has_many: [[JikoshintakuArticle]]
+- has_one: [[OwnrInfo]]
+- has_many: [[Comment]]
+- has_many: [[PricePrediction]]
+- has_many: [[PriorValuation]]
+- has_many: [[Valuation]]
+- has_many: [[SalesDestinationArticle]]
+- has_many: [[ConsumptionTaxVersion]]
+- has_many: [[PurchaseContract]]
 
-## articlesテーブル定義（抜粋）
+## テーブル定義
 
-| カラム名 | データ型 | 備考 | 定義場所 |
-|---|---|---|---|
-| id | bigint | 主キー | db/schema.rb:288 |
-| building_name | text | 建物名 | db/schema.rb:289 |
-| zip | string | 郵便番号 | db/schema.rb:290 |
-| prefecture | text | 住所１ | db/schema.rb:291 |
-| ... | ... | ... | ... |
-| created_at | datetime | null: false | db/schema.rb:312 |
-| updated_at | datetime | null: false | db/schema.rb:313 |
-| ... | ... | ... | ... | 
+※カラム数が多いため省略。詳細は[[schema.rb]]を参照。
+
+## 出典
+- schema.rb: articles テーブル定義
+- モデル: app/models/article.rb 

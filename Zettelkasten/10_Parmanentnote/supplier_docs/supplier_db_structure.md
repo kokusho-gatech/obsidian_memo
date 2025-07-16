@@ -2,12 +2,12 @@
 
 ## モデル一覧と役割
 
-| モデル名                                 | 主な役割                 | 主要な関連                                                                                                                     |
-| ------------------------------------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| [[User]]                             | [[ユーザー]]情報を管理        | has_many :articles, has_many :approvals, has_many :intermediary_companies, ...                                            |
-| [[Article]]                          | [[物件]]情報を管理          | belongs_to :user, has_many :article_items, has_many :negotiation_histories, ...                                           |
-| [[ArticleItem]]                      | 物件に紐づく[[書類]]情報       | belongs_to :article, belongs_to :item, has_many :article_item_files, ...                                                  |
-| [[Item]]                             | 書類種別マスタ              | has_many :article_items                                                                                                   |
+| モデル名                                     | 主な役割                 | 主要な関連                                                                                                                     |
+| ---------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| [[User]]                                 | [[ユーザー]]情報を管理        | has_many :articles, has_many :approvals, has_many :intermediary_companies, ...                                            |
+| [[Article]]                              | [[物件]]情報を管理          | belongs_to :user, has_many :article_items, has_many :negotiation_histories, ...                                           |
+| [[ArticleItem]]                          | 物件に紐づく[[書類]]情報       | belongs_to :article, belongs_to :item, has_many :article_item_files, ...                                                  |
+| [[Item]]                                 | 書類種別マスタ              | has_many :article_items                                                                                                   |
 | [[Approval]]                             | [[仕入稟議]]申請管理         | belongs_to :article, belongs_to :user, has_one :approval_detail, has_many :approval_status_histories                      |
 | [[ApprovalDetail]]                       | 稟議の詳細情報              | belongs_to :approval                                                                                                      |
 | [[ApprovalStatusHistory]]                | 稟議のステータス履歴           | belongs_to :approval, belongs_to :actor (User), has_one :approval_status_history_comment                                  |
@@ -51,7 +51,7 @@
 | [[PriorValuationResult]]                 | [[事前評価結果]]           | belongs_to :prior_valuation, belongs_to :bank                                                                             |
 | [[Valuation]]                            | [[銀行評価]]             | belongs_to :article, belongs_to :bank                                                                                     |
 | [[ValuationHistory]]                     | [[銀行評価履歴]]           | belongs_to :valuation                                                                                                     |
-| ...                                  | ...                  | ...                                                                                                                       |
+| ...                                      | ...                  | ...                                                                                                                       |
 
 > ※一部省略。サブディレクトリ（input, users, types, v1等）や特殊用途モデルも含めて随時追記してください。
 

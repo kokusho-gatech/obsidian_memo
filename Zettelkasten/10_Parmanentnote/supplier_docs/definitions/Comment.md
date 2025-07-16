@@ -1,10 +1,11 @@
-# Janitor
+# Comment
 
 ## 役割
-建物管理員を管理するモデル。
+コメントを管理するモデル。
 
 ## 主なリレーション
 - belongs_to: [[Article]]
+- belongs_to: [[User]]
 
 ## テーブル定義
 
@@ -12,11 +13,11 @@
 |---|---|---|
 | id | bigint | 主キー |
 | article_id | integer | 物件ID（articleへの外部キー） |
-| name | string | 管理員名 |
-| phone | string | 電話番号 |
+| user_id | integer | ユーザーID（userへの外部キー） |
+| content | text | コメント内容 |
 | created_at | datetime | null: false |
 | updated_at | datetime | null: false |
 
 ## 出典
-- schema.rb: janitors テーブル定義
-- モデル: app/models/janitor.rb 
+- schema.rb: comments テーブル定義
+- モデル: app/models/comment.rb 

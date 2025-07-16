@@ -1,7 +1,7 @@
-# Janitor
+# PricePrediction
 
 ## 役割
-建物管理員を管理するモデル。
+価格推定結果を管理するモデル。
 
 ## 主なリレーション
 - belongs_to: [[Article]]
@@ -12,11 +12,11 @@
 |---|---|---|
 | id | bigint | 主キー |
 | article_id | integer | 物件ID（articleへの外部キー） |
-| name | string | 管理員名 |
-| phone | string | 電話番号 |
+| predicted_price | integer | 推定価格 |
+| predicted_at | datetime | 推定日時 |
 | created_at | datetime | null: false |
 | updated_at | datetime | null: false |
 
 ## 出典
-- schema.rb: janitors テーブル定義
-- モデル: app/models/janitor.rb 
+- schema.rb: price_predictions テーブル定義
+- モデル: app/models/price_prediction.rb 

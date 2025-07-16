@@ -1,10 +1,12 @@
-# Janitor
+# Valuation
 
 ## 役割
-建物管理員を管理するモデル。
+銀行評価を管理するモデル。
 
 ## 主なリレーション
 - belongs_to: [[Article]]
+- belongs_to: [[Bank]]
+- has_many: [[ValuationHistory]]
 
 ## テーブル定義
 
@@ -12,11 +14,11 @@
 |---|---|---|
 | id | bigint | 主キー |
 | article_id | integer | 物件ID（articleへの外部キー） |
-| name | string | 管理員名 |
-| phone | string | 電話番号 |
+| bank_id | integer | 銀行ID（bankへの外部キー） |
+| evaluated_at | datetime | 評価日時 |
 | created_at | datetime | null: false |
 | updated_at | datetime | null: false |
 
 ## 出典
-- schema.rb: janitors テーブル定義
-- モデル: app/models/janitor.rb 
+- schema.rb: valuations テーブル定義
+- モデル: app/models/valuation.rb 
