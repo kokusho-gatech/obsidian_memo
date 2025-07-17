@@ -7,24 +7,24 @@
 ## アプリケーション基本設定
 
 ### config/application.rb:1-36*設定項目・内容の概要**
--[Rails]] 70.1のデフォルト設定を読み込み
+- [[Rails]] 70.1のデフォルト設定を読み込み
 - タイムゾーンを東京に設定
 - デフォルトロケールを日本語に設定
-- ActiveJob]]のキューアダプターを[Sidekiq]]に設定
+- ActiveJobのキューアダプターを[[Sidekiq]]に設定
 - 外部キー制約の検証を無効化（テスト用）
 
 **目的と影響範囲**
 - アプリケーション全体の基本動作を定義
-- 非同期処理の基盤となるSidekiqの設定
+- 非同期処理の基盤となる[[Sidekiq]]の設定
 - データベースの整合性チェックに影響
 
 ## 本番環境設定
 
 ### config/environments/production.rb:1-70*設定項目・内容の概要**
 - [[SSL]]強制有効化（`config.force_ssl = true`）
-- CloudFront]]アセット配信設定
--Redis]]キャッシュストア設定
-- [Lograge]]による構造化ログ設定
+- [[CloudFront]]アセット配信設定
+- [[Redis]]キャッシュストア設定
+- [[Lograge]]による構造化ログ設定
 - ヘルスチェックエンドポイントのSSL除外設定
 
 **目的と影響範囲**
@@ -62,14 +62,14 @@ config.cache_store = :redis_cache_store, { url: ENV['REDIS_URL'] }
 ```
 
 **目的と影響範囲**
--Redis]]による分散キャッシュ
+- [[Redis]]による分散キャッシュ
 - セッション管理・フラグメントキャッシュ
 - スケーラビリティの向上
 
 ## 認証・セキュリティ設定
 
 ### config/initializers/devise.rb:175*設定項目・内容の概要**
-- [Devise]]認証フレームワークの設定
+- [[Devise]]認証フレームワークの設定
 - パスワードハッシュ化（bcrypt、stretches:11）
 - セッション管理設定
 - CSRFトークン保護
@@ -91,7 +91,7 @@ config.stretches = Rails.env.test? ? 1 : 11nfig.reconfirmable = true
 - セキュリティ強化
 
 ### config/initializers/omniauth.rb:1-25*設定項目・内容の概要**
-- [Google OAuth2]]認証設定
+- [[Google OAuth2]]認証設定
 - 環境変数からAPI認証情報を読み込み
 - 開発環境でのモック認証設定
 
@@ -115,7 +115,7 @@ Rails.application.config.filter_parameters += [
 ## インフラ・パフォーマンス設定
 
 ### config/puma.rb:1-56*設定項目・内容の概要**
-- Puma]]Webサーバーの設定
+- [[Puma]]Webサーバーの設定
 - ワーカー数・スレッド数の環境変数制御
 - [[PumaWorkerKiller]]によるメモリ管理
 - プリロード設定
@@ -152,7 +152,7 @@ end
 - システム安定性の向上
 
 ### config/initializers/sidekiq.rb:1-10*設定項目・内容の概要**
-- [Sidekiq]]のRedis接続設定
+- [[Sidekiq]]の[[Redis]]接続設定
 - リトライ回数の制限（最大1回）
 
 **目的と影響範囲**
@@ -163,7 +163,7 @@ end
 ## 外部サービス連携
 
 ### config/initializers/carrierwave.rb:1-16*設定項目・内容の概要**
--[AWS S3]]ファイルストレージ設定
+- [[AWS S3]]ファイルストレージ設定
 - 環境変数から認証情報を読み込み
 - ファイルアップロード機能
 
@@ -173,7 +173,7 @@ end
 - セキュリティ（認証情報管理）
 
 ### config/initializers/rollbar.rb:1-74*設定項目・内容の概要**
-- Rollbar]]エラー監視設定
+- [[Rollbar]]エラー監視設定
 - 環境変数からアクセストークンを読み込み
 - 機密情報のスクラビング設定
 
@@ -193,7 +193,7 @@ end
 - 運用監視の基盤
 
 ### config/initializers/slack.rb:1-4*設定項目・内容の概要**
-- Slack]]通知設定
+- [[Slack]]通知設定
 - 環境変数からAPIトークンを読み込み
 
 **目的と影響範囲**
@@ -276,8 +276,8 @@ Rails.application.config.session_store :cookie_store, key: _supplier_session'
    - [[AWS Secrets Manager]]の活用
    - 認証情報のローテーション
 2 **監視の強化**
-   - Datadog]]による包括的監視
-   - [Rollbar]]によるエラー監視
+   - [[Datadog]]による包括的監視
+   - [[Rollbar]]によるエラー監視
 
 3**セキュリティヘッダーの追加**
    - CSP（Content Security Policy）
