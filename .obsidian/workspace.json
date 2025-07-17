@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/Ruby on Rails 探検ガイド.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05_SUPPLIER_DB構造"
+              "title": "Ruby on Rails 探検ガイド"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.5
+    "width": 300.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -194,13 +194,22 @@
   },
   "active": "7107e458b805a198",
   "lastOpenFiles": [
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ForSaleMaisokuEditPage.md",
+    "Zettelkasten/10_Parmanentnote/cursor_ai_shortcuts.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/プロダクトドキュメントの歩き方.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/Ruby on Rails 探検ガイド.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/06_SUPPLIER_Rakeタスク.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SalesContractTemplatesPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/BuildingConfirmationsPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SoldDocumentsPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ConsumptionTaxVersionsNewPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SalesAgreementSetPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ForSimulationEditPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ForSaleMaisokuEditPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/LatestSaleApprovalsController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Slack.md",
     "TechConsul.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ActiveJob.md",
@@ -211,16 +220,7 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/DocuSign.md",
     "SUPPLIER by RENOSY.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ApplicationJob.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateArticleWithMaisokuReaderJob.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ReuploadDocusignFilesJob.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ReplaceMaisokuForSbjJob.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateModelsWithCertifiedCopyReaderJob.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/コントローラー.md",
-    "[user](.definitions/)]、[[article.md",
     "[user](.definitions",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/User.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/履歴管理.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/users",

@@ -1,49 +1,22 @@
-# 交渉詳細(コントラクト用)ページ（/articles/:id/management/for_payment_request/edit）
+# ManagementForPaymentRequestEditPage
 
-> [[Articles__Management__ForPaymentRequestsController]] `edit`アクション & `app/views/articles/management/for_payment_requests/edit.html.erb` による描画
+## 概要
+交渉中物件のコントラクト担当者向け詳細編集画面。契約に関する交渉内容や進捗、履歴の確認・編集が可能です。
 
----
+## 画面構成
+- 契約交渉内容入力フォーム
+- 進捗・履歴表示
+- 保存ボタン
 
-## 画面概要
+## データの流れ
+- コントローラ: `articles/management/for_payment_request_controller.rb`（推定）
+- モデル: `Article`, `NegotiationHistory` など
 
-- 交渉中物件の詳細情報をコントラクト担当者が編集・管理する画面。
-- 物件情報、交渉履歴、ファイルタブ、建物情報、仲介/バイヤー情報などを表示・編集。
-
----
-
-## 1. データの流れ
-
-- **コントローラ:** `app/controllers/articles/management/for_payment_requests_controller.rb`
-    - `@article` : 編集対象の[[Article]]
-    - `@form` : 編集フォーム
-    - 交渉履歴・ファイルタブ・建物情報など（for_approvalと同様の構成）
-
-- **主なロジック:**
-    - 編集対象Articleの取得・権限チェック
-    - 各種フォーム・表示用インスタンス変数のセット
-    - ページ遷移やリダイレクト制御
-
----
-
-## 2. UIとデータの対応
-
-- **物件名:** `@article.article_name`
-- **交渉履歴:** `@negotiation_histories`
-- **ファイルタブ:** `@file_tabs_html`
-- **仲介会社・担当・バイヤー担当:** 各フォームフィールド
-- **建物情報:** BLDGリンク、過去取扱物件リンク
-- **仕入評価:** `@prior_valuation_form` など
-- **ページネーションや各種リンク**
-
----
+## UIとデータの対応
+- 入力フォームで契約交渉内容を登録・編集
+- 進捗・履歴を表示
+- 保存ボタンで更新
 
 ## 関連リンク
-- [[Articles__Management__ForPaymentRequestsController]]
 - [[Article]]
-
----
-
-## 参考ファイル
-- コントローラ: `app/controllers/articles/management/for_payment_requests_controller.rb`
-- モデル: `app/models/article.rb`
-- ビュー: `app/views/articles/management/for_payment_requests/edit.html.erb` 
+- [[NegotiationHistory]] 
