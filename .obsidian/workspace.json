@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04_SUPPLIER_コントローラー一覧"
+              "title": "AssessmentPage"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 376.5
+    "width": 319.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -194,14 +194,23 @@
   },
   "active": "34943e3255e491fe",
   "lastOpenFiles": [
+    "display_article_name.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentController.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ManagementForPaymentRequestEditPage.md",
+    "Articles__Management__ForPaymentRequestsController.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ManagementForApprovalEditPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticlesPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticlesController.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleDetailPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/06_SUPPLIER_Rakeタスク.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/07_SUPPLIER_テスト構成.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/BanksController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentNgController.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Article.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/IntermediaryCompany.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/IntermediaryStaff.md",
@@ -211,15 +220,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/Ruby on Rails 探検ガイド.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/APIエンドポイント.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItemsController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItemFilesController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/IntermediaryCompaniesPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/DeletedArticlesPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
-    "InputsPage.md",
-    "仲介会社一覧.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SupplierMail.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SaleApproval::StatusHistory::Comment.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/users",
