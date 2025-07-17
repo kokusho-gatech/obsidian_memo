@@ -59,17 +59,17 @@ routes.rbから、主な機能と担当コントローラーを抜粋して表�
 
 | URL例                                              | 機能概要              | コントローラー#アクション                                |
 | ------------------------------------------------- | ----------------- | -------------------------------------------- |
-| /articles/assessment                              | [[査定一覧]]          | articles/assessment#index                    |
-| /articles/assessment_ng                           | [[査定NG一覧]]        | articles/assessment_ng#index                 |
-| /articles/unassociated                            | [[仲介担当なし一覧]]      | articles/unassociated#index                  |
+| /articles/assessment                              | [[AssessmentPage]]          | articles/assessment#index                    |
+| /articles/assessment_ng                           | [[AssessmentNgPage]]        | articles/assessment_ng#index                 |
+| /articles/unassociated                            | [[UnassociatedPage]]      | articles/unassociated#index                  |
 | /articles/:id/edit                                | [[査定編集]]          | articles/assessment#edit                     |
-| /articles/management                              | [[交渉一覧]]          | articles/management#index                    |
+| /articles/management                              | [[ManagementPage]]          | articles/management#index                    |
 | /articles/:id/management/for_approval/edit        | [[交渉詳細（バイヤー用）]]   | articles/management/for_approval#edit        |
 | /articles/:id/management/for_payment_request/edit | [[交渉詳細（コントラクト用）]] | articles/management/for_payment_request#edit |
-| /sale_management_infos                            | [[発表管理一覧]]        | sale_management_infos#index                  |
+| /sale_management_infos                            | [[SaleManagementInfosPage]]        | sale_management_infos#index                  |
 | /articles/:id                                     | [[発表詳細]]          | articles#show                                |
 | /intermediary_companies                           | [[仲介会社一覧]]        | intermediary_companies#index                 |
-| /users                                            | [[ユーザー一覧]]        | users#index                                  |
+| /users                                            | [[UsersPage]]        | users#index                                  |
 | /purchase_contracts                               | [[仕入契約一覧]]        | purchase_contracts#index                     |
 | /sidekiq                                          | [[バックグラウンドジョブ管理]] | Sidekiq::Web（管理画面）                           |
 

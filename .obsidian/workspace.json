@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.5
+    "width": 376.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -194,6 +194,8 @@
   },
   "active": "34943e3255e491fe",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ManagementPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/サービスクラス.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/コントローラー.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/モデル.md",
@@ -211,7 +213,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/査定.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/物件.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/kaminari.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/devise.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/view_component.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/lograge.md",
@@ -219,7 +220,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ransack.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/cloudinary.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/aws-sdk-s3.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/paper_trail.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/users",
