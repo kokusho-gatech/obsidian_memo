@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Janitor.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/06_SUPPLIER_Rakeタスク.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Janitor"
+              "title": "06_SUPPLIER_Rakeタスク"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5
+    "width": 200
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -194,8 +194,9 @@
   },
   "active": "34943e3255e491fe",
   "lastOpenFiles": [
-    "Zettelkasten/10_Parmanentnote/supplier_docs/Ruby on Rails 探検ガイド.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/プロダクトドキュメントの歩き方.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Janitor.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/Ruby on Rails 探検ガイド.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/07_SUPPLIER_テスト構成.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/06_SUPPLIER_Rakeタスク.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
@@ -219,7 +220,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItemsPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItem.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleDetailPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Article.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/users",
