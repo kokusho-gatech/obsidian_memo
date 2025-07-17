@@ -1,3 +1,13 @@
+---
+tags:
+  - spec
+  - supplier
+  - overview
+  - guideline
+  - rails
+  - real-estate
+  - architecture
+---
 # SUPPLIER by RENOSY プロジェクト概要
 
 ## 1. プロジェクト概要

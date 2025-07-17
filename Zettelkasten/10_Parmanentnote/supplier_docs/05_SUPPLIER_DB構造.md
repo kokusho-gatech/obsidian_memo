@@ -1,3 +1,13 @@
+---
+tags:
+  - spec
+  - supplier
+  - db
+  - rails
+  - model
+  - architecture
+  - erd
+---
 # SUPPLIER by RENOSY データベース構造ドキュメント
 
 ## モデル一覧と役割

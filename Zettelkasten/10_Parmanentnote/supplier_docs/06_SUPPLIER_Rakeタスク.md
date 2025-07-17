@@ -1,3 +1,12 @@
+---
+tags:
+  - spec
+  - supplier
+  - rake-task
+  - rails
+  - automation
+  - batch
+---
 # SUPPLIER by RENOSY Rakeタスク分析
 
 ## 概要

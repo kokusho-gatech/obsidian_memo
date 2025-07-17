@@ -1,3 +1,12 @@
+---
+tags:
+  - spec
+  - supplier
+  - test
+  - rails
+  - qa
+  - guideline
+---
 # supplier-article テストファイル・関連リソース整理
 
 ---

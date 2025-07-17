@@ -1,3 +1,12 @@
+---
+tags:
+  - spec
+  - supplier
+  - page-list
+  - rails
+  - navigation
+  - architecture
+---
 # SUPPLIER by RENOSY 主要ページ一覧
 
 本ノートは、SUPPLIER by RENOSYの主要な画面・機能ページのURLパス一覧と、その詳細解説ノートへのリンク集です。

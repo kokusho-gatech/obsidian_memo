@@ -1,3 +1,12 @@
+---
+tags:
+  - spec
+  - supplier
+  - background-job
+  - rails
+  - automation
+  - architecture
+---
 # SUPPLIER by RENOSY バックグラウンドジョブ分析
 
 このドキュメントは、SUPPLIER by RENOSYプロジェクトの `app/jobs` ディレクトリに存在するバックグラウンド処理の一覧と詳細分析です。

@@ -1,3 +1,11 @@
+---
+tags:
+  - spec
+  - rails
+  - beginner
+  - guideline
+  - architecture
+---
 # Ruby on Rails 探検ガイド
 
 こんにちは！このガイドは、Ruby on Rails（ルビー・オン・レイルズ）という「アプリづくりの冒険」に初めて出発する人のための、やさしい地図です。

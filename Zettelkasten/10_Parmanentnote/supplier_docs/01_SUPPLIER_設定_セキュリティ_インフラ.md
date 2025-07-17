@@ -1,3 +1,13 @@
+---
+tags:
+  - spec
+  - supplier
+  - security
+  - infrastructure
+  - rails
+  - sre
+  - guideline
+---
 # SUPPLIER by RENOSY 設定ファイル分析 - セキュリティ・インフラ観点
 
 ## 概要

@@ -1,3 +1,11 @@
+---
+tags:
+  - spec
+  - supplier
+  - controller
+  - rails
+  - architecture
+---
 # SUPPLIER by RENOSY コントローラー一覧
 
 本ドキュメントは、主要なコントローラーの一覧と、その詳細解説ノートへのリンク集です。
