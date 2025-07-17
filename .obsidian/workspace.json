@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b0272d1317eb03a7",
+        "id": "4722c3ae0afe89fd",
         "type": "tabs",
         "children": [
           {
-            "id": "9f4d8c23a4256b96",
+            "id": "ef026b558904d53f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -192,14 +192,21 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9f4d8c23a4256b96",
+  "active": "ef026b558904d53f",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/LatestSaleApprovalsPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/Supplier_Pages_Index.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ManagementForApprovalEditPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ManagementPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentNgPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentEditPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ConsultingOutsourcingAgreementEditPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ReportOfImportantInfoSurveyEditPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/TenantLeaseAgreementEditPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/CompensationPaymentAgreementEditPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SalesAgreementAbEditPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ValuationCertificateEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/LatestSaleApprovalsPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PamphletEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/Supplier_Pages_Index.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/DeletedArticlesPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_by_RENOSY_全体像まとめ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SalesAgreementOnPurchaseEditPage.md",
@@ -213,13 +220,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/BuildingInformationEditPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/DocumentProgressesPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleInputsPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PurchaseContractsPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/LatestSaleApprovalEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/LatestApprovalEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PriorValuationEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PriorValuationsPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/LatestSaleApprovalsController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ForSaleMaisokusController.md",
     "definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs",
