@@ -57,21 +57,21 @@ Gemfileから、特に重要と思われるGemをピックアップし、役割�
 
 routes.rbから、主な機能と担当コントローラーを抜粋して表にまとめます。
 
-| URL例                                              | 機能概要              | コントローラー#アクション                                |
-| ------------------------------------------------- | ----------------- | -------------------------------------------- |
-| /articles/assessment                              | [[AssessmentPage]]          | articles/assessment#index                    |
-| /articles/assessment_ng                           | [[AssessmentNgPage]]        | articles/assessment_ng#index                 |
-| /articles/unassociated                            | [[UnassociatedPage]]      | articles/unassociated#index                  |
-| /articles/:id/edit                                | [[査定編集]]          | articles/assessment#edit                     |
-| /articles/management                              | [[ManagementPage]]          | articles/management#index                    |
-| /articles/:id/management/for_approval/edit        | [[交渉詳細（バイヤー用）]]   | articles/management/for_approval#edit        |
-| /articles/:id/management/for_payment_request/edit | [[交渉詳細（コントラクト用）]] | articles/management/for_payment_request#edit |
-| /sale_management_infos                            | [[SaleManagementInfosPage]]        | sale_management_infos#index                  |
-| /articles/:id                                     | [[発表詳細]]          | articles#show                                |
-| /intermediary_companies                           | [[仲介会社一覧]]        | intermediary_companies#index                 |
-| /users                                            | [[UsersPage]]        | users#index                                  |
-| /purchase_contracts                               | [[仕入契約一覧]]        | purchase_contracts#index                     |
-| /sidekiq                                          | [[バックグラウンドジョブ管理]] | Sidekiq::Web（管理画面）                           |
+| URL例                                              | 機能概要                          | コントローラー#アクション                                |
+| ------------------------------------------------- | ----------------------------- | -------------------------------------------- |
+| /articles/assessment                              | [[AssessmentPage]]            | articles/assessment#index                    |
+| /articles/assessment_ng                           | [[AssessmentNgPage]]          | articles/assessment_ng#index                 |
+| /articles/unassociated                            | [[UnassociatedPage]]          | articles/unassociated#index                  |
+| /articles/:id/edit                                | [[査定編集]]                      | articles/assessment#edit                     |
+| /articles/management                              | [[ManagementPage]]            | articles/management#index                    |
+| /articles/:id/management/for_approval/edit        | [[交渉詳細（バイヤー用）]]               | articles/management/for_approval#edit        |
+| /articles/:id/management/for_payment_request/edit | [[交渉詳細（コントラクト用）]]             | articles/management/for_payment_request#edit |
+| /sale_management_infos                            | [[SaleManagementInfosPage]]   | sale_management_infos#index                  |
+| /articles/:id                                     | [[発表詳細]]                      | articles#show                                |
+| /intermediary_companies                           | [[IntermediaryCompaniesPage]] | intermediary_companies#index                 |
+| /users                                            | [[UsersPage]]                 | users#index                                  |
+| /purchase_contracts                               | [[仕入契約一覧]]                    | purchase_contracts#index                     |
+| /sidekiq                                          | [[バックグラウンドジョブ管理]]             | Sidekiq::Web（管理画面）                           |
 
 ※他にも多数のルートがありますが、主要な業務機能に関わるものを抜粋しています。
 
