@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3f06bf4bcec9caea",
+        "id": "7ea909f0c5fbce1b",
         "type": "tabs",
         "children": [
           {
-            "id": "34943e3255e491fe",
+            "id": "0f3d36496c65d0d5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "AssessmentPage"
+              "title": "New tab"
             }
           }
         ]
@@ -192,34 +188,34 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "34943e3255e491fe",
+  "active": "2c5aec5436d8a775",
   "lastOpenFiles": [
-    "display_article_name.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ManagementForPaymentRequestEditPage.md",
-    "Articles__Management__ForPaymentRequestsController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ManagementForApprovalEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticlesPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticlesController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleDetailPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/06_SUPPLIER_Rakeタスク.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/07_SUPPLIER_テスト構成.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/BanksController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentNgController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Article.md",
+    "Rails.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/IntermediaryCompany.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/IntermediaryStaff.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/IntermediaryStaffUser.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/User.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/プロダクトドキュメントの歩き方.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/Ruby on Rails 探検ガイド.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/APIエンドポイント.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItemsController.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AWS Secrets Manager.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AWS S3.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PostgreSQL.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Slack.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Datadog.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Rollbar.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PumaWorkerKiller.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Puma.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/HSTS.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SSL.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Redis.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/CloudFront.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
+    "Articles__Management__ForPaymentRequestsController.md",
+    "Rollbar.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/仲介会社一覧.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/バックグラウンドジョブ管理.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/仕入契約一覧.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/発表詳細.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/交渉詳細（コントラクト用）.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/交渉詳細（バイヤー用）.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/査定編集.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/users",
