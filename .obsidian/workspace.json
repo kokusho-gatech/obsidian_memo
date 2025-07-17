@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_SUPPLIER_主要ページ一覧"
+              "title": "01_SUPPLIER_設定_セキュリティ_インフラ"
             }
           }
         ]
@@ -194,9 +194,9 @@
   },
   "active": "34943e3255e491fe",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
     "InputsPage.md",
     "仲介会社一覧.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/06_SUPPLIER_Rakeタスク.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SupplierMail.md",
