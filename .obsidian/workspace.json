@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7ea909f0c5fbce1b",
+        "id": "0443a93780fa48db",
         "type": "tabs",
         "children": [
           {
-            "id": "0f3d36496c65d0d5",
+            "id": "acf19bfc58494bb0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "00_SUPPLIER_全体概要"
             }
           }
         ]
@@ -188,10 +192,18 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2c5aec5436d8a775",
+  "active": "acf19bfc58494bb0",
   "lastOpenFiles": [
     "Rails.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+    "articles.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/aws-sdk-s3.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Redis.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Ruby on Rails.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/CloudFront.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/sidekiq.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AWS Secrets Manager.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AWS S3.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PostgreSQL.md",
@@ -202,20 +214,12 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Puma.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/HSTS.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SSL.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Redis.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/CloudFront.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
     "Articles__Management__ForPaymentRequestsController.md",
     "Rollbar.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/仲介会社一覧.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/バックグラウンドジョブ管理.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/仕入契約一覧.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/発表詳細.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/交渉詳細（コントラクト用）.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/交渉詳細（バイヤー用）.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/査定編集.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/users",
