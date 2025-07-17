@@ -12,13 +12,15 @@ SUPPLIER by RENOSYは不動産仕入れのためのプロダクトで、以下�
 4. [[UpdateArticleWithMaisokuReaderJob]] - マイソク自動読み取り処理
 5. [[ApplicationJob]] - 基底ジョブクラス
 
+これらのジョブは主に[[ArticleItemsPage]]でのファイルアップロードや、[[AssessmentPage]]・[[ManagementPage]]での物件情報更新時に実行されます。
+
 ---
 
 ## ジョブ詳細分析
 
 ### `UpdateModelsWithCertifiedCopyReaderJob` - (出典: `app/jobs/update_models_with_certified_copy_reader_job.rb:2`)
 
-* **目的:** 謄本ファイルがアップロードされた際に、[[OCR]]技術を使用して自動的に謄本の内容を読み取り、物件情報や売買契約フィールド、入力謄本モデルを更新するための非同期処理
+* **目的:** 謄本ファイルがアップロードされた際に、[[OCR]]技術を使用して自動的に謄本の内容を読み取り、[[Article]]情報や売買契約フィールド、入力謄本モデルを更新するための非同期処理
 
 * **実行のトリガー:** 
   - 謄本ファイルのアップロード時に `perform_later` が呼び出される
@@ -29,7 +31,7 @@ SUPPLIER by RENOSYは不動産仕入れのためのプロダクトで、以下�
 * **主な処理内容:**
   1. アップロードされた謄本ファイルのURLを取得
   2. ファイルがPDF形式であることを確認
-  3. 関連モデル（物件、売買契約フィールド、入力謄本）を取得
+  3. 関連モデル（[[Article]]、売買契約フィールド、入力謄本）を取得
   4. 謄本読み取り可能な状態かチェック（売買契約フィールドが未作成かつ物件ステータスが契約・決済以外）
   5. `CertifiedCopy::ApiClient.read` を使用して謄本の内容を読み取り
   6. 各モデルに対して専用のアップデーターを使用してデータを更新
@@ -55,7 +57,7 @@ SUPPLIER by RENOSYは不動産仕入れのためのプロダクトで、以下�
 
 * **主な処理内容:**
   1. 物件IDとユーザーIDを引数として受け取り
-  2. 物件とユーザーを取得
+  2. [[Article]]とユーザーを取得
   3. `article.replace_maisoku_for_sale!` メソッドを呼び出してSBJ用マイソクを生成
   4. エラー発生時はログ出力とNotifier.reportでエラー通知
 
@@ -89,7 +91,7 @@ SUPPLIER by RENOSYは不動産仕入れのためのプロダクトで、以下�
 
 ### `UpdateArticleWithMaisokuReaderJob` - (出典: `app/jobs/update_article_with_maisoku_reader_job.rb:2`)
 
-* **目的:** マイソク（図面）ファイルがアップロードされた際に、[[OCR]]技術を使用して自動的にマイソクの内容を読み取り、物件情報を更新するための非同期処理
+* **目的:** マイソク（図面）ファイルがアップロードされた際に、[[OCR]]技術を使用して自動的にマイソクの内容を読み取り、[[Article]]情報を更新するための非同期処理
 
 * **実行のトリガー:** 
   - 物件のマイソク読み取り準備が完了した時に `perform_later` が呼び出される
@@ -97,11 +99,11 @@ SUPPLIER by RENOSYは不動産仕入れのためのプロダクトで、以下�
     - `app/models/article.rb:1615` - [[Article]]モデルの`post_maisoku_reader` メソッド内
 
 * **主な処理内容:**
-  1. 物件モデルを取得
+  1. [[Article]]モデルを取得
   2. マイソクのURLをログ出力
   3. `DocumentReader::Maisoku` を使用してマイソクの内容を読み取り
   4. 読み取り結果をログ出力
-  5. `DocumentReader::Maisoku::ArticleUpdater` を使用して物件情報を更新
+  5. `DocumentReader::Maisoku::ArticleUpdater` を使用して[[Article]]情報を更新
   6. 更新失敗時はログ出力
 
 * **扱うデータ:**
@@ -152,6 +154,7 @@ SUPPLIER by RENOSYは不動産仕入れのためのプロダクトで、以下�
 
 ## 関連リンク
 
+### プロダクト・技術
 - [[SUPPLIER by RENOSY]] - プロダクト概要
 - [[ActiveJob]] - Railsのバックグラウンドジョブフレームワーク
 - [[OCR]] - 光学文字認識技術
@@ -159,4 +162,14 @@ SUPPLIER by RENOSYは不動産仕入れのためのプロダクトで、以下�
 - [[TechConsul]] - 外部連携システム
 - [[Slack]] - 通知システム
 - [[Rollbar]] - エラー監視サービス
-- [[SBJ]] - 不動産投資信託 
+- [[SBJ]] - 不動産投資信託
+
+### 関連ページ
+- [[AssessmentPage]] - 査定一覧ページ
+- [[ManagementPage]] - 交渉一覧ページ
+- [[ArticleItemsPage]] - ファイルチェックページ
+
+### 関連モデル
+- [[Article]] - 物件情報モデル
+- [[ArticleItem]] - 物件資料項目モデル
+- [[Item]] - 書類種別マスタ 

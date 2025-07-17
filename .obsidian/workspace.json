@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_バックグラウンドジョブ分析.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_rake_tasks_analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SUPPLIER_バックグラウンドジョブ分析"
+              "title": "supplier_rake_tasks_analysis"
             }
           }
         ]
@@ -194,9 +194,15 @@
   },
   "active": "ef026b558904d53f",
   "lastOpenFiles": [
-    "Zettelkasten/10_Parmanentnote/supplier_docs/Supplier_Pages_Index.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_バックグラウンドジョブ分析.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_rake_tasks_analysis.md",
+    "Zettelkasten/10Parmanentnote/supplier_docs/supplier_rake_tasks_analysis.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Item.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Article.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_by_RENOSY_全体像まとめ.md",
     "Zettelkasten/10_Parmanentnote/SUPPLIER_バックグラウンドジョブ分析.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/Supplier_Pages_Index.md",
     "Zettelkasten/10Parmanentnote/supplier_docs/SUPPLIER_バックグラウンドジョブ分析.md",
     "Zettelkasten/10Parmanentnote/supplier_docs",
     "Zettelkasten/10Parmanentnote",
@@ -213,15 +219,9 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ValuationCertificateEditPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PamphletEditPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/DeletedArticlesPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_by_RENOSY_全体像まとめ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SalesAgreementOnPurchaseEditPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_controllers_index.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/supplier_db_structure.md",
-    "UsersPage.md",
-    "AssessmentEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ValuationHistoriesEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/CertifiedCopyEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/CatalogEditPage.md",
     "definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs",
