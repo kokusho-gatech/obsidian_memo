@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItemsPage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_SUPPLIER_バックグラウンドジョブ"
+              "title": "ArticleItemsPage"
             }
           }
         ]
@@ -194,8 +194,12 @@
   },
   "active": "f3fe563704b473a5",
   "lastOpenFiles": [
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateArticleWithMaisokuReaderJob.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/DocuSign.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/OCR.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Rollbar.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ApplicationJob.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateArticleWithMaisokuReaderJob.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ReplaceMaisokuForSbjJob.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateModelsWithCertifiedCopyReaderJob.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
@@ -216,10 +220,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
     "外部API連携.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItem.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/モデル.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/Ruby on Rails 探検ガイド.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ForSimulationEditPage.md",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
