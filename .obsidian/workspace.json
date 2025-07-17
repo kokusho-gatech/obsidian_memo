@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5
+    "width": 267.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -195,14 +195,18 @@
   "active": "e940b3b90ff8e1b2",
   "lastOpenFiles": [
     "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
+    "外部API連携.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticlesPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItem.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/モデル.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/Ruby on Rails 探検ガイド.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ForSimulationEditPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Article.md",
     "Simulation.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/BuildingConfirmationsPage.md",
     "Zettelkasten/10_Parmanentnote/cursor_ai_shortcuts.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/プロダクトドキュメントの歩き方.md",
@@ -216,10 +220,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Slack.md",
     "TechConsul.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ActiveJob.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SUPPLIER by RENOSY.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/OCR.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/DocuSign.md",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
