@@ -15,6 +15,9 @@ npm init -y npm install @modelcontextprotocol/sdk
 npm install -D @types/node typescript
 ```
 
-
+[[typescriptとは]]
+[[npmとは]]
+[[npm initの書式・コマンド・実行内容]]
+[[npm installの書式・コマンド・実行内容]]
 
 以上を実行すると

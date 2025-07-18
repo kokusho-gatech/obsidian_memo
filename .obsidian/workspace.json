@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Typescriptを用いたMCPサーバーの作り方.md",
+                "file": "Zettelkasten/30_FleetingNote/Typescriptを用いたMCPサーバーの作り方.md",
                 "mode": "source",
                 "source": false
               },
@@ -209,8 +209,12 @@
   },
   "active": "038823aad47162c1",
   "lastOpenFiles": [
+    "display_article_name.md",
+    "Zettelkasten/30_FleetingNote/Typescriptを用いたMCPサーバーの作り方.md",
+    "Simulation.md",
+    "外部API連携.md",
+    "npm installの書式・コマンド・実行内容.md",
     "Zettelkasten/40_Daily/250718.md",
-    "Typescriptを用いたMCPサーバーの作り方.md",
     "Zettelkasten/20_LiteratureNote/web/MCPサーバー自作入門.md",
     "Zettelkasten/20_LiteratureNote/web/CursorとMCPサーバーの接続を試してみる（AIエージェント入門）.md",
     "Zettelkasten/40_Daily/250716.md",
@@ -231,10 +235,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/07_SUPPLIER_テスト構成.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticlesController.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentNgPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Article.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/devise.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/sidekiq.md",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
