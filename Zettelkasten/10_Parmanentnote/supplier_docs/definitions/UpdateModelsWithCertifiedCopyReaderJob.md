@@ -15,8 +15,8 @@
 - API経由やArticleItemsPageでの謄本ファイルアップロード時
 
 ## 扱うデータ
-- [[Article]]（物件情報）
-- [[SalesContractField]]（売買契約フィールド）
-- [[InputCertifiedCopy]]（入力謄本データ）
-- [[ArticleItem]]（物件資料項目）
-- [[ArticleItemFile]]（物件資料ファイル） 
+- Article（物件情報）
+- SalesContractField（売買契約フィールド）
+- InputCertifiedCopy（入力謄本データ）
+- ArticleItem（物件資料項目）
+- ArticleItemFile（物件資料ファイル） 
