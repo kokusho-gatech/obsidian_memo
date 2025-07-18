@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateModelsWithCertifiedCopyReaderJob.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_SUPPLIER_バックグラウンドジョブ"
+              "title": "UpdateModelsWithCertifiedCopyReaderJob"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.5
+    "width": 256.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -194,11 +194,11 @@
   },
   "active": "f79e067aa1846679",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
     "Zettelkasten/40_Daily/250718.md",
     "Zettelkasten/40_Daily/250716.md",
     "250717.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItemsPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/DocuSign.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/OCR.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Rollbar.md",
