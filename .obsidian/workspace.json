@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/07_SUPPLIER_テスト構成.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_SUPPLIER_全体概要"
+              "title": "07_SUPPLIER_テスト構成"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5,
-    "collapsed": true
+    "width": 321.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -210,13 +209,22 @@
   },
   "active": "038823aad47162c1",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/supplier_docs/Ruby on Rails 探検ガイド.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/06_SUPPLIER_Rakeタスク.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateArticleWithMaisokuReaderJob.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/sidekiq.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/契約.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UnassociatedPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Article.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItem.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/devise.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
     "Zettelkasten/30_FleetingNote/Typescriptを用いたMCPサーバーの作り方.md",
     "display_article_name.md",
     "Simulation.md",
@@ -227,15 +235,6 @@
     "Zettelkasten/20_LiteratureNote/web/CursorとMCPサーバーの接続を試してみる（AIエージェント入門）.md",
     "Zettelkasten/40_Daily/250716.md",
     "Zettelkasten/40_Daily/250715.md",
-    "Zettelkasten/Templates/DailyNoteTemplate.md",
-    "Zettelkasten/20_LiteratureNote/web/「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shin.md",
-    "Zettelkasten/30_FleetingNote/20250716-LINE.md",
-    "Zettelkasten/30_FleetingNote/20250712-LINE_1.md",
-    "Zettelkasten/30_FleetingNote/20250712-LINE.md",
-    "Zettelkasten/20_LiteratureNote/kindle/AWS認定資格 クラウドプラクティショナーの教科書.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
