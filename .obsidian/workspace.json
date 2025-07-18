@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250716.md",
+                "file": "Zettelkasten/40_Daily/250718.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "250716"
+              "title": "250718"
             }
           }
         ]
@@ -194,8 +194,9 @@
   },
   "active": "597495b51602ad9b",
   "lastOpenFiles": [
-    "Zettelkasten/40_Daily/250715.md",
+    "Zettelkasten/20_LiteratureNote/web/CursorとMCPサーバーの接続を試してみる（AIエージェント入門）.md",
     "Zettelkasten/40_Daily/250716.md",
+    "Zettelkasten/40_Daily/250715.md",
     "Zettelkasten/40_Daily/250718.md",
     "Zettelkasten/Templates/DailyNoteTemplate.md",
     "Zettelkasten/20_LiteratureNote/web/「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shin.md",
@@ -219,7 +220,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/sidekiq.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateModelsWithCertifiedCopyReaderJob.md",
     "250717.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItemsPage.md",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
