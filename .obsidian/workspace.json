@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateModelsWithCertifiedCopyReaderJob.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/sidekiq.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UpdateModelsWithCertifiedCopyReaderJob"
+              "title": "sidekiq"
             }
           }
         ]
@@ -194,7 +194,9 @@
   },
   "active": "f79e067aa1846679",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateModelsWithCertifiedCopyReaderJob.md",
     "Zettelkasten/40_Daily/250718.md",
     "Zettelkasten/40_Daily/250716.md",
     "250717.md",
@@ -205,11 +207,9 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ApplicationJob.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateArticleWithMaisokuReaderJob.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ReplaceMaisokuForSbjJob.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateModelsWithCertifiedCopyReaderJob.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PostgreSQL.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Puma.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/sidekiq.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UsersPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ManagementForApprovalEditPage.md",
