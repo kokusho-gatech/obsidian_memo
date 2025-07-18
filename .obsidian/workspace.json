@@ -11,10 +11,14 @@
             "id": "597495b51602ad9b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "00_SUPPLIER_全体概要"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.5
+    "width": 352.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -188,11 +192,19 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "597495b51602ad9b",
+  "active": "2c5aec5436d8a775",
   "lastOpenFiles": [
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/sidekiq.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticlesController.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentNgPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Article.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/devise.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/sidekiq.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateModelsWithCertifiedCopyReaderJob.md",
     "Zettelkasten/40_Daily/250718.md",
     "Zettelkasten/40_Daily/250716.md",
@@ -204,18 +216,10 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ApplicationJob.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UpdateArticleWithMaisokuReaderJob.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ReplaceMaisokuForSbjJob.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/PostgreSQL.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Puma.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UsersPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ManagementForApprovalEditPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/NegotiationHistory.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/UnassociatedPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticlesPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleDetailPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Article.md",
-    "display_article_name.md",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/articles",
