@@ -68,4 +68,11 @@ for (let outgo of dv.pages('outgoing([[' + dv.current().file.name + ']])')) {
     dv.header(4, outgo.file.name);
     dv.list(outgo.file.inlinks.sort());
 }
+
+// バックリンクがあるノートも出力
+let backlinks = dv.pages().where(p => p.file.inlinks && p.file.inlinks.map(l=>l.path).includes(dv.current().file.path));
+if (backlinks.length > 0) {
+    dv.header(3, "このノートへのバックリンク");
+    dv.list(backlinks.file.link);
+}
 ```

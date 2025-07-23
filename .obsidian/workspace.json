@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/definitions/SSE.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "SSE"
+              "title": "00_SUPPLIER_全体概要"
             }
           }
         ],
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/definitions/SSE.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "SSEへのバックリンク"
+              "title": "00_SUPPLIER_全体概要へのバックリンク"
             }
           },
           {
@@ -145,12 +145,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/definitions/SSE.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "SSEからのアウトゴーイングリンク"
+              "title": "00_SUPPLIER_全体概要からのアウトゴーイングリンク"
             }
           },
           {
@@ -159,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/definitions/SSE.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "SSEのアウトライン"
+              "title": "00_SUPPLIER_全体概要のアウトライン"
             }
           },
           {
@@ -208,8 +208,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 260.5,
-    "collapsed": true
+    "width": 260.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,8 +228,12 @@
   },
   "active": "a19d034ab75c2e4a",
   "lastOpenFiles": [
-    "Zettelkasten/10_Parmanentnote/definitions/Streamable HTTP.md",
+    "Zettelkasten/40_Daily/250723.md",
+    "Templates/UniversalTemplate.md",
+    "Templates/WeeklyNoteTemplate.md",
+    "Zettelkasten/40_Daily/250721.md",
     "Zettelkasten/10_Parmanentnote/definitions/uv.md",
+    "Zettelkasten/10_Parmanentnote/definitions/Streamable HTTP.md",
     "Zettelkasten/10_Parmanentnote/definitions/SSE.md",
     "Rules/Obsidianタグ命名規則.md",
     "Zettelkasten/10_Parmanentnote/cursor_ai_shortcuts.md",
@@ -240,7 +243,6 @@
     "Zettelkasten/20_LiteratureNote/web/ぼくがかんがえた最強のObsidian設定｜古村藍.md",
     "Zettelkasten/20_LiteratureNote/web/ぼくがかんがえた最強のObsidian設定｜古村藍 1.md",
     "Zettelkasten/20_LiteratureNote/web/「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shin.md",
-    "Templates/UniversalTemplate.md",
     "無題のファイル.md",
     "Untitled.md",
     "無題のファイル 2.md",
@@ -249,13 +251,10 @@
     "Zettelkasten/40_Daily/250725.md",
     "Zettelkasten/40_Daily/250711.md",
     "Zettelkasten/40_Daily/2025W28.md",
-    "Zettelkasten/40_Daily/250723.md",
     "Templates/DailyNoteTemplate.md",
-    "Templates/WeeklyNoteTemplate.md",
     "Zettelkasten/30_FleetingNote/20250712-LINE_1.md",
     "Zettelkasten/30_FleetingNote/20250716-LINE.md",
     "Zettelkasten/30_FleetingNote/20250712-LINE.md",
-    "Zettelkasten/30_FleetingNote/20250720-LINE.md",
     "Zettelkasten/10_Parmanentnote/definitions",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
