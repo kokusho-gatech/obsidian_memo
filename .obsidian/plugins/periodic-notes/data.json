@@ -5,14 +5,14 @@
   "daily": {
     "format": "YYMMDD",
     "folder": "Zettelkasten/40_Daily",
-    "template": "Zettelkasten/Templates/DailyNoteTemplate",
+    "template": "Templates/DailyNoteTemplate.md",
     "enabled": true
   },
   "weekly": {
     "format": "YYYY[W]ww",
     "template": "Zettelkasten/Templates/WeeklyNoteTemplate.md",
     "folder": "Zettelkasten/40_Daily",
-    "enabled": true
+    "enabled": false
   },
   "monthly": {
     "format": "",
