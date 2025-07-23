@@ -4,6 +4,7 @@ tags:
   - ai
   - shortcut
   - obsidian
+creation-date:
 ---
 # CursorでAIを活用するためのショートカット集
 
