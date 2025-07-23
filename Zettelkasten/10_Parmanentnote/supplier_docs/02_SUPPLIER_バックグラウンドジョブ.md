@@ -79,3 +79,13 @@ SUPPLIER by RENOSYは不動産仕入れのためのプロダクトで、以下�
 - [[Article]] - 物件情報モデル
 - [[ArticleItem]] - 物件資料項目モデル
 - [[Item]] - 書類種別マスタ 
+
+
+```dataviewjs
+dv.header(3, "関連ノート");
+var maxLoop = Math.min(dv.current().file.tags.length, 3);
+for(let i=0;i<maxLoop;i++){
+dv.span(dv.current().file.tags[i]);
+dv.list(dv.pages(dv.current().file.tags[i]).sort(f=>f.file.mtime.ts,"desc").limit(15).file.link);
+}
+```

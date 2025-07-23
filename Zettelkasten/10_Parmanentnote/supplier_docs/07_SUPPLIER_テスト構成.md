@@ -85,3 +85,13 @@ tags:
 - 各テストファイルは、**対応するモデル・コントローラー・ビュー・フィクスチャ**と密接に連携し、機能ごとにテストが分割されています。
 - **コントローラーテスト**は主にAPIや画面遷移の挙動、**モデルテスト**はビジネスロジックやバリデーション、**コンポーネントテスト**はUI部品の描画・動作を検証しています。
 - **フィクスチャ**はテストの前提データとして活用され、仕様の一部を担っています。 
+
+
+```dataviewjs
+dv.header(3, "関連ノート");
+var maxLoop = Math.min(dv.current().file.tags.length, 3);
+for(let i=0;i<maxLoop;i++){
+dv.span(dv.current().file.tags[i]);
+dv.list(dv.pages(dv.current().file.tags[i]).sort(f=>f.file.mtime.ts,"desc").limit(15).file.link);
+}
+```

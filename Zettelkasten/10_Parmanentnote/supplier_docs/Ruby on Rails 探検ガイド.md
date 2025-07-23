@@ -84,3 +84,12 @@ Railsのプロジェクトは、いろんな「部屋」が集まった大きな
 最初は分からないことだらけでも大丈夫。迷ったら、またこのガイドを見返して、少しずつ探検を進めていきましょう！
 
 一緒にRailsの世界を楽しみましょう😊 
+
+```dataviewjs
+dv.header(3, "関連ノート");
+var maxLoop = Math.min(dv.current().file.tags.length, 3);
+for(let i=0;i<maxLoop;i++){
+dv.span(dv.current().file.tags[i]);
+dv.list(dv.pages(dv.current().file.tags[i]).sort(f=>f.file.mtime.ts,"desc").limit(15).file.link);
+}
+```

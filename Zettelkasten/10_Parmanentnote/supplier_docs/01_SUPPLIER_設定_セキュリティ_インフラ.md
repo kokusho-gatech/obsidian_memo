@@ -304,3 +304,13 @@ SUPPLIER by RENOSYプロジェクトは、セキュリティとインフラの�
 - スケーラブルなアーキテクチャの採用
 
 継続的な改善として、セキュリティヘッダーの追加や認証情報の暗号化強化を検討することを推奨します。 
+
+
+```dataviewjs
+dv.header(3, "関連ノート");
+var maxLoop = Math.min(dv.current().file.tags.length, 3);
+for(let i=0;i<maxLoop;i++){
+dv.span(dv.current().file.tags[i]);
+dv.list(dv.pages(dv.current().file.tags[i]).sort(f=>f.file.mtime.ts,"desc").limit(15).file.link);
+}
+```

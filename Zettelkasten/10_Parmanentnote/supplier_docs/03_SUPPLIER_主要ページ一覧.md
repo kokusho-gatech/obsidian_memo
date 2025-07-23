@@ -96,3 +96,13 @@ tags:
 ---
 
 ※各リンク先ノートで、画面の詳細・データフロー・UI要素と裏側実装の対応を解説しています。 
+
+
+```dataviewjs
+dv.header(3, "関連ノート");
+var maxLoop = Math.min(dv.current().file.tags.length, 3);
+for(let i=0;i<maxLoop;i++){
+dv.span(dv.current().file.tags[i]);
+dv.list(dv.pages(dv.current().file.tags[i]).sort(f=>f.file.mtime.ts,"desc").limit(15).file.link);
+}
+```
