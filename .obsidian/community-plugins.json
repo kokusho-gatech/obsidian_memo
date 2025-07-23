@@ -6,5 +6,6 @@
   "obsidian-tasks-plugin",
   "calendar",
   "periodic-notes",
-  "dataview"
+  "dataview",
+  "auto-template-trigger"
 ]
