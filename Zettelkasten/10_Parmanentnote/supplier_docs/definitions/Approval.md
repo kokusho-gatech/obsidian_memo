@@ -1,11 +1,3 @@
----
-tags:
-  - definition
-  - approval
-  - model
-  - parmanentnote
----
-
 # Approval
 
 ## 役割

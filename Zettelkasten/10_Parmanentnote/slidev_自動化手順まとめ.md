@@ -1,10 +1,11 @@
 ---
 tags:
   - slidev
-  - automation
+  - 自動化
   - zettelkasten
   - obsidian
-  - slide
+  - スライド
+  - 手順
 ---
 # ZettelkastenメモをSlidevスライドに反映・起動する手順まとめ
 

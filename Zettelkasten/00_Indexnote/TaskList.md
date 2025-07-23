@@ -1,7 +1,7 @@
 ---
 tags:
-  - task-management
-  - indexnote
+  - タスク管理
+  - インデックスノート
   - dataview
 ---
 

@@ -1,12 +1,3 @@
----
-tags:
-  - definition
-  - datadog
-  - monitoring
-  - infrastructure
-  - parmanentnote
----
-
 # Datadog
 
 ## 概要

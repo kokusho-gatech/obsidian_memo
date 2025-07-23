@@ -1,12 +1,3 @@
----
-tags:
-  - definition
-  - application-job
-  - background-job
-  - ruby-on-rails
-  - parmanentnote
----
-
 # ApplicationJob
 
 ## 概要

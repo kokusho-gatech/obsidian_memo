@@ -105,8 +105,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -226,7 +225,7 @@
       "publish:パブリッシュによる変更の公開": false
     }
   },
-  "active": "676cc44b049dcb24",
+  "active": "2c5aec5436d8a775",
   "lastOpenFiles": [
     "Templates/UniversalTemplate.md",
     "Rules/Obsidianタグ命名規則.md",
