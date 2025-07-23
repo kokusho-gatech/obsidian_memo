@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - articles-controller
+  - controller
+  - ruby-on-rails
+  - parmanentnote
+---
+
 # ArticlesController
 
 SUPPLIER by RENOSYの物件管理の中核となるコントローラー。

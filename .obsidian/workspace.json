@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#2023-11-01",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +105,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -225,7 +226,7 @@
       "publish:パブリッシュによる変更の公開": false
     }
   },
-  "active": "ed1aa5cf49993da6",
+  "active": "676cc44b049dcb24",
   "lastOpenFiles": [
     "Templates/UniversalTemplate.md",
     "Rules/Obsidianタグ命名規則.md",

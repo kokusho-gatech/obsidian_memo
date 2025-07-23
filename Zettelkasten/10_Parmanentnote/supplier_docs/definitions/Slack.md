@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - slack
+  - communication
+  - notification
+  - parmanentnote
+---
+
 # Slack
 
 ## 概要
