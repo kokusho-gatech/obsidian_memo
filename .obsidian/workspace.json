@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250725.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "250725"
+              "title": "00_SUPPLIER_全体概要"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 320.5,
+    "collapsed": true
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -170,12 +171,11 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 260.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,17 +193,18 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "dfc48d7b472d284b",
+  "active": "fe031c12a64106f4",
   "lastOpenFiles": [
+    "Zettelkasten/40_Daily/250711.md",
+    "Zettelkasten/40_Daily/250714.md",
+    "Zettelkasten/40_Daily/250715.md",
+    "Zettelkasten/40_Daily/250716.md",
+    "Zettelkasten/40_Daily/250718.md",
     "Zettelkasten/40_Daily/250721.md",
     "Zettelkasten/40_Daily/250723.md",
-    "Zettelkasten/40_Daily/250718.md",
-    "Zettelkasten/40_Daily/250715.md",
-    "Zettelkasten/40_Daily/250712.md",
-    "Zettelkasten/40_Daily/250711.md",
-    "Zettelkasten/40_Daily/250716.md",
-    "250722.md",
     "Zettelkasten/40_Daily/250725.md",
+    "Zettelkasten/40_Daily/250712.md",
+    "250722.md",
     "Templates/DailyNoteTemplate.md",
     "Untitled.md",
     "Templates/テンプレ1.md",
@@ -220,7 +221,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItemsController.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleItemsPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleInputsPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ApprovalStatusHistory.md",
     "Zettelkasten/10_Parmanentnote/definitions",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
