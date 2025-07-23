@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "file": "Rules/Obsidianタグ命名規則.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "00_SUPPLIER_全体概要"
+              "title": "Obsidianタグ命名規則"
             }
           }
         ],
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "file": "Rules/Obsidianタグ命名規則.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "00_SUPPLIER_全体概要へのバックリンク"
+              "title": "Obsidianタグ命名規則へのバックリンク"
             }
           },
           {
@@ -145,12 +145,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "file": "Rules/Obsidianタグ命名規則.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "00_SUPPLIER_全体概要からのアウトゴーイングリンク"
+              "title": "Obsidianタグ命名規則からのアウトゴーイングリンク"
             }
           },
           {
@@ -159,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "file": "Rules/Obsidianタグ命名規則.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "00_SUPPLIER_全体概要のアウトライン"
+              "title": "Obsidianタグ命名規則のアウトライン"
             }
           },
           {
@@ -228,8 +228,14 @@
   },
   "active": "a19d034ab75c2e4a",
   "lastOpenFiles": [
-    "Templates/UniversalTemplate.md",
+    "Zettelkasten/30_FleetingNote/LINE/20250712-LINE.md",
+    "Zettelkasten/30_FleetingNote/LINE",
+    "Zettelkasten/20_LiteratureNote/kindle/Tsubota-一九八四年.md",
+    "Zettelkasten/20_LiteratureNote/kindle/Kaggleで勝つデータ分析の技術.md",
+    "Zettelkasten/20_LiteratureNote/kindle/AWS認定資格 クラウドプラクティショナーの教科書.md",
+    "Zettelkasten/20_LiteratureNote/kindle/(音声DL付)起きてから寝るまで英語表現1000 起きてから寝るまでシリーズ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+    "Templates/UniversalTemplate.md",
     "Zettelkasten/40_Daily/250723.md",
     "Templates/WeeklyNoteTemplate.md",
     "Zettelkasten/40_Daily/250721.md",
@@ -250,11 +256,6 @@
     "無題のファイル 1.md",
     "Templates/MonthlyNoteTemplate.md",
     "Zettelkasten/40_Daily/250725.md",
-    "Zettelkasten/40_Daily/250711.md",
-    "Zettelkasten/40_Daily/2025W28.md",
-    "Templates/DailyNoteTemplate.md",
-    "Zettelkasten/30_FleetingNote/20250712-LINE_1.md",
-    "Zettelkasten/30_FleetingNote/20250716-LINE.md",
     "Zettelkasten/10_Parmanentnote/definitions",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
@@ -263,7 +264,6 @@
     "Zettelkasten/10Parmanentnote/supplier_docs",
     "Zettelkasten/10Parmanentnote",
     "definitions",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions",
     "Pasted image 20250714124924.png",
     "Pasted image 20250714124951.png",
     "Pasted image 20250714151130.png",
