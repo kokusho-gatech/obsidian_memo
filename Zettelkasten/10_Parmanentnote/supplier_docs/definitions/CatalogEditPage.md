@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - page
+  - supplier
+  - parmanentnote
+---
+
 # カタログ編集ページ
 
 ## 概要

@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - monitoring
+  - technology
+  - parmanentnote
+---
+
 # Datadog
 
 ## 概要

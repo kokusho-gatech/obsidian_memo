@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - aws
+  - cloud-computing
+  - technology
+  - parmanentnote
+---
+
 # CloudFront
 
 ## 概要

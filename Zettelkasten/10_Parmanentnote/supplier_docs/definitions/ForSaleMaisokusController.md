@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - controller
+  - ruby-on-rails
+  - supplier
+  - parmanentnote
+---
+
 # ForSaleMaisokusController（Articles::ForSaleMaisokusController）
 
 ## 概要

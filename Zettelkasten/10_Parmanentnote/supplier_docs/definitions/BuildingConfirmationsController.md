@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - controller
+  - ruby-on-rails
+  - supplier
+  - parmanentnote
+---
+
 # BuildingConfirmationsController
 
 > 本来のクラス名は BuildingConfirmationsController です

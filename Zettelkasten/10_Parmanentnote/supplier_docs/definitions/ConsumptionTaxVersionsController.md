@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - controller
+  - ruby-on-rails
+  - supplier
+  - parmanentnote
+---
+
 # ConsumptionTaxVersionsController（Articles::ConsumptionTaxVersionsController）
 
 ## 概要

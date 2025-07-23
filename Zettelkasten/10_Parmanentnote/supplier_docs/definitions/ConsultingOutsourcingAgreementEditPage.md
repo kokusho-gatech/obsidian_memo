@@ -1,4 +1,12 @@
-# コンサル業務委託契約書の書類入力編集ページ
+---
+tags:
+  - definition
+  - page
+  - supplier
+  - parmanentnote
+---
+
+# ConsultingOutsourcingAgreementEditPage
 
 ## 概要
 - **URL**: `/articles/:id/inputs/consulting_outsourcing_agreement/edit`

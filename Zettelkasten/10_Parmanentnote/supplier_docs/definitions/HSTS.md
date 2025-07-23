@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - security
+  - technology
+  - parmanentnote
+---
+
 # HSTS
 
 ## 概要

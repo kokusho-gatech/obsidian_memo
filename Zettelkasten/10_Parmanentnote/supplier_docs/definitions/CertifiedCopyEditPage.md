@@ -1,4 +1,12 @@
-# 謄本の書類入力編集ページ
+---
+tags:
+  - definition
+  - page
+  - supplier
+  - parmanentnote
+---
+
+# CertifiedCopyEditPage
 
 ## 概要
 - **URL**: `/articles/:id/inputs/certified_copy/edit`

@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - controller
+  - ruby-on-rails
+  - supplier
+  - parmanentnote
+---
+
 # FilePublishedDatesController
 
 > 本来のクラス名は FilePublishedDatesController です

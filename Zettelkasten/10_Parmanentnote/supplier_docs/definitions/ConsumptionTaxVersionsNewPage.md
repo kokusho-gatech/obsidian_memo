@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - page
+  - supplier
+  - parmanentnote
+---
+
 # ConsumptionTaxVersionsNewPage
 
 ## 概要

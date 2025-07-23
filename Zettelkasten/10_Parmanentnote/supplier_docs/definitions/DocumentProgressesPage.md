@@ -1,4 +1,12 @@
-# 契約書作成進捗一覧ページ
+---
+tags:
+  - definition
+  - page
+  - supplier
+  - parmanentnote
+---
+
+# DocumentProgressesPage
 
 ## 概要
 - **URL**: `/articles/document_progresses`

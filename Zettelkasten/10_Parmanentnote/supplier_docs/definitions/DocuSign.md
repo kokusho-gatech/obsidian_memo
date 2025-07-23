@@ -1,3 +1,10 @@
+---
+tags:
+  - definition
+  - technology
+  - parmanentnote
+---
+
 # DocuSign
 
 ## 概要
