@@ -189,8 +189,7 @@
       "obsidian-kindle-plugin:Sync your Kindle highlights": false,
       "line-notes-sync:Sync LINE messages": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false,
-      "periodic-notes:Open this week": false
+      "periodic-notes:Open today": false
     }
   },
   "active": "fe031c12a64106f4",
