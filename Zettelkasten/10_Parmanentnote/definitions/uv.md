@@ -1,10 +1,9 @@
 ---
 tags:
-  - 定義
+  - definition
   - python
-  - パッケージマネージャー
-  - 開発ツール
-  - ツール
+  - package-manager
+  - development-tool
 ---
 
 # uv

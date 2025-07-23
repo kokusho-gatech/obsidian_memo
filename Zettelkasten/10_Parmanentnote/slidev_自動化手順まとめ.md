@@ -5,7 +5,6 @@ tags:
   - zettelkasten
   - obsidian
   - スライド
-  - 手順
 ---
 # ZettelkastenメモをSlidevスライドに反映・起動する手順まとめ
 

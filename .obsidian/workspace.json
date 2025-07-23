@@ -225,10 +225,13 @@
       "publish:パブリッシュによる変更の公開": false
     }
   },
-  "active": "2c5aec5436d8a775",
+  "active": "ed1aa5cf49993da6",
   "lastOpenFiles": [
-    "Templates/UniversalTemplate.md",
+    "Zettelkasten/00_Indexnote/Zettelkastenインデックス.md",
+    "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
+    "Zettelkasten/00_Indexnote/TaskList.md",
     "Rules/Obsidianタグ命名規則.md",
+    "Templates/UniversalTemplate.md",
     "Zettelkasten/40_Daily/Weekly",
     "Zettelkasten/30_Fleetingnote/LINE/20250712-LINE.md",
     "Zettelkasten/30_Fleetingnote/LINE",
@@ -245,7 +248,6 @@
     "Zettelkasten/10_Parmanentnote/definitions/SSE.md",
     "Zettelkasten/10_Parmanentnote/cursor_ai_shortcuts.md",
     "Zettelkasten/10_Parmanentnote/obsidian_shortcut_collection.md",
-    "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
     "Rules",
     "Zettelkasten/20_Literaturenote/web/ぼくがかんがえた最強のObsidian設定｜古村藍.md",
     "Zettelkasten/20_LiteratureNote/web/ぼくがかんがえた最強のObsidian設定｜古村藍 1.md",
@@ -254,7 +256,6 @@
     "Untitled.md",
     "無題のファイル 2.md",
     "無題のファイル 1.md",
-    "Templates/MonthlyNoteTemplate.md",
     "Zettelkasten/10_Parmanentnote/definitions",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",

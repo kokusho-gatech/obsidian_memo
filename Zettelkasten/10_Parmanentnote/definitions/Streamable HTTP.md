@@ -1,10 +1,9 @@
 ---
 tags:
-  - 定義
+  - definition
   - http
-  - 技術
-  - web開発
-  - 通信プロトコル
+  - technology
+  - web-development
 ---
 
 # Streamable HTTP
