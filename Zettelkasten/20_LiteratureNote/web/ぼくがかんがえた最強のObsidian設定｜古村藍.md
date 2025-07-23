@@ -1,25 +1,15 @@
 ---
-title: "ぼくがかんがえた最強のObsidian設定｜古村藍"
-source: "https://note.com/indigo372/n/nae1e72203c5b"
+title: ぼくがかんがえた最強のObsidian設定｜古村藍
+source: https://note.com/indigo372/n/nae1e72203c5b
 author:
   - "[[古村藍]]"
 published: 2023-10-06
 created: 2025-07-23
-description: "私はObsidianを使い始めて一年近くが経ちます。 例に漏れず本ツールの有用性やカスタム性に魅了されて使い続けているわけですが、活発に更新されるツールなので使い方や設定も日々変わっていきます。 そんな中、ここ最近「これでFAじゃね？」という設定に落ち着いてきたので、今の私のObsidian環境を晒します。 はじめに書いておきたいのは、「すべての人にとって最適な形などない」ということです。ある人にとっては有用なカスタマイズでも、ある人にとっては不便なだけかも知れない。 なので今回は「対象となる人」をはじめに宣言しておきます。以下に当てはまる人であれば私が使っている設定は有用に働くかも知"
+description: 私はObsidianを使い始めて一年近くが経ちます。 例に漏れず本ツールの有用性やカスタム性に魅了されて使い続けているわけですが、活発に更新されるツールなので使い方や設定も日々変わっていきます。 そんな中、ここ最近「これでFAじゃね？」という設定に落ち着いてきたので、今の私のObsidian環境を晒します。 はじめに書いておきたいのは、「すべての人にとって最適な形などない」ということです。ある人にとっては有用なカスタマイズでも、ある人にとっては不便なだけかも知れない。 なので今回は「対象となる人」をはじめに宣言しておきます。以下に当てはまる人であれば私が使っている設定は有用に働くかも知
 tags:
-  - "web-info"
+  - web-info
+  - obsidian
 ---
----
-title: "ぼくがかんがえた最強のObsidian設定｜古村藍"
-aliases: []
-url: "https://note.com/indigo372/n/nae1e72203c5b"
-source: ""
-author: ""
-date: ""
-tags: [📥/webclip, ⚪️/toread]
-status: "to-read"
----
-
 ## 🚀 要約
 - 
 
@@ -30,7 +20,19 @@ status: "to-read"
 - 
 
 ## 🔗 関連
-- [[ ]]
+```dataviewjs
+dv.header(3, "関連ノート");
+var maxLoop = Math.min(dv.current().file.tags.length, 3);
+for(let i=0;i<maxLoop;i++){
+dv.span(dv.current().file.tags[i]);
+dv.list(dv.pages(dv.current().file.tags[i]).sort(f=>f.file.mtime.ts,"desc").limit(15).file.link);
+}
+
+for (let outgo of dv.pages('outgoing([[' + dv.current().file.name + ']])')) {
+    dv.header(4, outgo.file.name);
+    dv.list(outgo.file.inlinks.sort());
+}
+```
 
 ---
 
