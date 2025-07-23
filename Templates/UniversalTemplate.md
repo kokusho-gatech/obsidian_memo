@@ -1,13 +1,13 @@
 ---
 tags:
   - daily-note/task
-creation-date: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+creation-date: "{{date}}"
 ---
 
 
 # タイトル
 
-
+{{}}
 
 
 
