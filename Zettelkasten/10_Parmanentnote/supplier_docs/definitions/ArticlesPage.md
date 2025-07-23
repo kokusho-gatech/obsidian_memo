@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - page
+  - supplier
+  - parmanentnote
+---
+
 # ArticlesPage
 
 SUPPLIER by RENOSYの物件管理の中核となる画面・コントローラーの仕様まとめ。

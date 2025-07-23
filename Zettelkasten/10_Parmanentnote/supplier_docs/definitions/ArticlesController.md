@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - controller
+  - ruby-on-rails
+  - supplier
+  - parmanentnote
+---
+
 # ArticlesController
 
 SUPPLIER by RENOSYの物件管理の中核となるコントローラー。

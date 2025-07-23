@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - controller
+  - ruby-on-rails
+  - supplier
+  - parmanentnote
+---
+
 # Articles__CatalogsController
 
 > 本来のクラス名は Articles::CatalogsController です

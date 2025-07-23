@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - model
+  - supplier
+  - parmanentnote
+---
+
 # ApprovalStatusHistoryComment
 
 ## 役割

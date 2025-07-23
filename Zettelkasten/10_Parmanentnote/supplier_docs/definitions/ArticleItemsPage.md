@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - page
+  - supplier
+  - parmanentnote
+---
+
 # ファイルチェックページ（/articles/:id/article_items）
 
 > [[Articles__ArticleItemsController]] `index`アクション & `app/views/articles/article_items/index.html.erb` による描画

@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - page
+  - supplier
+  - parmanentnote
+---
+
 # 発表詳細ページ（/articles/:id）
 
 > [[ArticlesController]] `show`アクション & `app/views/articles/show.html.erb` による描画

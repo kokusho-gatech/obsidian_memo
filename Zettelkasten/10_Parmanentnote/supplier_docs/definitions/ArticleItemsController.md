@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - controller
+  - ruby-on-rails
+  - supplier
+  - parmanentnote
+---
+
 # ArticleItemsController（Articles::ArticleItemsController）
 
 ## 概要

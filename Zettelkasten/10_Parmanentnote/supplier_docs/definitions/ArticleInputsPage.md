@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - page
+  - supplier
+  - parmanentnote
+---
+
 # 書類入力一覧ページ
 
 ## 概要

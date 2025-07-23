@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - model
+  - supplier
+  - parmanentnote
+---
+
 # ArticleItem
 
 ## 役割

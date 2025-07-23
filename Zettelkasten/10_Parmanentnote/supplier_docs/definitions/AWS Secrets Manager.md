@@ -1,3 +1,13 @@
+---
+tags:
+  - definition
+  - aws
+  - cloud-computing
+  - security
+  - technology
+  - parmanentnote
+---
+
 # AWS Secrets Manager
 
 ## 概要

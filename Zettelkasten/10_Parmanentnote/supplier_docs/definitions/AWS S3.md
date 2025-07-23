@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - aws
+  - cloud-computing
+  - technology
+  - parmanentnote
+---
+
 # AWS S3
 
 ## 概要

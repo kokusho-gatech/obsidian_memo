@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - controller
+  - ruby-on-rails
+  - supplier
+  - parmanentnote
+---
+
 # Articles__ApprovedApprovalsController
 
 > 本来のクラス名は Articles::ApprovedApprovalsController です
