@@ -2,6 +2,7 @@
 tags:
   - obsidian
   - shortcut
+  - note-technique
 ---
 # Obsidian ショートカット集
 
