@@ -1,9 +1,7 @@
 ---
-tags:
-  - daily-note/task
+tags: []
 creation-date: "{{date}}"
 ---
-
 
 # タイトル
 

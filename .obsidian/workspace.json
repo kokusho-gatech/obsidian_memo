@@ -58,13 +58,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/UniversalTemplate.md",
+                "file": "Zettelkasten/20_LiteratureNote/web/「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shin.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "UniversalTemplate"
+              "title": "「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shin"
             }
           }
         ],
@@ -141,6 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Zettelkasten/20_LiteratureNote/web/「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +151,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "バックリンク"
+              "title": "「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shinへのバックリンク"
             }
           },
           {
@@ -159,11 +160,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Zettelkasten/20_LiteratureNote/web/「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "アウトゴーイングリンク"
+              "title": "「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shinからのアウトゴーイングリンク"
             }
           },
           {
@@ -172,13 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "無題のファイル.md",
+                "file": "Zettelkasten/20_LiteratureNote/web/「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shin.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "無題のファイルのアウトライン"
+              "title": "「外界」と「自分の脳」を分けて考える、NotebookLM×Obsidianが変える学びの新常識｜Shinのアウトライン"
             }
           },
           {
@@ -240,8 +242,10 @@
       "publish:パブリッシュによる変更の公開": false
     }
   },
-  "active": "2c5aec5436d8a775",
+  "active": "63f5839b67b3d775",
   "lastOpenFiles": [
+    "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
+    "Zettelkasten/20_LiteratureNote/web/ぼくがかんがえた最強のObsidian設定｜古村藍.md",
     "Templates/UniversalTemplate.md",
     "無題のファイル.md",
     "Untitled.md",
@@ -263,12 +267,10 @@
     "無題のフォルダ",
     "Zettelkasten/40_Daily/250716.md",
     "Zettelkasten/40_Daily/250715.md",
-    "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/プロダクトドキュメントの歩き方.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/User.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
     "Zettelkasten/10_Parmanentnote/definitions",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
