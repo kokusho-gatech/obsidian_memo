@@ -1,7 +1,7 @@
 ---
-tags:
-  - obsidian
-  - ルール
+description: 
+globs: 
+alwaysApply: true
 ---
 -
 # Obsidianタグ命名規則
