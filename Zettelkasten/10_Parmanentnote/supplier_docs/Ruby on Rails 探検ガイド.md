@@ -1,10 +1,8 @@
 ---
 tags:
   - spec
-  - rails
-  - beginner
+  - ruby-on-rails
   - guideline
-  - architecture
 ---
 # Ruby on Rails 探検ガイド
 

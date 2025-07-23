@@ -1,12 +1,10 @@
 ---
 tags:
   - spec
-  - supplier
   - overview
   - guideline
-  - rails
+  - ruby-on-rails
   - real-estate
-  - architecture
 ---
 # SUPPLIER by RENOSY プロジェクト概要
 

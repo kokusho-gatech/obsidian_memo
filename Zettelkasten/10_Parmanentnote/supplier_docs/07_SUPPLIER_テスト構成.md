@@ -11,51 +11,6 @@ tags:
 
 ---
 
-## 1. uvのインストール
-
-uv自体はPythonのグローバル環境にインストールします。
-
-```sh
-<code_block_to_apply_changes_from>
-```
-
-または、Homebrewでもインストール可能です（macOSの場合）:
-
-```sh
-brew install uv
-```
-
----
-
-## 2. 既存のvenvを削除（任意）
-
-既存の仮想環境（`venv/`ディレクトリ）を削除してもOKです。  
-（ただし、必要な場合はバックアップしてください）
-
-```sh
-rm -rf venv
-```
-
----
-
-## 3. uvで仮想環境の作成
-
-uvは`uv venv`コマンドで仮想環境を作成します。
-
-```sh
-uv venv .venv
-```
-
-（`.venv`ディレクトリが作成されます）
-
----
-
-## 4. 依存関係のインストール
-
-従来の`requirements.txt`がある場合は、そのまま使えます
-
----
-
 ## 1. コントローラーテスト（test/controllers）
 
 ### 例: users_controller_test.rb
