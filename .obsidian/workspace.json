@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/Templates/DailyNoteTemplate.md",
+                "file": "Templates/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DailyNoteTemplate"
+              "title": "Untitled"
             }
           }
         ]
@@ -120,21 +120,6 @@
             }
           },
           {
-            "id": "860e720d9a715aa1",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
             "id": "d2ba9a261b09024c",
             "type": "leaf",
             "state": {
@@ -168,9 +153,24 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "7df1f962acc79ca0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -194,9 +194,12 @@
   },
   "active": "597495b51602ad9b",
   "lastOpenFiles": [
-    "Zettelkasten/Templates/WeeklyNoteTemplate.md",
-    "Zettelkasten/Templates/MonthlyNoteTemplate.md",
-    "Zettelkasten/Templates/DailyNoteTemplate.md",
+    "Templates/DailyNoteTemplate.md",
+    "Templates/Untitled.md",
+    "Templates/WeeklyNoteTemplate.md",
+    "Templates/MonthlyNoteTemplate.md",
+    "Zettelkasten/40_Daily/250721.md",
+    "Zettelkasten/40_Daily/250718.md",
     "Zettelkasten/40_Daily/250723.md",
     "Zettelkasten/40_Daily/250725.md",
     "Zettelkasten/10_Parmanentnote/obsidian_shortcut_collection.md",
@@ -217,9 +220,6 @@
     "Zettelkasten/10_Parmanentnote/definitions/SSE.md",
     "Zettelkasten/40_Daily/250715.md",
     "Zettelkasten/40_Daily/250714.md",
-    "Zettelkasten/40_Daily/250716.md",
-    "Zettelkasten/40_Daily/250718.md",
-    "Zettelkasten/40_Daily/2025W28.md",
     "Zettelkasten/10_Parmanentnote/definitions",
     "[user](.definitions",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/intermediary_companies",
