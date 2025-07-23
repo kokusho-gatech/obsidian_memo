@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - http
+  - technology
+  - web-development
+---
+
 # Streamable HTTP
 
 > **関連タグ:** #通信プロトコル #HTTP #MCP #リアルタイム通信

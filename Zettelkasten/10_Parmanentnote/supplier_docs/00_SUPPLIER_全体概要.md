@@ -3,10 +3,7 @@ tags:
   - spec
   - supplier
   - overview
-  - guideline
-  - rails
-  - real-estate
-  - architecture
+  - parmanentnote
 ---
 # SUPPLIER by RENOSY プロジェクト概要
 

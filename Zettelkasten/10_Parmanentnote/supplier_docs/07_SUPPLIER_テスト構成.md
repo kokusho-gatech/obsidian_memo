@@ -3,9 +3,7 @@ tags:
   - spec
   - supplier
   - test
-  - rails
-  - qa
-  - guideline
+  - parmanentnote
 ---
 # supplier-article テストファイル・関連リソース整理
 

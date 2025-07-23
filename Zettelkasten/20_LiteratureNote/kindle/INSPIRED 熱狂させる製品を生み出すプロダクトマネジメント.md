@@ -1,5 +1,10 @@
 ---
-tags: kindle
+tags:
+  - literaturenote
+  - product-management
+  - business
+  - kindle
+---
 kindle-sync:
   bookId: '9564'
   title: INSPIRED 熱狂させる製品を生み出すプロダクトマネジメント

@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - python
+  - package-manager
+  - development-tool
+---
+
 # uv
 
 > **関連タグ:** #Python #パッケージ管理 #開発ツール #MCP

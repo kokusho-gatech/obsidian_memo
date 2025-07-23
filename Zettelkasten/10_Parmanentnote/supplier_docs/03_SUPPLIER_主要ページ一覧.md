@@ -3,9 +3,7 @@ tags:
   - spec
   - supplier
   - page-list
-  - rails
-  - navigation
-  - architecture
+  - parmanentnote
 ---
 # SUPPLIER by RENOSY 主要ページ一覧
 

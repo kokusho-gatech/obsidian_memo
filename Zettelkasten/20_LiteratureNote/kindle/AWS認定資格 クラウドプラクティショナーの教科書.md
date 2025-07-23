@@ -1,5 +1,11 @@
 ---
-tags: kindle
+tags:
+  - literaturenote
+  - aws
+  - cloud-computing
+  - certification
+  - kindle
+---
 kindle-sync:
   bookId: '56760'
   title: 'AWS認定資格 クラウドプラクティショナーの教科書: 合格へ導く虎の巻 CloudTech制作委員会シリーズ'

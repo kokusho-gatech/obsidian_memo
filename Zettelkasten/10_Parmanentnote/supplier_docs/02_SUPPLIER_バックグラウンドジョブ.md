@@ -3,9 +3,7 @@ tags:
   - spec
   - supplier
   - background-job
-  - rails
-  - automation
-  - architecture
+  - parmanentnote
 ---
 # SUPPLIER by RENOSY バックグラウンドジョブ分析
 

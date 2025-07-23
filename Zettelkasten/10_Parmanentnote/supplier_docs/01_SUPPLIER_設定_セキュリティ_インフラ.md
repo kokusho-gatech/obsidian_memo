@@ -2,11 +2,9 @@
 tags:
   - spec
   - supplier
-  - security
   - infrastructure
-  - rails
-  - sre
-  - guideline
+  - security
+  - parmanentnote
 ---
 # SUPPLIER by RENOSY 設定ファイル分析 - セキュリティ・インフラ観点
 

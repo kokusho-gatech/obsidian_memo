@@ -3,8 +3,7 @@ tags:
   - spec
   - supplier
   - controller
-  - rails
-  - architecture
+  - parmanentnote
 ---
 # SUPPLIER by RENOSY コントローラー一覧
 

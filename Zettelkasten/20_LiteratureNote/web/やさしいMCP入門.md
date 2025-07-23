@@ -7,7 +7,11 @@ published: 2025-04-06
 created: 2025-07-23
 description: "書籍化が決定しました！ アマゾンで予約できます。https://www.amazon.co.jp/dp/4798075736"
 tags:
-  - "web-info"
+  - literaturenote
+  - mcp
+  - ai
+  - technology
+  - web
 ---
 ---
 title: "やさしいMCP入門"

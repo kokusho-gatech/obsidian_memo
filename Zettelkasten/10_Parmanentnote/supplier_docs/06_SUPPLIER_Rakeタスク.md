@@ -3,9 +3,7 @@ tags:
   - spec
   - supplier
   - rake-task
-  - rails
-  - automation
-  - batch
+  - parmanentnote
 ---
 # SUPPLIER by RENOSY Rakeタスク分析
 

@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - sse
+  - technology
+  - web-development
+---
+
 # SSE (Server-Sent Events)
 
 > **関連タグ:** #通信プロトコル #HTTP #リアルタイム通信 #WebAPI

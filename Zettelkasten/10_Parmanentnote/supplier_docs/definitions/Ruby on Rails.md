@@ -1,3 +1,12 @@
+---
+tags:
+  - definition
+  - ruby-on-rails
+  - web-framework
+  - mvc
+  - parmanentnote
+---
+
 # Ruby on Rails
 
 （別名：Rails、レイルズ）

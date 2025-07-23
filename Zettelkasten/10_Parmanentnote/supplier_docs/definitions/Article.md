@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - article
+  - model
+  - parmanentnote
+---
+
 # Article
 
 ## 役割

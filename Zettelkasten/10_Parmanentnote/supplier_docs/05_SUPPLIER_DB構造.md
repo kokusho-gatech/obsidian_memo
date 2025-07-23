@@ -2,11 +2,8 @@
 tags:
   - spec
   - supplier
-  - db
-  - rails
-  - model
-  - architecture
-  - erd
+  - database
+  - parmanentnote
 ---
 # SUPPLIER by RENOSY データベース構造ドキュメント
 
@@ -513,7 +510,7 @@ erDiagram
 | other_contract_cost_item_1 | string | その他契約費用：項目1 |
 | other_contract_cost_amount_1 | integer | その他契約費用：金額1 |
 | other_contract_cost_item_2 | string | その他契約費用：項目2 |
-| other_contract_cost_amount_2 | integer | その他契約費用：項目2 |
+| other_contract_cost_amount_2 | integer | その他契約費用：金額2 |
 | other_contract_cost_item_3 | string | その他契約費用：項目3 |
 | other_contract_cost_amount_3 | integer | その他契約費用：金額3 |
 | payment_for_contract_conclusion_item | integer | 契約時支払い項目 |

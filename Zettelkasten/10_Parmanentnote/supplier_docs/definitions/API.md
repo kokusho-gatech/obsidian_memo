@@ -1,3 +1,11 @@
+---
+tags:
+  - definition
+  - api
+  - technology
+  - parmanentnote
+---
+
 # API
 
 ## 概要
