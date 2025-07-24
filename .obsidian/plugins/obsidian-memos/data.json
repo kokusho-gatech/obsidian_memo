@@ -29,7 +29,7 @@
   "AutoSaveWhenOnMobile": false,
   "DeleteFileName": "delete",
   "QueryFileName": "query",
-  "UseVaultTags": false,
+  "UseVaultTags": true,
   "SetCustomBackgroundImage": false,
   "SetCustomMemoFooter": false,
   "DefaultLightBackgroundImage": "",
