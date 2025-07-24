@@ -14,5 +14,6 @@
   "obsidian-meta-bind-plugin",
   "marp-slides",
   "obsidian-memos",
-  "obsidian-icon-folder"
+  "obsidian-icon-folder",
+  "obsidian-linter"
 ]
