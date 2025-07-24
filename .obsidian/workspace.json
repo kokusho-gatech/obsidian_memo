@@ -37,13 +37,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250718.md",
+                "file": "Templates/UniversalTemplate.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "250718"
+              "title": "UniversalTemplate"
             }
           }
         ],
@@ -223,8 +223,8 @@
   },
   "active": "4eaa3e524964f6fc",
   "lastOpenFiles": [
-    "Zettelkasten/40_Daily/250721.md",
     "Zettelkasten/40_Daily/250718.md",
+    "Zettelkasten/40_Daily/250721.md",
     "Zettelkasten/10_Parmanentnote/definitions/npm.md",
     "Zettelkasten/10_Parmanentnote/definitions/サブリース.md",
     "Zettelkasten/10_Parmanentnote/definitions/割戻賃料.md",
