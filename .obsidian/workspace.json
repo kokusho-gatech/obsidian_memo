@@ -13,43 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "00_SUPPLIER_全体概要"
-            }
-          },
-          {
-            "id": "72edd6f8709c741e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/UniversalTemplate.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "UniversalTemplate"
-            }
-          },
-          {
-            "id": "a19d034ab75c2e4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zettelkasten/30_Fleetingnote/LINE/20250712-LINE.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "20250712-LINE"
+              "title": "AssessmentPage"
             }
           }
         ]
@@ -109,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 237.5,
+    "collapsed": true
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -125,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +106,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "00_SUPPLIER_全体概要へのバックリンク"
+              "title": "AssessmentPageへのバックリンク"
             }
           },
           {
@@ -144,12 +115,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "00_SUPPLIER_全体概要からのアウトゴーイングリンク"
+              "title": "AssessmentPageからのアウトゴーイングリンク"
             }
           },
           {
@@ -158,13 +129,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "00_SUPPLIER_全体概要のアウトライン"
+              "title": "AssessmentPageのアウトライン"
             }
           },
           {
@@ -207,7 +178,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,20 +199,23 @@
   },
   "active": "ed1aa5cf49993da6",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentController.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/IntermediaryCompany.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_Wiki_トップページ.md",
+    "Zettelkasten/10_Parmanentnote/supplier_docs/Ruby on Rails 探検ガイド.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/05_SUPPLIER_DB構造.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ManagementPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/03_SUPPLIER_主要ページ一覧.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/02_SUPPLIER_バックグラウンドジョブ.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/01_SUPPLIER_設定_セキュリティ_インフラ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/paper_trail.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/sidekiq.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_Wiki_トップページ.md",
     "Zettelkasten/40_Daily/250725.md",
     "Zettelkasten/20_Literaturenote/web/Pythonのasyncawaitを理解したい【asyncio】.md",
     "Zettelkasten/00_Indexnote/タグ一覧/タグ一覧.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/04_SUPPLIER_コントローラー一覧.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/06_SUPPLIER_Rakeタスク.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/07_SUPPLIER_テスト構成.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/NegotiationHistory.md",
@@ -251,9 +226,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/物件管理機能.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/CatalogsController.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ArticleInputsPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Article.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ApprovedApprovalsController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/ApprovalStatusHistoryComment.md",
     "Zettelkasten/40_Daily/Weekly",
     "Zettelkasten/30_Fleetingnote/LINE",
     "Rules",
