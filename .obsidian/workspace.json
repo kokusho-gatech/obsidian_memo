@@ -85,9 +85,69 @@
               "icon": "lucide-file",
               "title": "250724"
             }
+          },
+          {
+            "id": "65e6383e338c2dc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/40_Daily/250724.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "250724"
+            }
+          },
+          {
+            "id": "1ae72e84cf62eabc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/40_Daily/250724.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "250724"
+            }
+          },
+          {
+            "id": "f8ec748e2a5afe31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/40_Daily/250724.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "250724"
+            }
+          },
+          {
+            "id": "258fd782a98af526",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/40_Daily/250724.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "250724"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -279,11 +339,12 @@
       "obsidian-memos:Thino": false
     }
   },
-  "active": "f0ccf95d0587e1d5",
+  "active": "258fd782a98af526",
   "lastOpenFiles": [
+    "Zettelkasten/20_Literaturenote/web/Obsidianおすすめプラグイン 〜日常記録、コードスニペット、ブログの下書きに〜   necco Note  necco inc.（ネッコ）.md",
+    "Zettelkasten/40_Daily/未完了タスク一覧_簡易版.md",
     "Zettelkasten/40_Daily/250724.md",
     "Zettelkasten/40_Daily/250723.md",
-    "Zettelkasten/40_Daily/未完了タスク一覧_簡易版.md",
     "Templates/DailyNoteTemplate.md",
     "Templates/MonthlyNoteTemplate.md",
     "Templates/UniversalTemplate.md",
@@ -306,7 +367,6 @@
     "Zettelkasten/40_Daily/Weekly/2025W30.md",
     "Zettelkasten/40_Daily/2025W30.md",
     "Templates/WeeklyNoteTemplate_修正版.md",
-    "Zettelkasten/40_Daily/Weekly/2025W28.md",
     "Rules/TagRules.mdc",
     "Rules/Obsidianタグ命名規則.mdc",
     "Zettelkasten/40_Daily/Weekly",
