@@ -39,6 +39,14 @@ creation-date: <% tp.date.now("YYYY-MM-DD") %>
 - [x] 
 - [x] 
 
+```dataview
+TASK  
+WHERE !completed and file.text != ""
+group by file.link
+
+```
+
+
 ## MEMO
 - <% tp.date.now("HH:mm") %> ：
 - <% tp.date.now("HH:mm") %> ：
