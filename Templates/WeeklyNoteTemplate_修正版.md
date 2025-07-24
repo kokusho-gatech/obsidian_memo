@@ -111,7 +111,7 @@ for (let note of weeklyNotes) {
                 const isCompleted = line.trim().startsWith('- [x]');
                 const taskText = line.trim().substring(4).trim();
                 // 「- [ ]」のみの行はカウントしない
-                if (taskText && taskText !== '' && taskText !== '- [ ]' && taskText !== '- [x]') {
+                if (taskText && taskText !== '' && taskText !== '- [ ]' && taskText !== '- [x]' && taskText.length > 0 && taskText !== ' ') {
                     dayTasks.push({
                         task: taskText,
                         completed: isCompleted,
@@ -652,7 +652,7 @@ for (let note of weeklyNotes) {
                 const isCompleted = line.trim().startsWith('- [x]');
                 const taskText = line.trim().substring(4).trim();
                 // 「- [ ]」のみの行はカウントしない
-                if (taskText && taskText !== '' && taskText !== '- [ ]' && taskText !== '- [x]') {
+                if (taskText && taskText !== '' && taskText !== '- [ ]' && taskText !== '- [x]' && taskText.length > 0 && taskText !== ' ') {
                     allTasks.push({
                         task: taskText,
                         completed: isCompleted,
