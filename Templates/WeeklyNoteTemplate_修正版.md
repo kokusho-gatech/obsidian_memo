@@ -110,7 +110,7 @@ for (let note of weeklyNotes) {
             if (inTodoSection && line.trim().startsWith('- [')) {
                 const isCompleted = line.trim().startsWith('- [x]');
                 const taskText = line.trim().substring(4).trim();
-                // 空のタスクや「- [ ]」のみの行を除外
+                // 「- [ ]」のみの行はカウントしない
                 if (taskText && taskText !== '' && taskText !== '- [ ]' && taskText !== '- [x]') {
                     dayTasks.push({
                         task: taskText,
@@ -200,8 +200,8 @@ for (let note of weeklyNotes) {
             
             if (inStudySection && line.trim().startsWith('- ')) {
                 const studyText = line.trim().substring(2).trim();
-                // 空の学習記録を除外
-                if (studyText && studyText !== '' && studyText !== '-') {
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (studyText && studyText !== '' && !studyText.match(/^-\s*\d{1,2}:\d{2}\s*：\s*$/)) {
                     dayStudy.push({
                         study: studyText,
                         date: note.date
@@ -288,8 +288,8 @@ for (let note of weeklyNotes) {
             
             if (inMemoSection && line.trim().startsWith('- ')) {
                 const memoText = line.trim().substring(2).trim();
-                // 空のメモを除外
-                if (memoText && memoText !== '' && memoText !== '-') {
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (memoText && memoText !== '' && !memoText.match(/^-\s*\d{1,2}:\d{2}\s*：\s*$/)) {
                     dayMemos.push({
                         memo: memoText,
                         date: note.date
@@ -376,8 +376,8 @@ for (let note of weeklyNotes) {
             
             if (inExperienceSection && line.trim().startsWith('- ')) {
                 const experienceText = line.trim().substring(2).trim();
-                // 空の経験記録を除外
-                if (experienceText && experienceText !== '' && experienceText !== '-') {
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (experienceText && experienceText !== '' && !experienceText.match(/^-\s*\d{1,2}:\d{2}\s*：\s*$/)) {
                     dayExperiences.push({
                         experience: experienceText,
                         date: note.date
@@ -464,8 +464,8 @@ for (let note of weeklyNotes) {
             
             if (inJournalSection && line.trim().startsWith('- ')) {
                 const journalText = line.trim().substring(2).trim();
-                // 空の日誌を除外
-                if (journalText && journalText !== '' && journalText !== '-') {
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (journalText && journalText !== '' && !journalText.match(/^-\s*\d{1,2}:\d{2}\s*：\s*$/)) {
                     dayJournals.push({
                         journal: journalText,
                         date: note.date
@@ -651,7 +651,7 @@ for (let note of weeklyNotes) {
             if (inTodoSection && line.trim().startsWith('- [')) {
                 const isCompleted = line.trim().startsWith('- [x]');
                 const taskText = line.trim().substring(4).trim();
-                // 空のタスクや「- [ ]」のみの行を除外
+                // 「- [ ]」のみの行はカウントしない
                 if (taskText && taskText !== '' && taskText !== '- [ ]' && taskText !== '- [x]') {
                     allTasks.push({
                         task: taskText,
@@ -664,8 +664,8 @@ for (let note of weeklyNotes) {
             // STUDY処理
             if (inStudySection && line.trim().startsWith('- ')) {
                 const studyText = line.trim().substring(2).trim();
-                // 空の学習記録を除外
-                if (studyText && studyText !== '' && studyText !== '-') {
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (studyText && studyText !== '' && !studyText.match(/^-\s*\d{1,2}:\d{2}\s*：\s*$/)) {
                     allStudy.push({
                         study: studyText,
                         date: note.date
@@ -676,8 +676,8 @@ for (let note of weeklyNotes) {
             // MEMO処理
             if (inMemoSection && line.trim().startsWith('- ')) {
                 const memoText = line.trim().substring(2).trim();
-                // 空のメモを除外
-                if (memoText && memoText !== '' && memoText !== '-') {
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (memoText && memoText !== '' && !memoText.match(/^-\s*\d{1,2}:\d{2}\s*：\s*$/)) {
                     allMemos.push({
                         memo: memoText,
                         date: note.date
@@ -688,8 +688,8 @@ for (let note of weeklyNotes) {
             // EXPERIENCE処理
             if (inExperienceSection && line.trim().startsWith('- ')) {
                 const experienceText = line.trim().substring(2).trim();
-                // 空の経験記録を除外
-                if (experienceText && experienceText !== '' && experienceText !== '-') {
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (experienceText && experienceText !== '' && !experienceText.match(/^-\s*\d{1,2}:\d{2}\s*：\s*$/)) {
                     allExperiences.push({
                         experience: experienceText,
                         date: note.date
@@ -700,8 +700,8 @@ for (let note of weeklyNotes) {
             // JOURNAL処理
             if (inJournalSection && line.trim().startsWith('- ')) {
                 const journalText = line.trim().substring(2).trim();
-                // 空の日誌を除外
-                if (journalText && journalText !== '' && journalText !== '-') {
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (journalText && journalText !== '' && !journalText.match(/^-\s*\d{1,2}:\d{2}\s*：\s*$/)) {
                     allJournals.push({
                         journal: journalText,
                         date: note.date
