@@ -6,13 +6,20 @@ creation-date: <% tp.date.now("YYYY-MM-DD") %>
 
 # <% tp.date.now("YYYY-MM-DD") %>
 
- 
+
 
 前日のデイリーNote: [[<% tp.date.now("YYMMDD", -1) %>]]
 ## TODO
 - [x] 
 - [x] 
 - [x] 
+
+```dataview
+TASK  
+WHERE !completed and file.text != ""
+group by file.link
+
+```
 
 ## MEMO
 - <% tp.date.now("HH:mm") %> ：
@@ -31,37 +38,6 @@ creation-date: <% tp.date.now("YYYY-MM-DD") %>
 - <% tp.date.now("HH:mm") %> ：
 # <% tp.date.now("YYYY-MM-DD") %>
 
- 
-
-前日のデイリーNote: [[<% tp.date.now("YYMMDD", -1) %>]]
-## TODO
-- [x] 
-- [x] 
-- [x] 
-
-```dataview
-TASK  
-WHERE !completed and file.text != ""
-group by file.link
-
-```
-
-
-## MEMO
-- <% tp.date.now("HH:mm") %> ：
-- <% tp.date.now("HH:mm") %> ：
-
-## JOURNAL
-- <% tp.date.now("HH:mm") %> ：
-- <% tp.date.now("HH:mm") %> ：
-
-## STUDY
-- <% tp.date.now("HH:mm") %> ：
-- <% tp.date.now("HH:mm") %> ：
-
-## EXPERIENCE
-- <% tp.date.now("HH:mm") %> ：
-- <% tp.date.now("HH:mm") %> ：
 
 
 ```dataviewjs
