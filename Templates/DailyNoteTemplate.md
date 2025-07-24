@@ -1,6 +1,6 @@
 ---
 tags:
-  - daily-note/task
+  - daily
 creation-date: <% tp.date.now("YYYY-MM-DD") %>
 ---
 
