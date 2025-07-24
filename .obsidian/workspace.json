@@ -37,13 +37,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/00_Indexnote/Calender.md",
+                "file": "Zettelkasten/40_Daily/250724.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Calender"
+              "title": "250724"
             }
           }
         ],
@@ -222,8 +222,8 @@
   },
   "active": "4eaa3e524964f6fc",
   "lastOpenFiles": [
-    "Zettelkasten/40_Daily/250711.md",
     "Zettelkasten/00_Indexnote/Calender.md",
+    "Zettelkasten/40_Daily/250711.md",
     "Zettelkasten/40_Daily/250724.md",
     "Zettelkasten/30_Fleetingnote/無題のファイル.md",
     "Templates/UniversalTemplate.md",
