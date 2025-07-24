@@ -10,7 +10,7 @@
   },
   "weekly": {
     "format": "YYYY[W]ww",
-    "template": "Zettelkasten/Templates/WeekWeeklyNoteTemplate.md",
+    "template": "Templates/WeeklyNoteTemplate.md",
     "folder": "Zettelkasten/40_Daily",
     "enabled": true
   },
