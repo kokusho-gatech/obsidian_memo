@@ -22,5 +22,13 @@
       ],
       "key": "C"
     }
+  ],
+  "slides:start": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "P"
+    }
   ]
 }
