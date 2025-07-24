@@ -10,209 +10,250 @@ tags:
 
 > **SUPPLIER by RENOSY**は、不動産の仕入れ業務を効率化・高度化するための業務システムです。このWikiでは、システムの技術仕様、アーキテクチャ、機能詳細を体系的に整理しています。
 
----
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia風ページ</title>
+    <style>
+        /* style.css の内容をここに直接記述します */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f8f9fa; /* Wikipediaの背景色に近い */
+            color: #202122;
+        }
 
-## 📚 システム概要・アーキテクチャ
+        .container {
+            max-width: 980px; /* Wikipediaのコンテンツ幅に近い */
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-### 基本情報
-- **[[00_SUPPLIER_全体概要]]** - プロジェクト概要、技術スタック、規模感
-- **[[01_SUPPLIER_設定_セキュリティ_インフラ]]** - セキュリティ・インフラ設定の詳細分析
-- **[[02_SUPPLIER_バックグラウンドジョブ]]** - 非同期処理・ジョブ管理の仕組み
+        /* ヘッダー */
+        #header {
+            background-color: #fbfbfb;
+            border-bottom: 1px solid #a7d7f9;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-### 技術ガイド
-- **[[Ruby on Rails 探検ガイド]]** - Railsアプリケーションの探検方法
+        #header .logo a {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #000;
+            text-decoration: none;
+        }
 
----
+        #header .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-## 🏗️ システム構成
+        #header .main-nav li {
+            margin-right: 20px;
+        }
 
-### フロントエンド・ページ構成
-- **[[03_SUPPLIER_主要ページ一覧]]** - 主要画面・機能ページのURLパス一覧
+        #header .main-nav a {
+            text-decoration: none;
+            color: #006621; /* Wikipediaのリンク色に近い */
+        }
 
-### バックエンド・コントローラー構成
-- **[[04_SUPPLIER_コントローラー一覧]]** - 主要コントローラーの一覧と詳細解説
+        #header .search-bar input {
+            border: 1px solid #a7d7f9;
+            padding: 5px;
+            border-radius: 3px;
+        }
 
-### データベース・インフラ
-- **[[05_SUPPLIER_DB構造]]** - データベース設計・テーブル構造
-- **[[06_SUPPLIER_Rakeタスク]]** - 管理用タスク・バッチ処理
-- **[[07_SUPPLIER_テスト構成]]** - テスト戦略・構成
+        #header .search-bar button {
+            background-color: #f0f0f0;
+            border: 1px solid #a7d7f9;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
 
----
+        /* メインコンテンツ */
+        #main-content {
+            display: flex;
+            padding-top: 20px;
+        }
 
-## 🔍 プロダクトドキュメントの歩き方
+        /* サイドバー */
+        #sidebar {
+            width: 200px; /* サイドバーの幅 */
+            margin-right: 30px;
+            padding-right: 20px;
+            border-right: 1px solid #eaecf0;
+        }
 
-- **[[プロダクトドキュメントの歩き方]]** - このWikiの使い方・ナビゲーション方法
+        #sidebar .toc h2,
+        #sidebar .sidebar-links h3 {
+            font-size: 1.1em;
+            border-bottom: 1px solid #eaecf0;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
 
----
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
 
-## 📖 用語集・定義
+        #sidebar li {
+            margin-bottom: 5px;
+        }
 
-### 技術用語
-- **[[ActiveJob]]** - Railsのバックグラウンドジョブフレームワーク
-- **[[API]]** - アプリケーションプログラミングインターフェース
-- **[[APIエンドポイント]]** - APIの接続点
-- **[[AWS S3]]** - Amazon Simple Storage Service
-- **[[AWS Secrets Manager]]** - AWSの機密情報管理サービス
-- **[[CloudFront]]** - AWSのCDNサービス
-- **[[Datadog]]** - 監視・分析プラットフォーム
-- **[[devise]]** - Rails認証フレームワーク
-- **[[DocuSign]]** - 電子署名サービス
-- **[[HSTS]]** - HTTP Strict Transport Security
-- **[[kaminari]]** - ページネーションgem
-- **[[lograge]]** - 構造化ログgem
-- **[[OCR]]** - 光学文字認識
-- **[[omniauth-google-oauth2]]** - Google OAuth2認証
-- **[[paper_trail]]** - データ変更履歴管理
-- **[[PostgreSQL]]** - リレーショナルデータベース
-- **[[Puma]]** - Ruby Webサーバー
-- **[[PumaWorkerKiller]]** - Pumaのメモリ管理
-- **[[ransack]]** - 検索・絞り込みgem
-- **[[Redis]]** - インメモリデータストア
-- **[[Rollbar]]** - エラー監視サービス
-- **[[Ruby on Rails]]** - Webアプリケーションフレームワーク
-- **[[sidekiq]]** - バックグラウンドジョブキュー
-- **[[Slack]]** - チームコミュニケーションツール
-- **[[SSL]]** - Secure Sockets Layer
-- **[[view_component]]** - UIコンポーネントgem
+        #sidebar a {
+            text-decoration: none;
+            color: #006621;
+        }
 
-### ビジネス用語
-- **[[Approval]]** - 承認
-- **[[ApprovalDetail]]** - 承認詳細
-- **[[ApprovalStatusHistory]]** - 承認ステータス履歴
-- **[[ApprovalStatusHistoryComment]]** - 承認ステータス履歴コメント
-- **[[Article]]** - 物件
-- **[[ArticleDetailPage]]** - 物件詳細ページ
-- **[[ArticleInputsPage]]** - 物件入力ページ
-- **[[ArticleItem]]** - 物件資料項目
-- **[[ArticleItemsPage]]** - 物件資料ページ
-- **[[ArticlesPage]]** - 物件一覧ページ
-- **[[AssessmentEditPage]]** - 査定編集ページ
-- **[[AssessmentNgPage]]** - 査定NGページ
-- **[[AssessmentPage]]** - 査定ページ
-- **[[Attachment]]** - 添付ファイル
-- **[[Building]]** - 建物
-- **[[BuildingConfirmation]]** - 建物確認
-- **[[BuildingConfirmationsPage]]** - 建物確認ページ
-- **[[BuildingInformationEditPage]]** - 建物情報編集ページ
-- **[[BusinessPartner]]** - ビジネスパートナー
-- **[[CatalogEditPage]]** - カタログ編集ページ
-- **[[CertifiedCopyEditPage]]** - 謄本編集ページ
-- **[[Comment]]** - コメント
-- **[[CompensationPaymentAgreementEditPage]]** - 補償金支払い契約編集ページ
-- **[[ConsultingOutsourcingAgreementEditPage]]** - コンサルティング委託契約編集ページ
-- **[[ConsumptionTaxVersion]]** - 消費税バージョン
-- **[[ConsumptionTaxVersionsNewPage]]** - 消費税計算新規作成ページ
-- **[[ContractController]]** - 契約コントローラー
-- **[[DeletedArticlesPage]]** - 削除済み物件ページ
-- **[[DocusignFile]]** - DocuSignファイル
-- **[[ForSaleMaisokuEditPage]]** - 販売用マイソク編集ページ
-- **[[ForSimulationEditPage]]** - シミュレーション編集ページ
-- **[[IntermediaryCompany]]** - 仲介会社
-- **[[IntermediaryCompaniesPage]]** - 仲介会社ページ
-- **[[IntermediaryDomain]]** - 仲介ドメイン
-- **[[IntermediaryStaff]]** - 仲介スタッフ
-- **[[IntermediaryStaffUser]]** - 仲介スタッフユーザー
-- **[[Item]]** - 項目
-- **[[Janitor]]** - 管理人
-- **[[Jikoshintaku]]** - 自己新宅
-- **[[JikoshintakuArticle]]** - 自己新宅物件
-- **[[Label]]** - ラベル
-- **[[LatestApprovalEditPage]]** - 最新承認編集ページ
-- **[[LatestApprovalsPage]]** - 最新承認ページ
-- **[[LatestSaleApprovalEditPage]]** - 最新販売承認編集ページ
-- **[[LatestSaleApprovalsPage]]** - 最新販売承認ページ
-- **[[ManagementForApprovalEditPage]]** - 承認用管理編集ページ
-- **[[ManagementForPaymentRequestEditPage]]** - 支払い請求用管理編集ページ
-- **[[ManagementPage]]** - 管理ページ
-- **[[NegotiationHistory]]** - 交渉履歴
-- **[[OwnrInfo]]** - 所有者情報
-- **[[PamphletEditPage]]** - パンフレット編集ページ
-- **[[PaymentRequest]]** - 支払い請求
-- **[[PaymentRequestComment]]** - 支払い請求コメント
-- **[[Prefecture]]** - 都道府県
-- **[[PricePrediction]]** - 価格予測
-- **[[PriorValuation]]** - 事前評価
-- **[[PriorValuationEditPage]]** - 事前評価編集ページ
-- **[[PriorValuationResult]]** - 事前評価結果
-- **[[PriorValuationsPage]]** - 事前評価ページ
-- **[[PurchaseContractsPage]]** - 仕入契約ページ
-- **[[ReplaceMaisokuForSbjJob]]** - SBJ用マイソク生成ジョブ
-- **[[ReportOfImportantInfoSurveyEditPage]]** - 重要情報調査報告編集ページ
-- **[[ReuploadDocusignFilesJob]]** - DocuSignファイル再アップロードジョブ
-- **[[SaleApproval]]** - 販売承認
-- **[[SaleApproval::Detail]]** - 販売承認詳細
-- **[[SaleApproval::StatusHistory]]** - 販売承認ステータス履歴
-- **[[SaleApproval::StatusHistory::Comment]]** - 販売承認ステータス履歴コメント
-- **[[SaleManagementInfo]]** - 販売管理情報
-- **[[SaleManagementInfosPage]]** - 販売管理情報ページ
-- **[[SalesAgreementAbEditPage]]** - 販売契約AB編集ページ
-- **[[SalesAgreementOnPurchaseEditPage]]** - 購入時販売契約編集ページ
-- **[[SalesAgreementSetPage]]** - 販売契約セットページ
-- **[[SalesContractField]]** - 販売契約フィールド
-- **[[SalesContractFile]]** - 販売契約ファイル
-- **[[SalesContractTemplate]]** - 販売契約テンプレート
-- **[[SalesContractTemplatesPage]]** - 販売契約テンプレートページ
-- **[[SalesDestination]]** - 販売先
-- **[[SalesDestinationArticle]]** - 販売先物件
-- **[[SalesInfo]]** - 販売情報
-- **[[SalesPropertiesSheetField]]** - 販売物件シートフィールド
-- **[[SoldDocumentsPage]]** - 販売済み書類ページ
-- **[[SupplierMail]]** - サプライヤーメール
-- **[[TenantLeaseAgreementEditPage]]** - 賃貸借契約編集ページ
-- **[[UnassociatedPage]]** - 未関連ページ
-- **[[UpdateArticleWithMaisokuReaderJob]]** - マイソク読み取りジョブ
-- **[[UpdateModelsWithCertifiedCopyReaderJob]]** - 謄本読み取りジョブ
-- **[[User]]** - ユーザー
-- **[[UsersPage]]** - ユーザーページ
-- **[[UsersPages]]** - ユーザーページ群
-- **[[Valuation]]** - 評価
-- **[[ValuationCertificateEditPage]]** - 評価証明書編集ページ
-- **[[ValuationHistory]]** - 評価履歴
-- **[[ValuationHistoriesEditPage]]** - 評価履歴編集ページ
+        /* 記事コンテンツ */
+        #article-content {
+            flex-grow: 1;
+        }
 
-### 日本語用語
-- **[[交渉]]** - 物件の交渉プロセス
-- **[[交渉詳細（コントラクト用）]]** - コントラクト用交渉詳細
-- **[[交渉詳細（バイヤー用）]]** - バイヤー用交渉詳細
-- **[[仕入契約一覧]]** - 仕入契約の一覧表示
-- **[[仲介会社]]** - 不動産仲介会社
-- **[[仲介会社一覧]]** - 仲介会社の一覧表示
-- **[[仲介会社管理]]** - 仲介会社の管理機能
-- **[[契約]]** - 不動産取引契約
-- **[[契約管理]]** - 契約の管理機能
-- **[[履歴管理]]** - データ変更履歴の管理
-- **[[書類]]** - 不動産取引関連書類
-- **[[書類管理]]** - 書類の管理機能
-- **[[査定]]** - 物件の査定プロセス
-- **[[査定編集]]** - 査定情報の編集
-- **[[物件]]** - 不動産物件
-- **[[物件管理]]** - 物件の管理機能
-- **[[発表詳細]]** - 物件発表の詳細情報
-- **[[認可]]** - システム利用の認可
-- **[[認証]]** - ユーザー認証
-- **[[通知]]** - システム通知機能
-- **[[進捗]]** - 業務進捗の管理
+        #article-content h1 {
+            font-size: 2em;
+            border-bottom: 1px solid #eaecf0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
 
----
+        #article-content h2 {
+            font-size: 1.5em;
+            border-bottom: 1px solid #a2a9b1; /* Wikipediaの見出し下線色 */
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
 
-## 🚀 クイックスタート
+        #article-content p {
+            line-height: 1.6;
+            margin-bottom: 1em;
+        }
 
-### 新規参入者向け
-1. **[[00_SUPPLIER_全体概要]]** でシステムの全体像を把握
-2. **[[プロダクトドキュメントの歩き方]]** でWikiの使い方を学習
-3. **[[03_SUPPLIER_主要ページ一覧]]** で主要機能を確認
+        #article-content ul {
+            margin-left: 20px;
+            margin-bottom: 1em;
+        }
 
-### 開発者向け
-1. **[[01_SUPPLIER_設定_セキュリティ_インフラ]]** でインフラ構成を理解
-2. **[[04_SUPPLIER_コントローラー一覧]]** でバックエンド構造を把握
-3. **[[05_SUPPLIER_DB構造]]** でデータベース設計を確認
+        #article-content a {
+            color: #006621;
+            text-decoration: none;
+        }
 
-### 運用者向け
-1. **[[02_SUPPLIER_バックグラウンドジョブ]]** で非同期処理を理解
-2. **[[06_SUPPLIER_Rakeタスク]]** で管理タスクを確認
-3. **[[07_SUPPLIER_テスト構成]]** でテスト戦略を把握
+        /* フッター */
+        #footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #eaecf0;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
 
----
+        #footer ul {
+            list-style: none;
+            padding: 0;
+            display: inline-block; /* インラインブロックにして横並びにする */
+        }
+
+        #footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: #006621;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Wikipedia</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">メインページ</a></li>
+                    <li><a href="#">最近の更新</a></li>
+                    <li><a href="#">おまかせ表示</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="検索">
+                <button>検索</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="main-content" class="container">
+        <aside id="sidebar">
+            <nav class="toc">
+                <h2>目次</h2>
+                <ul>
+                    <li><a href="#section1">1 導入</a></li>
+                    <li><a href="#section2">2 歴史</a></li>
+                    <li><a href="#section3">3 特徴</a></li>
+                    <li><a href="#section4">4 関連項目</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-links">
+                <h3>ツール</h3>
+                <ul>
+                    <li><a href="#">リンク元</a></li>
+                    <li><a href="#">関連ページの更新状況</a></li>
+                    <li><a href="#">ファイルをアップロード</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <article id="article-content">
+            <h1>ページのタイトル</h1>
+            <p>これはWikipedia風ページのサンプルです。</p>
+
+            <h2 id="section1">1 導入</h2>
+            <p>ここに導入に関するテキストが入ります。Wikipediaの記事のように、詳細な情報を提供します。</p>
+            <p>Wikipediaは、様々な分野の情報を網羅するオンライン百科事典です。</p>
+
+            <h2 id="section2">2 歴史</h2>
+            <p>Wikipediaの歴史に関するテキストです。</p>
+            <ul>
+                <li>2001年1月15日: Wikipediaがプロジェクトを開始</li>
+                <li>...</li>
+            </ul>
+
+            <h2 id="section3">3 特徴</h2>
+            <p>Wikipediaの主な特徴についての記述です。</p>
+            <p>誰でも編集できるオープンなプラットフォームであり、多言語で利用可能です。</p>
+
+            <h2 id="section4">4 関連項目</h2>
+            <ul>
+                <li><a href="#">関連するトピック1</a></li>
+                <li><a href="#">関連するトピック2</a></li>
+            </ul>
+        </article>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2025 Wikipedia風ページ</p>
+            <ul>
+                <li><a href="#">プライバシーポリシー</a></li>
+                <li><a href="#">利用規約</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
 
 ## 📝 最近の更新
 
