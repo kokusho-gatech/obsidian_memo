@@ -110,7 +110,8 @@ for (let note of weeklyNotes) {
             if (inTodoSection && line.trim().startsWith('- [')) {
                 const isCompleted = line.trim().startsWith('- [x]');
                 const taskText = line.trim().substring(4).trim();
-                if (taskText) {
+                // 空のタスクや「- [ ]」のみの行を除外
+                if (taskText && taskText !== '' && taskText !== '- [ ]' && taskText !== '- [x]') {
                     dayTasks.push({
                         task: taskText,
                         completed: isCompleted,
@@ -199,7 +200,8 @@ for (let note of weeklyNotes) {
             
             if (inStudySection && line.trim().startsWith('- ')) {
                 const studyText = line.trim().substring(2).trim();
-                if (studyText) {
+                // 空の学習記録を除外
+                if (studyText && studyText !== '' && studyText !== '-') {
                     dayStudy.push({
                         study: studyText,
                         date: note.date
@@ -286,7 +288,8 @@ for (let note of weeklyNotes) {
             
             if (inMemoSection && line.trim().startsWith('- ')) {
                 const memoText = line.trim().substring(2).trim();
-                if (memoText) {
+                // 空のメモを除外
+                if (memoText && memoText !== '' && memoText !== '-') {
                     dayMemos.push({
                         memo: memoText,
                         date: note.date
@@ -373,7 +376,8 @@ for (let note of weeklyNotes) {
             
             if (inExperienceSection && line.trim().startsWith('- ')) {
                 const experienceText = line.trim().substring(2).trim();
-                if (experienceText) {
+                // 空の経験記録を除外
+                if (experienceText && experienceText !== '' && experienceText !== '-') {
                     dayExperiences.push({
                         experience: experienceText,
                         date: note.date
@@ -460,7 +464,8 @@ for (let note of weeklyNotes) {
             
             if (inJournalSection && line.trim().startsWith('- ')) {
                 const journalText = line.trim().substring(2).trim();
-                if (journalText) {
+                // 空の日誌を除外
+                if (journalText && journalText !== '' && journalText !== '-') {
                     dayJournals.push({
                         journal: journalText,
                         date: note.date
@@ -646,7 +651,8 @@ for (let note of weeklyNotes) {
             if (inTodoSection && line.trim().startsWith('- [')) {
                 const isCompleted = line.trim().startsWith('- [x]');
                 const taskText = line.trim().substring(4).trim();
-                if (taskText) {
+                // 空のタスクや「- [ ]」のみの行を除外
+                if (taskText && taskText !== '' && taskText !== '- [ ]' && taskText !== '- [x]') {
                     allTasks.push({
                         task: taskText,
                         completed: isCompleted,
@@ -658,7 +664,8 @@ for (let note of weeklyNotes) {
             // STUDY処理
             if (inStudySection && line.trim().startsWith('- ')) {
                 const studyText = line.trim().substring(2).trim();
-                if (studyText) {
+                // 空の学習記録を除外
+                if (studyText && studyText !== '' && studyText !== '-') {
                     allStudy.push({
                         study: studyText,
                         date: note.date
@@ -669,7 +676,8 @@ for (let note of weeklyNotes) {
             // MEMO処理
             if (inMemoSection && line.trim().startsWith('- ')) {
                 const memoText = line.trim().substring(2).trim();
-                if (memoText) {
+                // 空のメモを除外
+                if (memoText && memoText !== '' && memoText !== '-') {
                     allMemos.push({
                         memo: memoText,
                         date: note.date
@@ -680,7 +688,8 @@ for (let note of weeklyNotes) {
             // EXPERIENCE処理
             if (inExperienceSection && line.trim().startsWith('- ')) {
                 const experienceText = line.trim().substring(2).trim();
-                if (experienceText) {
+                // 空の経験記録を除外
+                if (experienceText && experienceText !== '' && experienceText !== '-') {
                     allExperiences.push({
                         experience: experienceText,
                         date: note.date
@@ -691,7 +700,8 @@ for (let note of weeklyNotes) {
             // JOURNAL処理
             if (inJournalSection && line.trim().startsWith('- ')) {
                 const journalText = line.trim().substring(2).trim();
-                if (journalText) {
+                // 空の日誌を除外
+                if (journalText && journalText !== '' && journalText !== '-') {
                     allJournals.push({
                         journal: journalText,
                         date: note.date

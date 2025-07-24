@@ -11,7 +11,7 @@
   "weekly": {
     "format": "YYYY[W]ww",
     "template": "Templates/WeeklyNoteTemplate.md",
-    "folder": "Zettelkasten/40_Daily",
+    "folder": "Zettelkasten/40_Daily/Weekly",
     "enabled": true
   },
   "monthly": {
