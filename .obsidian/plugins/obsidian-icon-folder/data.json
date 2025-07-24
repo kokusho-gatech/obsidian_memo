@@ -5,7 +5,13 @@
     "fontSize": 16,
     "emojiStyle": "native",
     "iconColor": null,
-    "recentlyUsedIcons": [],
+    "recentlyUsedIcons": [
+      "🔖",
+      "💽",
+      "📅",
+      "LiCalendarDay",
+      "LiCalendarYear"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -27,5 +33,10 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  }
+  },
+  "Zettelkasten/40_Daily": "📅",
+  "Zettelkasten/30_Fleetingnote": "✍",
+  "Zettelkasten/20_Literaturenote": "📚",
+  "Zettelkasten/10_Parmanentnote": "💽",
+  "Zettelkasten/00_Indexnote": "🔖"
 }
