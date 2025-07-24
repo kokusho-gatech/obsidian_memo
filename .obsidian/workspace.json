@@ -179,7 +179,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#model",
+                "query": "tag:#weekly/task",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,10 +197,11 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "ブックマーク"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -239,12 +240,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
+                "file": "Zettelkasten/40_Daily/250724.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "00_SUPPLIER_全体概要からのアウトゴーイングリンク"
+              "title": "250724からのアウトゴーイングリンク"
             }
           },
           {
@@ -312,7 +313,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
