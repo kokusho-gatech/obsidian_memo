@@ -37,13 +37,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250718.md",
+                "file": "Zettelkasten/10_Parmanentnote/definitions/npm.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "250718"
+              "title": "npm"
             }
           }
         ],
@@ -223,6 +223,13 @@
   },
   "active": "4eaa3e524964f6fc",
   "lastOpenFiles": [
+    "Zettelkasten/40_Daily/250718.md",
+    "Zettelkasten/10_Parmanentnote/definitions/サブリース.md",
+    "Zettelkasten/10_Parmanentnote/definitions/npm.md",
+    "Zettelkasten/10_Parmanentnote/definitions/割戻賃料.md",
+    "Zettelkasten/40_Daily/250717.md",
+    "Zettelkasten/10_Parmanentnote/definitions/gross-profit-master.md",
+    "Zettelkasten/10_Parmanentnote/definitions/schema-less-database-design.md",
     "Zettelkasten/10_Parmanentnote/definitions/Dify.md",
     "Zettelkasten/40_Daily/250721.md",
     "Zettelkasten/40_Daily/250723.md",
@@ -242,13 +249,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/10_Parmanentnote/slidev_自動化手順まとめ.md",
     "Templates/DailyNoteTemplate.md",
-    "Zettelkasten/40_Daily/250725.md",
-    "Zettelkasten/10_Parmanentnote/definitions/uv.md",
-    "Zettelkasten/10_Parmanentnote/definitions/Streamable HTTP.md",
-    "Zettelkasten/10_Parmanentnote/definitions/SSE.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentPage.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/AssessmentController.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/IntermediaryCompany.md",
     "Rules/Obsidianタグ命名規則.mdc",
     "Zettelkasten/40_Daily/Weekly",
     "Zettelkasten/30_Fleetingnote/LINE",
