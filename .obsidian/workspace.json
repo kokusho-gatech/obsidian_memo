@@ -37,13 +37,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250724.md",
+                "file": "Zettelkasten/40_Daily/250723.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "250724"
+              "title": "250723"
             }
           }
         ],
@@ -202,7 +202,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -222,10 +223,10 @@
   },
   "active": "4eaa3e524964f6fc",
   "lastOpenFiles": [
+    "Zettelkasten/40_Daily/250724.md",
     "Zettelkasten/20_Literaturenote/web/RDBとスキーマレスDBの使い分けについて  さにあらず.md",
     "Zettelkasten/00_Indexnote/Calender.md",
     "Zettelkasten/40_Daily/250711.md",
-    "Zettelkasten/40_Daily/250724.md",
     "Zettelkasten/30_Fleetingnote/無題のファイル.md",
     "Templates/UniversalTemplate.md",
     "Zettelkasten/30_Fleetingnote/査定自動化の進め方.md",
