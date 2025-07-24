@@ -11,5 +11,7 @@
   "editing-toolbar",
   "surfing",
   "habit-calendar",
-  "obsidian-meta-bind-plugin"
+  "obsidian-meta-bind-plugin",
+  "marp-slides",
+  "obsidian-memos"
 ]

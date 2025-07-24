@@ -30,5 +30,13 @@
       ],
       "key": "P"
     }
+  ],
+  "marp-slides:preview": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "P"
+    }
   ]
 }

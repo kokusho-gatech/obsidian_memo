@@ -6,6 +6,7 @@
       {
         "id": "81fd46e4c19d035c",
         "type": "tabs",
+        "dimension": 99.99999999999999,
         "children": [
           {
             "id": "ed1aa5cf49993da6",
@@ -30,8 +31,19 @@
               "icon": "lucide-file",
               "title": "00_SUPPLIER_全体概要"
             }
+          },
+          {
+            "id": "cb8bc3c7eef0c24a",
+            "type": "leaf",
+            "state": {
+              "type": "thino_view",
+              "state": {},
+              "icon": "Memos",
+              "title": "Thino"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -216,11 +228,16 @@
       "line-notes-sync:Sync LINE messages": false,
       "templater-obsidian:Templater": false,
       "publish:パブリッシュによる変更の公開": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "random-note:ランダムノートを開く": false,
+      "zk-prefixer:新規ユニークノートの作成": false,
+      "marp-slides:Show Slide Preview": false,
+      "obsidian-memos:Thino": false
     }
   },
-  "active": "ed1aa5cf49993da6",
+  "active": "cb8bc3c7eef0c24a",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/40_Daily/250712.md",
     "Zettelkasten/40_Daily/250724.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SalesContractField.md",
@@ -247,7 +264,6 @@
     "Rules/TagRules.mdc",
     "Zettelkasten/20_Literaturenote/web/AI Coding Meetup 2 を開催しました aicoding.md",
     "Zettelkasten/10_Parmanentnote/definitions/npm.md",
-    "Zettelkasten/10_Parmanentnote/definitions/割戻賃料.md",
     "Rules/Obsidianタグ命名規則.mdc",
     "Zettelkasten/40_Daily/Weekly",
     "Zettelkasten/30_Fleetingnote/LINE",
