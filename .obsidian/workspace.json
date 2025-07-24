@@ -35,15 +35,10 @@
             "id": "4eaa3e524964f6fc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zettelkasten/40_Daily/Weekly/2025W30.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2025W30"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "グラフビュー"
             }
           }
         ],
@@ -79,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:daily-note/task",
+                "query": "tag:#package-manager",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +95,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -221,14 +217,19 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4eaa3e524964f6fc",
+  "active": "676cc44b049dcb24",
   "lastOpenFiles": [
+    "Zettelkasten/30_Fleetingnote/査定自動化の進め方.md",
+    "Zettelkasten/10_Parmanentnote/definitions/サブリース.md",
     "Zettelkasten/40_Daily/250718.md",
+    "Zettelkasten/40_Daily/250717.md",
+    "Zettelkasten/40_Daily/250716.md",
     "Zettelkasten/40_Daily/250721.md",
-    "Zettelkasten/40_Daily/250724.md",
     "Zettelkasten/40_Daily/250723.md",
-    "Zettelkasten/00_Indexnote/TaskList.md",
+    "Zettelkasten/40_Daily/250724.md",
+    "Zettelkasten/40_Daily/250711.md",
     "Zettelkasten/40_Daily/Weekly/2025W30.md",
+    "Zettelkasten/00_Indexnote/TaskList.md",
     "Zettelkasten/40_Daily/2025W30.md",
     "Templates/WeeklyNoteTemplate_修正版.md",
     "Zettelkasten/40_Daily/Weekly/2025W28.md",
@@ -242,14 +243,9 @@
     "Rules/TagRules.mdc",
     "Zettelkasten/20_Literaturenote/web/AI Coding Meetup 2 を開催しました aicoding.md",
     "Zettelkasten/10_Parmanentnote/definitions/npm.md",
-    "Zettelkasten/10_Parmanentnote/definitions/サブリース.md",
     "Zettelkasten/10_Parmanentnote/definitions/割戻賃料.md",
-    "Zettelkasten/40_Daily/250717.md",
     "Zettelkasten/10_Parmanentnote/definitions/gross-profit-master.md",
     "Zettelkasten/10_Parmanentnote/definitions/schema-less-database-design.md",
-    "Zettelkasten/10_Parmanentnote/definitions/Dify.md",
-    "Zettelkasten/20_Literaturenote/web/RDBとスキーマレスDBの使い分けについて  さにあらず.md",
-    "Zettelkasten/00_Indexnote/Calender.md",
     "Rules/Obsidianタグ命名規則.mdc",
     "Zettelkasten/40_Daily/Weekly",
     "Zettelkasten/30_Fleetingnote/LINE",

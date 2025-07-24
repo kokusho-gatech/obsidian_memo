@@ -52,6 +52,193 @@ dv.table(["日付", "曜日", "ノート"],
 );
 ```
 
+
+## 📋 今週の統計
+
+```dataviewjs
+// 今週の日付範囲を計算
+const currentDate = new Date('{{date:YYYY-MM-DD}}');
+const weekStart = new Date(currentDate);
+weekStart.setDate(currentDate.getDate() - currentDate.getDay()); // 日曜日を週の開始とする
+
+const weekEnd = new Date(weekStart);
+weekEnd.setDate(weekStart.getDate() + 6);
+
+// 日付フォーマット関数（YYMMDD形式）
+function formatDate(date) {
+    const year = date.getFullYear().toString().slice(-2); // 年の下2桁
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const day = date.getDate().toString().padStart(2, '0');
+    return year + month + day;
+}
+
+// 今週のDailyノートを取得
+const weeklyNotes = [];
+for (let d = new Date(weekStart); d <= weekEnd; d.setDate(d.getDate() + 1)) {
+    const dateStr = formatDate(d);
+    const note = dv.page(`Zettelkasten/40_Daily/${dateStr}`);
+    if (note) {
+        weeklyNotes.push({
+            date: dateStr,
+            note: note,
+            dayOfWeek: ['日', '月', '火', '水', '木', '金', '土'][d.getDay()]
+        });
+    }
+}
+
+// 統計データを収集
+let allTasks = [];
+let allStudy = [];
+let allMemos = [];
+let allExperiences = [];
+let allJournals = [];
+
+for (let note of weeklyNotes) {
+    try {
+        const content = await dv.io.load(note.note.file.path);
+        const lines = content.split('\n');
+        
+        let inTodoSection = false;
+        let inStudySection = false;
+        let inMemoSection = false;
+        let inExperienceSection = false;
+        let inJournalSection = false;
+        
+        for (let line of lines) {
+            // セクション判定
+            if (line.trim() === '## TODO' || line.trim() === '## ✅ タスクリスト') {
+                inTodoSection = true;
+                inStudySection = false;
+                inMemoSection = false;
+                inExperienceSection = false;
+                inJournalSection = false;
+                continue;
+            }
+            if (line.trim() === '## STUDY') {
+                inTodoSection = false;
+                inStudySection = true;
+                inMemoSection = false;
+                inExperienceSection = false;
+                inJournalSection = false;
+                continue;
+            }
+            if (line.trim() === '## MEMO') {
+                inTodoSection = false;
+                inStudySection = false;
+                inMemoSection = true;
+                inExperienceSection = false;
+                inJournalSection = false;
+                continue;
+            }
+            if (line.trim() === '## EXPERIENCE') {
+                inTodoSection = false;
+                inStudySection = false;
+                inMemoSection = false;
+                inExperienceSection = true;
+                inJournalSection = false;
+                continue;
+            }
+            if (line.trim() === '## JOURNAL') {
+                inTodoSection = false;
+                inStudySection = false;
+                inMemoSection = false;
+                inExperienceSection = false;
+                inJournalSection = true;
+                continue;
+            }
+            
+            // 次のセクションが始まったら全てのセクションを終了
+            if (line.trim().startsWith('## ')) {
+                inTodoSection = false;
+                inStudySection = false;
+                inMemoSection = false;
+                inExperienceSection = false;
+                inJournalSection = false;
+                continue;
+            }
+            
+            // タスク処理
+            if (inTodoSection && line.trim().startsWith('- [')) {
+                const isCompleted = line.trim().startsWith('- [x]');
+                const taskText = line.trim().substring(4).trim();
+                // 「- [ ]」のみの行はカウントしない
+                if (taskText && taskText !== '' && taskText !== '- [ ]' && taskText !== '- [x]') {
+                    allTasks.push({
+                        task: taskText,
+                        completed: isCompleted,
+                        date: note.date
+                    });
+                }
+            }
+            
+            // STUDY処理
+            if (inStudySection && line.trim().startsWith('- ')) {
+                const studyText = line.trim().substring(2).trim();
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (studyText && studyText !== '' && !studyText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
+                    allStudy.push({
+                        study: studyText,
+                        date: note.date
+                    });
+                }
+            }
+            
+            // MEMO処理
+            if (inMemoSection && line.trim().startsWith('- ')) {
+                const memoText = line.trim().substring(2).trim();
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (memoText && memoText !== '' && !memoText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
+                    allMemos.push({
+                        memo: memoText,
+                        date: note.date
+                    });
+                }
+            }
+            
+            // EXPERIENCE処理
+            if (inExperienceSection && line.trim().startsWith('- ')) {
+                const experienceText = line.trim().substring(2).trim();
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (experienceText && experienceText !== '' && !experienceText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
+                    allExperiences.push({
+                        experience: experienceText,
+                        date: note.date
+                    });
+                }
+            }
+            
+            // JOURNAL処理
+            if (inJournalSection && line.trim().startsWith('- ')) {
+                const journalText = line.trim().substring(2).trim();
+                // 「- 10:55 ：」のみの行はカウントしない
+                if (journalText && journalText !== '' && !journalText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
+                    allJournals.push({
+                        journal: journalText,
+                        date: note.date
+                    });
+                }
+            }
+        }
+    } catch (error) {
+        console.log(`Error processing ${note.date}:`, error);
+    }
+}
+
+// 統計情報を表示
+const completedTasks = allTasks.filter(t => t.completed).length;
+const totalTasks = allTasks.length;
+const completionRate = totalTasks > 0 ? Math.round((completedTasks / totalTasks) * 100) : 0;
+
+dv.header(3, "📊 今週の統計");
+dv.paragraph(`**タスク完了率**: ${completionRate}% (${completedTasks}/${totalTasks})`);
+dv.paragraph(`**学習記録数**: ${allStudy.length}件`);
+dv.paragraph(`**メモ数**: ${allMemos.length}件`);
+dv.paragraph(`**経験・体験記録数**: ${allExperiences.length}件`);
+dv.paragraph(`**日誌記録数**: ${allJournals.length}件`);
+```
+
+---
+
 ## 📋 今週のタスク一覧
 
 ```dataviewjs
@@ -540,192 +727,6 @@ if (allJournals.length > 0) {
 - 
 - 
 - 
-
----
-
-## 📋 今週の統計
-
-```dataviewjs
-// 今週の日付範囲を計算
-const currentDate = new Date('{{date:YYYY-MM-DD}}');
-const weekStart = new Date(currentDate);
-weekStart.setDate(currentDate.getDate() - currentDate.getDay()); // 日曜日を週の開始とする
-
-const weekEnd = new Date(weekStart);
-weekEnd.setDate(weekStart.getDate() + 6);
-
-// 日付フォーマット関数（YYMMDD形式）
-function formatDate(date) {
-    const year = date.getFullYear().toString().slice(-2); // 年の下2桁
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
-    return year + month + day;
-}
-
-// 今週のDailyノートを取得
-const weeklyNotes = [];
-for (let d = new Date(weekStart); d <= weekEnd; d.setDate(d.getDate() + 1)) {
-    const dateStr = formatDate(d);
-    const note = dv.page(`Zettelkasten/40_Daily/${dateStr}`);
-    if (note) {
-        weeklyNotes.push({
-            date: dateStr,
-            note: note,
-            dayOfWeek: ['日', '月', '火', '水', '木', '金', '土'][d.getDay()]
-        });
-    }
-}
-
-// 統計データを収集
-let allTasks = [];
-let allStudy = [];
-let allMemos = [];
-let allExperiences = [];
-let allJournals = [];
-
-for (let note of weeklyNotes) {
-    try {
-        const content = await dv.io.load(note.note.file.path);
-        const lines = content.split('\n');
-        
-        let inTodoSection = false;
-        let inStudySection = false;
-        let inMemoSection = false;
-        let inExperienceSection = false;
-        let inJournalSection = false;
-        
-        for (let line of lines) {
-            // セクション判定
-            if (line.trim() === '## TODO' || line.trim() === '## ✅ タスクリスト') {
-                inTodoSection = true;
-                inStudySection = false;
-                inMemoSection = false;
-                inExperienceSection = false;
-                inJournalSection = false;
-                continue;
-            }
-            if (line.trim() === '## STUDY') {
-                inTodoSection = false;
-                inStudySection = true;
-                inMemoSection = false;
-                inExperienceSection = false;
-                inJournalSection = false;
-                continue;
-            }
-            if (line.trim() === '## MEMO') {
-                inTodoSection = false;
-                inStudySection = false;
-                inMemoSection = true;
-                inExperienceSection = false;
-                inJournalSection = false;
-                continue;
-            }
-            if (line.trim() === '## EXPERIENCE') {
-                inTodoSection = false;
-                inStudySection = false;
-                inMemoSection = false;
-                inExperienceSection = true;
-                inJournalSection = false;
-                continue;
-            }
-            if (line.trim() === '## JOURNAL') {
-                inTodoSection = false;
-                inStudySection = false;
-                inMemoSection = false;
-                inExperienceSection = false;
-                inJournalSection = true;
-                continue;
-            }
-            
-            // 次のセクションが始まったら全てのセクションを終了
-            if (line.trim().startsWith('## ')) {
-                inTodoSection = false;
-                inStudySection = false;
-                inMemoSection = false;
-                inExperienceSection = false;
-                inJournalSection = false;
-                continue;
-            }
-            
-            // タスク処理
-            if (inTodoSection && line.trim().startsWith('- [')) {
-                const isCompleted = line.trim().startsWith('- [x]');
-                const taskText = line.trim().substring(4).trim();
-                // 「- [ ]」のみの行はカウントしない
-                if (taskText && taskText !== '' && taskText !== '- [ ]' && taskText !== '- [x]') {
-                    allTasks.push({
-                        task: taskText,
-                        completed: isCompleted,
-                        date: note.date
-                    });
-                }
-            }
-            
-            // STUDY処理
-            if (inStudySection && line.trim().startsWith('- ')) {
-                const studyText = line.trim().substring(2).trim();
-                // 「- 10:55 ：」のみの行はカウントしない
-                if (studyText && studyText !== '' && !studyText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
-                    allStudy.push({
-                        study: studyText,
-                        date: note.date
-                    });
-                }
-            }
-            
-            // MEMO処理
-            if (inMemoSection && line.trim().startsWith('- ')) {
-                const memoText = line.trim().substring(2).trim();
-                // 「- 10:55 ：」のみの行はカウントしない
-                if (memoText && memoText !== '' && !memoText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
-                    allMemos.push({
-                        memo: memoText,
-                        date: note.date
-                    });
-                }
-            }
-            
-            // EXPERIENCE処理
-            if (inExperienceSection && line.trim().startsWith('- ')) {
-                const experienceText = line.trim().substring(2).trim();
-                // 「- 10:55 ：」のみの行はカウントしない
-                if (experienceText && experienceText !== '' && !experienceText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
-                    allExperiences.push({
-                        experience: experienceText,
-                        date: note.date
-                    });
-                }
-            }
-            
-            // JOURNAL処理
-            if (inJournalSection && line.trim().startsWith('- ')) {
-                const journalText = line.trim().substring(2).trim();
-                // 「- 10:55 ：」のみの行はカウントしない
-                if (journalText && journalText !== '' && !journalText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
-                    allJournals.push({
-                        journal: journalText,
-                        date: note.date
-                    });
-                }
-            }
-        }
-    } catch (error) {
-        console.log(`Error processing ${note.date}:`, error);
-    }
-}
-
-// 統計情報を表示
-const completedTasks = allTasks.filter(t => t.completed).length;
-const totalTasks = allTasks.length;
-const completionRate = totalTasks > 0 ? Math.round((completedTasks / totalTasks) * 100) : 0;
-
-dv.header(3, "📊 今週の統計");
-dv.paragraph(`**タスク完了率**: ${completionRate}% (${completedTasks}/${totalTasks})`);
-dv.paragraph(`**学習記録数**: ${allStudy.length}件`);
-dv.paragraph(`**メモ数**: ${allMemos.length}件`);
-dv.paragraph(`**経験・体験記録数**: ${allExperiences.length}件`);
-dv.paragraph(`**日誌記録数**: ${allJournals.length}件`);
-```
 
 ---
 
