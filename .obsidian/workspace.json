@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250724.md",
+                "file": "Zettelkasten/40_Daily/250725.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "250724"
+              "title": "250725"
             }
           },
           {
@@ -211,7 +211,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.5
+    "width": 395.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -246,12 +246,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zettelkasten/40_Daily/250724.md",
+                "file": "Zettelkasten/40_Daily/250725.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "250724からのアウトゴーイングリンク"
+              "title": "250725からのアウトゴーイングリンク"
             }
           },
           {
@@ -349,6 +349,7 @@
   "active": "ed1aa5cf49993da6",
   "lastOpenFiles": [
     "Zettelkasten/40_Daily/未完了タスク一覧_簡易版.md",
+    "Zettelkasten/40_Daily/250725.md",
     "Zettelkasten/40_Daily/250724.md",
     "Zettelkasten/40_Daily/250711.md",
     "Zettelkasten/00_Indexnote/Calender.md",
@@ -373,7 +374,6 @@
     "Zettelkasten/40_Daily/250721.md",
     "Zettelkasten/40_Daily/Weekly/2025W30.md",
     "Zettelkasten/40_Daily/2025W30.md",
-    "Templates/WeeklyNoteTemplate_修正版.md",
     "Rules/TagRules.mdc",
     "Rules/Obsidianタグ命名規則.mdc",
     "Zettelkasten/40_Daily/Weekly",
