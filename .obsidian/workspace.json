@@ -34,7 +34,7 @@
       {
         "id": "6d7520892f48a608",
         "type": "tabs",
-        "dimension": 58.70069605568445,
+        "dimension": 58.70069605568446,
         "children": [
           {
             "id": "2c5aec5436d8a775",
@@ -81,7 +81,7 @@
       {
         "id": "ab90a071950baa66",
         "type": "tabs",
-        "dimension": 41.29930394431555,
+        "dimension": 41.29930394431554,
         "children": [
           {
             "id": "f2f6b064f72862b3",
@@ -97,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5
+    "width": 265.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -214,9 +214,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:クイックスイッチャーを開く": false,
-      "graph:グラフビューを開く": false,
-      "canvas:新規キャンバスを作成": false,
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
       "command-palette:コマンドパレットを開く": false,
@@ -224,10 +221,7 @@
       "obsidian-kindle-plugin:Sync your Kindle highlights": false,
       "line-notes-sync:Sync LINE messages": false,
       "templater-obsidian:Templater": false,
-      "publish:パブリッシュによる変更の公開": false,
-      "periodic-notes:Open today": false,
       "random-note:ランダムノートを開く": false,
-      "zk-prefixer:新規ユニークノートの作成": false,
       "marp-slides:Show Slide Preview": false,
       "obsidian-memos:Thino": false
     }
