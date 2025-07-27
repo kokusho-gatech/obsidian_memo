@@ -71,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:プロジェクト",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,8 +92,7 @@
               "title": "ブックマーク"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "ab90a071950baa66",
@@ -244,7 +243,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d0b91ddf2e460c94",
+  "active": "2c5aec5436d8a775",
   "lastOpenFiles": [
     "Zettelkasten/40_Daily/250727.md",
     "Zettelkasten/40_Daily/未完了タスク一覧_簡易版.md",
