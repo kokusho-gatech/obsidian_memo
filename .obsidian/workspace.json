@@ -13,16 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250725.md",
+                "file": "Zettelkasten/40_Daily/250727.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "250725"
+              "title": "250727"
+            }
+          },
+          {
+            "id": "d0b91ddf2e460c94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zettelkasten/30_Fleetingnote/無題のファイル 1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "無題のファイル 1"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -34,7 +50,7 @@
       {
         "id": "6d7520892f48a608",
         "type": "tabs",
-        "dimension": 58.70069605568446,
+        "dimension": 74.875,
         "children": [
           {
             "id": "2c5aec5436d8a775",
@@ -55,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#weekly/task",
+                "query": "tag:プロジェクト",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,12 +92,13 @@
               "title": "ブックマーク"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "ab90a071950baa66",
         "type": "tabs",
-        "dimension": 41.29930394431554,
+        "dimension": 25.124999999999996,
         "children": [
           {
             "id": "f2f6b064f72862b3",
@@ -227,10 +244,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f00394b8df6151cc",
+  "active": "d0b91ddf2e460c94",
   "lastOpenFiles": [
-    "Zettelkasten/40_Daily/250724.md",
+    "Zettelkasten/40_Daily/250727.md",
+    "Zettelkasten/30_Fleetingnote/無題のファイル 1.md",
     "Zettelkasten/40_Daily/250725.md",
+    "Zettelkasten/40_Daily/250724.md",
     "Zettelkasten/40_Daily/未完了タスク一覧_簡易版.md",
     "Zettelkasten/40_Daily/250711.md",
     "Zettelkasten/00_Indexnote/Calender.md",
@@ -253,8 +272,6 @@
     "Zettelkasten/40_Daily/250718.md",
     "Zettelkasten/40_Daily/250717.md",
     "Zettelkasten/40_Daily/250721.md",
-    "Zettelkasten/40_Daily/Weekly/2025W30.md",
-    "Zettelkasten/40_Daily/2025W30.md",
     "Rules/TagRules.mdc",
     "Rules/Obsidianタグ命名規則.mdc",
     "Zettelkasten/40_Daily/Weekly",
