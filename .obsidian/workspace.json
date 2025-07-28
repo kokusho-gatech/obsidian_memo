@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250727.md",
+                "file": "Zettelkasten/40_Daily/Weekly/2025W31.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "250727"
+              "title": "2025W31"
             }
           }
         ],
@@ -243,10 +243,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2c5aec5436d8a775",
+  "active": "d0b91ddf2e460c94",
   "lastOpenFiles": [
-    "Zettelkasten/40_Daily/250727.md",
+    "Zettelkasten/40_Daily/Weekly/2025W30.md",
+    "Zettelkasten/40_Daily/Weekly/2025W31.md",
     "Zettelkasten/40_Daily/未完了タスク一覧_簡易版.md",
+    "Zettelkasten/40_Daily/未完了タスク一覧.md",
+    "Zettelkasten/40_Daily/250728.md",
+    "Zettelkasten/40_Daily/250717.md",
+    "Zettelkasten/40_Daily/250727.md",
     "Zettelkasten/30_Fleetingnote/無題のファイル 1.md",
     "Zettelkasten/40_Daily/250725.md",
     "Zettelkasten/40_Daily/250724.md",
@@ -266,11 +271,6 @@
     "Zettelkasten/40_Daily/250716.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/00_SUPPLIER_全体概要.md",
     "Zettelkasten/40_Daily/250712.md",
-    "Zettelkasten/30_Fleetingnote/査定自動化の進め方.md",
-    "Zettelkasten/10_Parmanentnote/definitions/サブリース.md",
-    "Zettelkasten/40_Daily/250718.md",
-    "Zettelkasten/40_Daily/250717.md",
-    "Zettelkasten/40_Daily/250721.md",
     "Rules/TagRules.mdc",
     "Rules/Obsidianタグ命名規則.mdc",
     "Zettelkasten/40_Daily/Weekly",
