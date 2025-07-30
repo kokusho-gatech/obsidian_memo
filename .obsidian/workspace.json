@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/DailyNoteTemplate.md",
+                "file": "Zettelkasten/40_Daily/Weekly/2025W31.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DailyNoteTemplate"
+              "title": "2025W31"
             }
           }
         ],
@@ -113,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 364.5
+    "width": 398.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -245,12 +245,13 @@
   },
   "active": "9059d003b1b8e7bf",
   "lastOpenFiles": [
-    "Zettelkasten/40_Daily/250730.md",
-    "Zettelkasten/30_Fleetingnote/査定自動化Ph.1のプロジェクト概要書.md",
-    "Zettelkasten/40_Daily/Weekly/2025W31.md",
-    "Zettelkasten/30_Fleetingnote/ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
-    "Zettelkasten/40_Daily/未完了タスク一覧_簡易版.md",
+    "Templates/DailyNoteTemplate.md",
     "Zettelkasten/40_Daily/250727.md",
+    "Zettelkasten/40_Daily/Weekly/2025W31.md",
+    "Zettelkasten/30_Fleetingnote/査定自動化Ph.1のプロジェクト概要書.md",
+    "Zettelkasten/40_Daily/250730.md",
+    "Zettelkasten/40_Daily/未完了タスク一覧_簡易版.md",
+    "Zettelkasten/30_Fleetingnote/ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
     "Zettelkasten/40_Daily/Weekly/2025W28.md",
     "ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
     "Zettelkasten/40_Daily/Weekly/2025W30.md",
@@ -264,7 +265,6 @@
     "Zettelkasten/00_Indexnote/Calender.md",
     "Zettelkasten/20_Literaturenote/web/Obsidianおすすめプラグイン 〜日常記録、コードスニペット、ブログの下書きに〜   necco Note  necco inc.（ネッコ）.md",
     "Zettelkasten/40_Daily/250723.md",
-    "Templates/DailyNoteTemplate.md",
     "Templates/MonthlyNoteTemplate.md",
     "Templates/UniversalTemplate.md",
     "Templates/WeeklyNoteTemplate.md",

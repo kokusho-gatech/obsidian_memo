@@ -25,19 +25,6 @@ group by file.link
 - <% tp.date.now("HH:mm") %> ：
 - <% tp.date.now("HH:mm") %> ：
 
-## JOURNAL
-- <% tp.date.now("HH:mm") %> ：
-- <% tp.date.now("HH:mm") %> ：
-
-## STUDY
-- <% tp.date.now("HH:mm") %> ：
-- <% tp.date.now("HH:mm") %> ：
-
-## EXPERIENCE
-- <% tp.date.now("HH:mm") %> ：
-- <% tp.date.now("HH:mm") %> ：
-# <% tp.date.now("YYYY-MM-DD") %>
-
 
 
 ```dataviewjs
