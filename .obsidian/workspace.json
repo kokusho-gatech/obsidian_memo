@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "250730"
             }
+          },
+          {
+            "id": "235cfb90bd0de725",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-view",
+              "state": {
+                "url": "https://id.atlassian.com/login?continue=https%3A%2F%2Fid.atlassian.com%2Fjoin%2Fuser-access%3Fresource%3Dari%253Acloud%253Aconfluence%253A%253Asite%252F6cc9efa1-904d-49d0-a6f5-923d79f98515%26continue%3Dhttps%253A%252F%252Fga-tech.atlassian.net%252Fwiki%252Fspaces%252FSUPPLIER%252Fpages%252F4113498553%252FSUP%252B2025%252BPh.1&application=confluence"
+              },
+              "icon": "lucide-file",
+              "title": "Log in with Atlassian account"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -227,13 +240,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f00394b8df6151cc",
+  "active": "235cfb90bd0de725",
   "lastOpenFiles": [
+    "Zettelkasten/40_Daily/250730.md",
+    "査定自動化Ph.1のプロジェクト概要書.md",
     "Zettelkasten/40_Daily/250727.md",
     "Zettelkasten/30_Fleetingnote/ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
     "Zettelkasten/40_Daily/Weekly/2025W31.md",
     "Zettelkasten/40_Daily/Weekly/2025W28.md",
-    "Zettelkasten/40_Daily/250730.md",
     "ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
     "Zettelkasten/40_Daily/未完了タスク一覧_簡易版.md",
     "Zettelkasten/40_Daily/Weekly/2025W30.md",
@@ -254,7 +268,6 @@
     "Zettelkasten/00_Indexnote/TaskList.md",
     "Zettelkasten/10_Parmanentnote/slidev_自動化手順まとめ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/Slack.md",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/definitions/SalesContractField.md",
     "Rules/TagRules.mdc",
     "Rules/Obsidianタグ命名規則.mdc",
     "Zettelkasten/40_Daily/Weekly",

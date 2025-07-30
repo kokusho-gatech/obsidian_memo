@@ -1,43 +1,12 @@
 ---
-tags:
-  - daily
-creation-date: 2025-07-30
+tags: []
+creation-date: "20250730"
 ---
 
-# 2025-07-30
+# タイトル
 
+{{}}
 
-
-前日のデイリーNote: [[250729]]
-## TODO
-- [x] 要件方針シフトした際の機能内容とインパクトの変更について整理
-- [ ] [Log in with Atlassian account](https://ga-tech.atlassian.net/wiki/spaces/SUPPLIER/pages/4113498553/SUP+2025+Ph.1)
-- [ ] 
-- 
-- [ ] 
-
-```dataview
-TASK  
-WHERE !completed and file.text != ""
-group by file.link
-
-```
-
-## MEMO
-- 10:52 ： [[ドラフトチェックページでPj達成を目指す場合の必要な要件]] 
-
-## JOURNAL
-- 10:51 ：
-- 10:51 ：
-
-## STUDY
-- 10:51 ：
-- 10:51 ：
-
-## EXPERIENCE
-- 10:51 ：
-- 10:51 ：
-# 2025-07-30
 
 
 
@@ -60,4 +29,5 @@ if (backlinks.length > 0) {
     dv.header(3, "このノートへのバックリンク");
     dv.list(backlinks.file.link);
 }
+
 ```
