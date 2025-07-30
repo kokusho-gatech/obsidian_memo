@@ -171,18 +171,6 @@ for (let note of weeklyNotes) {
                 }
             }
             
-            // STUDY処理
-            if (inStudySection && line.trim().startsWith('- ')) {
-                const studyText = line.trim().substring(2).trim();
-                // 「- 10:55 ：」のみの行はカウントしない
-                if (studyText && studyText !== '' && !studyText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
-                    allStudy.push({
-                        study: studyText,
-                        date: note.date
-                    });
-                }
-            }
-            
             // MEMO処理
             if (inMemoSection && line.trim().startsWith('- ')) {
                 const memoText = line.trim().substring(2).trim();
@@ -195,29 +183,7 @@ for (let note of weeklyNotes) {
                 }
             }
             
-            // EXPERIENCE処理
-            if (inExperienceSection && line.trim().startsWith('- ')) {
-                const experienceText = line.trim().substring(2).trim();
-                // 「- 10:55 ：」のみの行はカウントしない
-                if (experienceText && experienceText !== '' && !experienceText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
-                    allExperiences.push({
-                        experience: experienceText,
-                        date: note.date
-                    });
-                }
-            }
-            
-            // JOURNAL処理
-            if (inJournalSection && line.trim().startsWith('- ')) {
-                const journalText = line.trim().substring(2).trim();
-                // 「- 10:55 ：」のみの行はカウントしない
-                if (journalText && journalText !== '' && !journalText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
-                    allJournals.push({
-                        journal: journalText,
-                        date: note.date
-                    });
-                }
-            }
+        
         }
     } catch (error) {
         console.log(`Error processing ${note.date}:`, error);
@@ -231,10 +197,7 @@ const completionRate = totalTasks > 0 ? Math.round((completedTasks / totalTasks)
 
 dv.header(3, "📊 今週の統計");
 dv.paragraph(`**タスク完了率**: ${completionRate}% (${completedTasks}/${totalTasks})`);
-dv.paragraph(`**学習記録数**: ${allStudy.length}件`);
 dv.paragraph(`**メモ数**: ${allMemos.length}件`);
-dv.paragraph(`**経験・体験記録数**: ${allExperiences.length}件`);
-dv.paragraph(`**日誌記録数**: ${allJournals.length}件`);
 ```
 
 ---
@@ -330,94 +293,6 @@ if (allTasks.length > 0) {
 }
 ```
 
-## 📚 今週のSTUDY一覧
-
-```dataviewjs
-// 今週の日付範囲を計算
-const currentDate = new Date('{{date:YYYY-MM-DD}}');
-const weekStart = new Date(currentDate);
-weekStart.setDate(currentDate.getDate() - currentDate.getDay()); // 日曜日を週の開始とする
-
-const weekEnd = new Date(weekStart);
-weekEnd.setDate(weekStart.getDate() + 6);
-
-// 日付フォーマット関数（YYMMDD形式）
-function formatDate(date) {
-    const year = date.getFullYear().toString().slice(-2); // 年の下2桁
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
-    return year + month + day;
-}
-
-// 今週のDailyノートを取得
-const weeklyNotes = [];
-for (let d = new Date(weekStart); d <= weekEnd; d.setDate(d.getDate() + 1)) {
-    const dateStr = formatDate(d);
-    const note = dv.page(`Zettelkasten/40_Daily/${dateStr}`);
-    if (note) {
-        weeklyNotes.push({
-            date: dateStr,
-            note: note,
-            dayOfWeek: ['日', '月', '火', '水', '木', '金', '土'][d.getDay()]
-        });
-    }
-}
-
-// 今週のDailyノートからSTUDYを抽出
-let allStudy = [];
-
-for (let note of weeklyNotes) {
-    try {
-        const content = await dv.io.load(note.note.file.path);
-        const lines = content.split('\n');
-        
-        let inStudySection = false;
-        const dayStudy = [];
-        
-        for (let line of lines) {
-            if (line.trim() === '## STUDY') {
-                inStudySection = true;
-                continue;
-            }
-            
-            if (inStudySection && line.trim().startsWith('## ')) {
-                inStudySection = false;
-                continue;
-            }
-            
-            if (inStudySection && line.trim().startsWith('- ')) {
-                const studyText = line.trim().substring(2).trim();
-                // 「- 10:55 ：」のみの行はカウントしない
-                if (studyText && studyText !== '' && !studyText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
-                    dayStudy.push({
-                        study: studyText,
-                        date: note.date
-                    });
-                }
-            }
-        }
-        
-        allStudy.push(...dayStudy);
-    } catch (error) {
-        console.log(`Error processing ${note.date}:`, error);
-    }
-}
-
-// STUDY一覧を表示
-if (allStudy.length > 0) {
-    dv.header(3, "📚 今週のSTUDY一覧");
-    dv.table(["日付", "学習内容"], 
-        allStudy.map(s => [
-            s.date,
-            s.study
-        ])
-    );
-} else {
-    dv.header(3, "📚 今週のSTUDY一覧");
-    dv.paragraph("今週の学習記録はありません。");
-}
-```
-
 ## 📝 今週のMEMO一覧
 
 ```dataviewjs
@@ -503,182 +378,6 @@ if (allMemos.length > 0) {
 } else {
     dv.header(3, "📝 今週のMEMO一覧");
     dv.paragraph("今週のメモはありません。");
-}
-```
-
-## 🎯 今週のEXPERIENCE一覧
-
-```dataviewjs
-// 今週の日付範囲を計算
-const currentDate = new Date('{{date:YYYY-MM-DD}}');
-const weekStart = new Date(currentDate);
-weekStart.setDate(currentDate.getDate() - currentDate.getDay()); // 日曜日を週の開始とする
-
-const weekEnd = new Date(weekStart);
-weekEnd.setDate(weekStart.getDate() + 6);
-
-// 日付フォーマット関数（YYMMDD形式）
-function formatDate(date) {
-    const year = date.getFullYear().toString().slice(-2); // 年の下2桁
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
-    return year + month + day;
-}
-
-// 今週のDailyノートを取得
-const weeklyNotes = [];
-for (let d = new Date(weekStart); d <= weekEnd; d.setDate(d.getDate() + 1)) {
-    const dateStr = formatDate(d);
-    const note = dv.page(`Zettelkasten/40_Daily/${dateStr}`);
-    if (note) {
-        weeklyNotes.push({
-            date: dateStr,
-            note: note,
-            dayOfWeek: ['日', '月', '火', '水', '木', '金', '土'][d.getDay()]
-        });
-    }
-}
-
-// 今週のDailyノートからEXPERIENCEを抽出
-let allExperiences = [];
-
-for (let note of weeklyNotes) {
-    try {
-        const content = await dv.io.load(note.note.file.path);
-        const lines = content.split('\n');
-        
-        let inExperienceSection = false;
-        const dayExperiences = [];
-        
-        for (let line of lines) {
-            if (line.trim() === '## EXPERIENCE') {
-                inExperienceSection = true;
-                continue;
-            }
-            
-            if (inExperienceSection && line.trim().startsWith('## ')) {
-                inExperienceSection = false;
-                continue;
-            }
-            
-            if (inExperienceSection && line.trim().startsWith('- ')) {
-                const experienceText = line.trim().substring(2).trim();
-                // 「- 10:55 ：」のみの行はカウントしない
-                if (experienceText && experienceText !== '' && !experienceText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
-                    dayExperiences.push({
-                        experience: experienceText,
-                        date: note.date
-                    });
-                }
-            }
-        }
-        
-        allExperiences.push(...dayExperiences);
-    } catch (error) {
-        console.log(`Error processing ${note.date}:`, error);
-    }
-}
-
-// EXPERIENCE一覧を表示
-if (allExperiences.length > 0) {
-    dv.header(3, "🎯 今週のEXPERIENCE一覧");
-    dv.table(["日付", "経験・体験"], 
-        allExperiences.map(e => [
-            e.date,
-            e.experience
-        ])
-    );
-} else {
-    dv.header(3, "🎯 今週のEXPERIENCE一覧");
-    dv.paragraph("今週の経験・体験記録はありません。");
-}
-```
-
-## 📖 今週のJOURNAL一覧
-
-```dataviewjs
-// 今週の日付範囲を計算
-const currentDate = new Date('{{date:YYYY-MM-DD}}');
-const weekStart = new Date(currentDate);
-weekStart.setDate(currentDate.getDate() - currentDate.getDay()); // 日曜日を週の開始とする
-
-const weekEnd = new Date(weekStart);
-weekEnd.setDate(weekStart.getDate() + 6);
-
-// 日付フォーマット関数（YYMMDD形式）
-function formatDate(date) {
-    const year = date.getFullYear().toString().slice(-2); // 年の下2桁
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
-    return year + month + day;
-}
-
-// 今週のDailyノートを取得
-const weeklyNotes = [];
-for (let d = new Date(weekStart); d <= weekEnd; d.setDate(d.getDate() + 1)) {
-    const dateStr = formatDate(d);
-    const note = dv.page(`Zettelkasten/40_Daily/${dateStr}`);
-    if (note) {
-        weeklyNotes.push({
-            date: dateStr,
-            note: note,
-            dayOfWeek: ['日', '月', '火', '水', '木', '金', '土'][d.getDay()]
-        });
-    }
-}
-
-// 今週のDailyノートからJOURNALを抽出
-let allJournals = [];
-
-for (let note of weeklyNotes) {
-    try {
-        const content = await dv.io.load(note.note.file.path);
-        const lines = content.split('\n');
-        
-        let inJournalSection = false;
-        const dayJournals = [];
-        
-        for (let line of lines) {
-            if (line.trim() === '## JOURNAL') {
-                inJournalSection = true;
-                continue;
-            }
-            
-            if (inJournalSection && line.trim().startsWith('## ')) {
-                inJournalSection = false;
-                continue;
-            }
-            
-            if (inJournalSection && line.trim().startsWith('- ')) {
-                const journalText = line.trim().substring(2).trim();
-                // 「- 10:55 ：」のみの行はカウントしない
-                if (journalText && journalText !== '' && !journalText.match(/^\d{1,2}:\d{2}\s*：\s*$/)) {
-                    dayJournals.push({
-                        journal: journalText,
-                        date: note.date
-                    });
-                }
-            }
-        }
-        
-        allJournals.push(...dayJournals);
-    } catch (error) {
-        console.log(`Error processing ${note.date}:`, error);
-    }
-}
-
-// JOURNAL一覧を表示
-if (allJournals.length > 0) {
-    dv.header(3, "📖 今週のJOURNAL一覧");
-    dv.table(["日付", "日誌"], 
-        allJournals.map(j => [
-            j.date,
-            j.journal
-        ])
-    );
-} else {
-    dv.header(3, "📖 今週のJOURNAL一覧");
-    dv.paragraph("今週の日誌はありません。");
 }
 ```
 
