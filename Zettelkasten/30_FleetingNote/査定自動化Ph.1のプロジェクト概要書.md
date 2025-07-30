@@ -3,9 +3,8 @@ tags: []
 creation-date: "20250730"
 ---
 
-# タイトル
+コンフルURL: [査定自動化Ph.1のプロジェクト概要書](https://ga-tech.atlassian.net/wiki/spaces/SUPPLIER/pages/4113498553/SUP+2025+Ph.1)
 
-{{}}
 
 
 
