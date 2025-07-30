@@ -1,41 +1,19 @@
 ---
 tags:
-  - daily
-creation-date: 2025-07-25
+  - 書類重複確認削減Pj
+creation-date: "20250730"
 ---
 
-# 2025-07-25
+# Pjの目的
+
+Acqusition事業部ないの各部署での同一書類に関する重複確認をなくすこと
+
+対象部署：Contract, Settlement, Document/Main Document/Maisoku, Succession
+
+制約１：コントラクトチームが確認している項目のみに限定される
+　
 
 
-
-前日のデイリーNote: [[250724]]
-## TODO
-- [x] 査定自動化issue起票
-- [x] 王冠登録_楽天対応
-
-```dataview
-TASK  
-WHERE !completed and file.text != ""
-group by file.link
-
-```
-
-## MEMO
-- 14:54 ：
-- 14:54 ：
-
-## JOURNAL
-- 14:54 ：
-- 14:54 ：
-
-## STUDY
-- 14:54 ：
-- 14:54 ：
-
-## EXPERIENCE
-- 14:54 ：
-- 14:54 ：
-# 2025-07-25
 
 
 
@@ -58,4 +36,5 @@ if (backlinks.length > 0) {
     dv.header(3, "このノートへのバックリンク");
     dv.list(backlinks.file.link);
 }
+
 ```
