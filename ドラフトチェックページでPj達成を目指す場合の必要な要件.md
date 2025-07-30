@@ -11,7 +11,8 @@ Acqusition事業部ないの各部署での同一書類に関する重複確認�
 対象部署：Contract, Settlement, Document/Main Document/Maisoku, Succession
 
 制約１：コントラクトチームが確認している項目のみに限定される
-　
+　マイソク作成チーム　20項目⇨6項目
+　契約書作成チーム　 80項目⇨
 
 
 
