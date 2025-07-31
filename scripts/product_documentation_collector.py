@@ -7,7 +7,6 @@ GitHub PR、Confluence、その他の情報源から包括的にデータを収�
 import os
 import csv
 import json
-import requests
 from datetime import datetime, timedelta
 from typing import Dict, List, Any
 import argparse

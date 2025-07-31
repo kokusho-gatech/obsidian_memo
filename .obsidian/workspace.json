@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/Confluence_MCP_Setup_Manual.md",
+                "file": "Zettelkasten/10_Parmanentnote/プロダクト総合説明書_作成ガイド.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Confluence_MCP_Setup_Manual"
+              "title": "プロダクト総合説明書_作成ガイド"
             }
           }
         ],
@@ -148,12 +148,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/Confluence_MCP_Setup_Manual.md",
+                "file": "Zettelkasten/10_Parmanentnote/プロダクト総合説明書_作成ガイド.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Confluence_MCP_Setup_Manualからのアウトゴーイングリンク"
+              "title": "プロダクト総合説明書_作成ガイドからのアウトゴーイングリンク"
             }
           },
           {
@@ -162,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/Confluence_MCP_Setup_Manual.md",
+                "file": "Zettelkasten/10_Parmanentnote/プロダクト総合説明書_作成ガイド.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Confluence_MCP_Setup_Manualのアウトライン"
+              "title": "プロダクト総合説明書_作成ガイドのアウトライン"
             }
           },
           {
@@ -245,6 +245,8 @@
   },
   "active": "fd48857172b23ae5",
   "lastOpenFiles": [
+    "Zettelkasten/10_Parmanentnote/Confluence_MCP_Setup_Manual.md",
+    "collected_data",
     "scripts/product_documentation_collector.py",
     "scripts",
     "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_プロダクト総合説明書.md",
@@ -252,7 +254,6 @@
     "~",
     "Zettelkasten/10_Parmanentnote/definitions/割戻賃料.md",
     "Zettelkasten/40_Daily/250730.md",
-    "Zettelkasten/10_Parmanentnote/Confluence_MCP_Setup_Manual.md",
     "Zettelkasten/40_Daily/250718.md",
     "role.mdc",
     "Zettelkasten/40_Daily/250731.md",
@@ -279,8 +280,6 @@
     "Zettelkasten/40_Daily/Weekly",
     "Zettelkasten/30_Fleetingnote/LINE",
     "Rules",
-    "Zettelkasten/10_Parmanentnote/definitions",
-    "[user](.definitions",
     "Pasted image 20250714124924.png",
     "Pasted image 20250714124951.png",
     "Pasted image 20250714151130.png",
