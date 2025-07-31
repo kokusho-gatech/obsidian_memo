@@ -128,6 +128,7 @@ Acquisition事業部内の各部署での同一書類に関する重複確認を
 - コントラクトチーム以外の項目は対象外となるため、完全な重複削減は困難
 - 将来的な機能拡張時の影響範囲の検討が必要
 
+
 ```dataviewjs
 dv.header(3, "関連ノート");
 var maxLoop = Math.min(dv.current().file.tags.length, 3);
@@ -147,3 +148,4 @@ if (backlinks.length > 0) {
     dv.header(3, "このノートへのバックリンク");
     dv.list(backlinks.file.link);
 }
+
