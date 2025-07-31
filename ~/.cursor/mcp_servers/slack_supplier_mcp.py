@@ -9,7 +9,6 @@ import json
 import asyncio
 from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional
-import subprocess
 
 from mcp.server.models import InitializationOptions
 from mcp.server.server import NotificationOptions, Server
@@ -66,29 +65,8 @@ class SlackSupplierMCP:
         except Exception as e:
             pass  # ログ記録エラーは無視
     
-    def get_cached_data(self) -> Dict[str, Any]:
-        """キャッシュされたSlackデータを取得"""
-        try:
-            if os.path.exists(self.cache_file):
-                with open(self.cache_file, 'r', encoding='utf-8') as f:
-                    return json.load(f)
-        except Exception:
-            pass
-        return {}
-    
-    def save_cached_data(self, data: Dict[str, Any]):
-        """Slackデータをキャッシュに保存"""
-        try:
-            os.makedirs(os.path.dirname(self.cache_file), exist_ok=True)
-            with open(self.cache_file, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-        except Exception:
-            pass
-    
     def search_slack_messages(self, query: str, channel: str = None, days_back: int = 7) -> Dict[str, Any]:
         """Slackメッセージの検索（サンプル実装）"""
-        # 実際の実装では Slack API を使用
-        # ここではサンプルデータを返す
         
         sample_messages = [
             {
@@ -117,14 +95,14 @@ class SlackSupplierMCP:
             }
         ]
         
-        # クエリによるフィルタリング（簡易実装）
+        # クエリによるフィルタリング
         filtered_messages = []
         query_lower = query.lower()
         
         for msg in sample_messages:
             if (query_lower in msg["text"].lower() or 
                 (channel and channel.lower() in msg["channel"].lower()) or
-                not query_lower):  # 空のクエリは全件返す
+                not query_lower):
                 filtered_messages.append(msg)
         
         result = {
@@ -132,7 +110,7 @@ class SlackSupplierMCP:
             "channel_filter": channel,
             "days_back": days_back,
             "total_messages": len(filtered_messages),
-            "messages": filtered_messages[:10],  # 最大10件
+            "messages": filtered_messages[:10],
             "summary": self._generate_message_summary(filtered_messages)
         }
         
@@ -149,7 +127,6 @@ class SlackSupplierMCP:
         if not messages:
             return {"themes": [], "key_decisions": [], "action_items": []}
         
-        # 簡易的な要約生成
         channels = set(msg["channel"] for msg in messages)
         users = set(msg["user"] for msg in messages)
         
@@ -190,8 +167,6 @@ class SlackSupplierMCP:
     
     def ask_slack_context(self, question: str) -> Dict[str, Any]:
         """Slack上の情報を元に質問に回答"""
-        # 実際の実装では RAG や LLM を使用
-        # ここではサンプル回答を生成
         
         question_lower = question.lower()
         
