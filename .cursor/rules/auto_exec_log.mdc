@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+チャット上の命令を受けた結果、コマンドの実行やファイルのCRUDを実行した場合
+- ~/.cursor/auto_execution_history.csvに実行ログを残す
+- フォーマットは、Date（YYYY/MM/DD）, Time(hh:mm), チャットによる命令文, Project_Path, 影響範囲, 実行コマンド, 実行内容, 実行結果
+- ログを残した場合、必ずチャット上で報告を行なって下さい。
