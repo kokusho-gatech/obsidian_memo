@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "confluence-supplier": {
+      "command": "python3",
+      "args": ["/Users/t_kokusho/.cursor/mcp_servers/confluence_mcp_supplier.py"],
+      "env": {}
+    },
+    "slack-supplier": {
+      "command": "python3", 
+      "args": ["/Users/t_kokusho/.cursor/mcp_servers/slack_supplier_mcp.py"],
+      "env": {}
+    }
+  }
+} 
