@@ -1,0 +1,12 @@
+{
+    "confluence_url": "https://your-company.atlassian.net",
+    "email": "your-email@company.com",
+    "api_token": "YOUR_API_TOKEN_HERE", 
+    "default_space": "ACTUAL_SPACE_KEY_HERE",
+    "security_level": "maximum_restricted",
+    "allowed_spaces": ["ACTUAL_SPACE_KEY_HERE"],
+    "blocked_spaces": "ALL_EXCEPT_personal_space",
+    "usage_purpose": "個人スペースの1on1記録のみ - 他のスペースは完全にブロック",
+    "space_name": "t_kokusho",
+    "actual_space_key": "ACTUAL_SPACE_KEY_HERE"
+} 
