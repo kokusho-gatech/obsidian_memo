@@ -1,0 +1,2 @@
+Date,Time,チャットによる命令文,Project_Path,影響範囲,実行コマンド,実行内容,実行結果
+2025/01/31,10:30,契約書関連のPjを全て洗い出してほしいです,/Users/t_kokusho/Documents/My%20Valut,Confluence検索,mcp_confluence_secure_search_confluence,契約書関連のプロジェクト検索を実行,契約書・売買契約・賃貸借契約・ワイドリースプラン・仕入稟議改修など複数プロジェクトを特定 
