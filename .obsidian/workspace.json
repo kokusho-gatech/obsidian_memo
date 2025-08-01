@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/40_Daily/250801.md",
+                "file": "Zettelkasten/30_Fleetingnote/ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "250801"
+              "title": "ドラフトチェックページでPj達成を目指す場合の必要な要件"
             }
           }
         ],
@@ -148,12 +148,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zettelkasten/40_Daily/250801.md",
+                "file": "Zettelkasten/30_Fleetingnote/ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "250801からのアウトゴーイングリンク"
+              "title": "ドラフトチェックページでPj達成を目指す場合の必要な要件からのアウトゴーイングリンク"
             }
           },
           {
@@ -162,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zettelkasten/40_Daily/250801.md",
+                "file": "Zettelkasten/30_Fleetingnote/ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "250801のアウトライン"
+              "title": "ドラフトチェックページでPj達成を目指す場合の必要な要件のアウトライン"
             }
           },
           {
@@ -245,8 +245,10 @@
   },
   "active": "fd48857172b23ae5",
   "lastOpenFiles": [
-    "Zettelkasten/10_Parmanentnote/プロダクト総合説明書_作成ガイド.md",
+    "Zettelkasten/40_Daily/250730.md",
+    "Zettelkasten/40_Daily/250731.md",
     "Zettelkasten/40_Daily/250801.md",
+    "Zettelkasten/10_Parmanentnote/プロダクト総合説明書_作成ガイド.md",
     "Zettelkasten/10_Parmanentnote/Confluence_MCP_Setup_Manual.md",
     "collected_data",
     "scripts/product_documentation_collector.py",
@@ -254,10 +256,8 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_プロダクト総合説明書.md",
     "~",
     "Zettelkasten/10_Parmanentnote/definitions/割戻賃料.md",
-    "Zettelkasten/40_Daily/250730.md",
     "Zettelkasten/40_Daily/250718.md",
     "role.mdc",
-    "Zettelkasten/40_Daily/250731.md",
     "丸々について検討.md",
     "無題のファイル.md",
     "Zettelkasten/40_Daily/250715.md",
