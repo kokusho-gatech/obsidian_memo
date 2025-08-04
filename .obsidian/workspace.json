@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/30_Fleetingnote/ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
+                "file": "Zettelkasten/10_Parmanentnote/supplier_docs/Dify_仕入判定アプリケーション_マニュアル.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ドラフトチェックページでPj達成を目指す場合の必要な要件"
+              "title": "Dify_仕入判定アプリケーション_マニュアル"
             }
           }
         ],
@@ -245,9 +245,9 @@
   },
   "active": "fd48857172b23ae5",
   "lastOpenFiles": [
+    "Zettelkasten/30_Fleetingnote/ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/Dify_仕入判定アプリケーション_マニュアル.md",
     "Zettelkasten/10_Parmanentnote/definitions/Dify_DSL_Format.md",
-    "Zettelkasten/30_Fleetingnote/ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
     "【開発中】仕入判定_ver2.1_全国対応.yml",
     "【開発中】仕入判定_ver2.1_全国対応 (1).yml",
     "Zettelkasten/10_Parmanentnote/Dify_査定自動化アプリケーション_マニュアル.md",
