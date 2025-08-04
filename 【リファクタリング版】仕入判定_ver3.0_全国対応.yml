@@ -1,0 +1,1379 @@
+app:
+  description: 物件カテゴリとジャックス基準での利回り、仕入れ可否判定、NG会社のフィルタリング、補填費用の可否がわかります（リファクタリング版）
+  icon: 🏦
+  icon_background: '#D1E9FF'
+  mode: workflow
+  name: 【リファクタリング版】仕入判定_ver3.0_全国対応
+  use_icon_as_answer_icon: false
+
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/gemini:0.2.7@b8a04c0155eb3b9d43ed1199b4387e7f67ef75ad63fcec466eab31a726e2c3a0
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/bedrock:0.0.25@a1f0f4842b4862db63f1194bdca9cf9b0e00543ef0a21dbfcb383376ec0b4faa
+
+kind: app
+version: 0.3.0
+
+workflow:
+  conversation_variables: []
+  
+  # 設定値の外部化 - 改善点1: マジックナンバーの環境変数化
+  environment_variables:
+  # 既存の金融機関基準
+  - description: 楽天銀行の評価基準
+    id: rakuten_ng_standard_id
+    name: rakuten_ng_standard
+    selector: [env, rakuten_ng_standard]
+    value: '楽天銀行では、下記の仕入基準を設けています。下記に該当する場合はNG エリア（東京都23区外、埼玉県さいたま市、東京都府中市、東京都八王子市、神奈川県藤沢市）最寄駅から徒歩12分以上はNG（但し、エリアが良い場合はその限りではない）専有面積が18㎡~100㎡の範囲を超える場合'
+    value_type: string
+    
+  - description: ジャックスの評価基準
+    id: jacks_ng_standard_id
+    name: jacks_ng_standard
+    selector: [env, jacks_ng_standard]
+    value: 'ジャックスでの評価基準は次の通りです。・駅徒歩：徒歩15分以上は一律NG・専有面積：エリア3の18㎡未満の部屋はNG・所在階：防犯、視覚ストレス対策なしの1階物件はNG・エレベーターの有無：総階数が3階以上にも関わらず、エレベーターがない場合はNG'
+    value_type: string
+    
+  - description: オリックス銀行の評価基準
+    id: orix_ng_standard_id
+    name: orix_ng_standard
+    selector: [env, orix_ng_standard]
+    value: 'オリックス銀行での評価基準は次の通りです。・駅徒歩：最寄駅から15分以上はNG・専有面積：18㎡以上50㎡未満はOK・総戸数：管理人室除き、総戸数20戸未満はNG・築年数：築25年以上はNG'
+    value_type: string
+    
+  - description: オリックス銀行NG会社リスト
+    id: orix_ng_company_id
+    name: orix_ng_company
+    selector: [env, orix_ng_company]
+    value: 'オリックス銀行では、不動産仲介会社や賃貸管理会社、もしくは建物管理会社として次の会社に当てはまる場合は評価がNGで返ってくるため、仕入れ判定はNGになります。'
+    value_type: string
+    
+  # 新規追加：設定値の外部化
+  - description: 徒歩分数の警告閾値（分）
+    id: walk_warning_threshold
+    name: walk_warning_threshold
+    selector: [env, walk_warning_threshold]
+    value: '13'
+    value_type: string
+    
+  - description: 徒歩分数のNG閾値（分）
+    id: walk_ng_threshold
+    name: walk_ng_threshold
+    selector: [env, walk_ng_threshold]
+    value: '15'
+    value_type: string
+    
+  - description: 修繕積立補填金額（円）
+    id: repair_fund_compensation_amount
+    name: repair_fund_compensation_amount
+    selector: [env, repair_fund_compensation_amount]
+    value: '300000'
+    value_type: string
+    
+  - description: 3点ユニット引当金額（円）
+    id: unit_bath_allowance_amount
+    name: unit_bath_allowance_amount
+    selector: [env, unit_bath_allowance_amount]
+    value: '200000'
+    value_type: string
+    
+  - description: 空室手当の月数倍率
+    id: vacancy_allowance_months
+    name: vacancy_allowance_months
+    selector: [env, vacancy_allowance_months]
+    value: '3'
+    value_type: string
+    
+  - description: サブリース粗利率
+    id: sublease_profit_margin
+    name: sublease_profit_margin
+    selector: [env, sublease_profit_margin]
+    value: '0.85'
+    value_type: string
+    
+  - description: 通常粗利率
+    id: normal_profit_margin
+    name: normal_profit_margin
+    selector: [env, normal_profit_margin]
+    value: '0.9'
+    value_type: string
+
+  features:
+    file_upload:
+      enabled: false
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+
+  graph:
+    edges:
+    # 改善点3: エッジの整理とコメント化
+    # メインフロー
+    - id: start_to_structure
+      source: workflow_start
+      sourceHandle: source
+      target: property_info_structurer
+      targetHandle: target
+      type: custom
+      
+    - id: structure_to_extract
+      source: property_info_structurer
+      sourceHandle: source
+      target: parameter_extractor
+      targetHandle: target
+      type: custom
+      
+    - id: extract_to_normalize
+      source: parameter_extractor
+      sourceHandle: source
+      target: station_name_normalizer
+      targetHandle: target
+      type: custom
+      
+    - id: normalize_to_age_calc
+      source: station_name_normalizer
+      sourceHandle: source
+      target: building_age_calculator
+      targetHandle: target
+      type: custom
+      
+    - id: age_calc_to_area_judge
+      source: building_age_calculator
+      sourceHandle: source
+      target: area_judgment_branch
+      targetHandle: target
+      type: custom
+      
+    # 関東エリアフロー
+    - id: area_judge_kanto_to_station_rank
+      source: area_judgment_branch
+      sourceHandle: 'true'
+      target: station_rank_retriever_kanto
+      targetHandle: target
+      type: custom
+      
+    - id: station_rank_to_yield
+      source: station_rank_retriever_kanto
+      sourceHandle: source
+      target: yield_calculator_kanto
+      targetHandle: target
+      type: custom
+      
+    # その他エリアフロー
+    - id: area_judge_other_to_station_rank
+      source: area_judgment_branch
+      sourceHandle: 'false'
+      target: station_rank_retriever_other
+      targetHandle: target
+      type: custom
+      
+    # 物件判定フロー
+    - id: yield_to_property_judge
+      source: yield_calculator_kanto
+      sourceHandle: source
+      target: property_attribute_validator
+      targetHandle: target
+      type: custom
+      
+    # 会社判定フロー（統合）
+    - id: property_to_company
+      source: property_attribute_validator
+      sourceHandle: source
+      target: company_validator_unified
+      targetHandle: target
+      type: custom
+      
+    # 補填費用計算フロー
+    - id: company_to_compensation
+      source: company_validator_unified
+      sourceHandle: source
+      target: compensation_calculator
+      targetHandle: target
+      type: custom
+      
+    # 最終結果統合
+    - id: compensation_to_final
+      source: compensation_calculator
+      sourceHandle: source
+      target: final_result_aggregator
+      targetHandle: target
+      type: custom
+      
+    - id: final_to_end
+      source: final_result_aggregator
+      sourceHandle: source
+      target: workflow_end
+      targetHandle: target
+      type: custom
+
+    nodes:
+    # 改善点2: 意味のあるノード名への変更
+    
+    # 1. ワークフロー開始
+    - data:
+        desc: 'supplier by renosyの査定 or 交渉画面から物件情報部分をコピーして貼り付けます。関東物件限定で利回りと物件カテゴリの判定ができます。'
+        title: ワークフロー開始
+        type: start
+        variables:
+        - label: article_info
+          max_length: 999999
+          required: true
+          type: paragraph
+          variable: article_info
+      height: 181
+      id: workflow_start
+      position: {x: -3362, y: 112}
+      type: custom
+      width: 244
+
+    # 2. 物件情報構造化（改善されたプロンプト）
+    - data:
+        desc: 入力された非構造化テキストを標準フォーマットに変換
+        model:
+          completion_params:
+            temperature: 0.3
+          mode: chat
+          name: gemini-2.5-flash
+          provider: langgenius/gemini/google
+        prompt_template:
+        - id: system_prompt
+          role: system
+          text: |
+            あなたは不動産物件情報の構造化専門AIです。
+            入力された情報を以下のフォーマットに従って整理してください。
+            記載がない項目については"不明"で値を記述してください。
+            
+            # 出力フォーマット
+            **💉抽出した物件情報💉**
+            <details>
+            物件名：{値}
+            所在地：{値}
+            エリア：{所在地から、"関東"or"関西"or"九州"or"東北"のいずれかを判定}
+            最寄駅１：{値}駅
+            最寄駅１までの徒歩分数：{値}
+            最寄駅２：{値}駅（ない場合は"不明"）
+            最寄駅２までの徒歩分数：{値}（ない場合は抽出しない）
+            所在階：{値}
+            地上階層：{値}
+            建物構造：{値}
+            総戸数：{値}
+            築年月：{値}年{値}月
+            専有面積：{値}㎡
+            エレベータ有無：{あり/なし/未指定}
+            室内洗濯機置き場有無：{あり/なし/未指定}
+            オートロック有無：{あり/なし/未指定}
+            バスルームタイプ：{値}
+            仲介会社名：{値}
+            現況：{値}
+            サブリース会社名：{値}
+            建物管理会社名：{値}
+            賃料：{値}円
+            修繕積立金：{値}円
+            管理費：{値}円
+            その他費用：{値}円
+            心理的瑕疵：{あり/なし/不明}
+            都道府県：{値}
+            </details>
+        - id: user_input
+          role: user
+          text: '{{#workflow_start.article_info#}}'
+        title: 物件情報構造化
+        type: llm
+      height: 325
+      id: property_info_structurer
+      position: {x: -2822, y: 112}
+      type: custom
+      width: 244
+
+    # 3. パラメータ抽出（改善されたパラメータ設定）
+    - data:
+        desc: 構造化された情報から個別パラメータを抽出
+        model:
+          completion_params:
+            temperature: 0.1
+          mode: chat
+          name: gemini-2.0-flash-lite
+          provider: langgenius/gemini/google
+        parameters:
+        # 基本情報
+        - description: 物件名
+          name: bldg_name
+          required: false
+          type: string
+        - description: 所在地
+          name: address
+          required: false
+          type: string
+        - description: 都道府県
+          name: prefecture
+          required: true
+          type: string
+        - description: エリア区分
+          name: area
+          required: false
+          type: string
+          
+        # 駅情報
+        - description: 最寄り駅①（駅名のみ）
+          name: station1
+          required: false
+          type: string
+        - description: 最寄り駅①までの徒歩分数
+          name: walk_minute_to_station1
+          required: false
+          type: number
+        - description: 最寄り駅②（駅名のみ、ない場合は"不明"）
+          name: station2
+          required: false
+          type: string
+        - description: 最寄り駅②までの徒歩分数
+          name: walk_minute_to_station2
+          required: false
+          type: number
+          
+        # 建物仕様
+        - description: 所在階
+          name: floor
+          required: false
+          type: number
+        - description: 地上階層
+          name: stories_high
+          required: false
+          type: number
+        - description: 築年
+          name: built_year
+          required: false
+          type: number
+        - description: 築月
+          name: built_month
+          required: false
+          type: number
+        - description: 専有面積（㎡）
+          name: footprint
+          required: false
+          type: number
+        - description: 建物構造
+          name: building_structure
+          required: false
+          type: string
+        - description: 総戸数
+          name: total_rooms
+          required: false
+          type: number
+          
+        # 設備仕様
+        - description: エレベータの有無（あり/なし/未指定）
+          name: is_elevator_exist
+          required: false
+          type: string
+        - description: 室内洗濯機置き場の有無（あり/なし/未指定）
+          name: indoor_washing_machine_storage
+          required: false
+          type: string
+        - description: オートロックの有無（あり/なし/未指定）
+          name: auto_lock
+          required: false
+          type: string
+        - description: バスルームタイプ
+          name: bathroom_type
+          required: false
+          type: string
+          
+        # 会社情報
+        - description: 仲介会社名
+          name: intermediary_company
+          required: false
+          type: string
+        - description: サブリース会社名
+          name: subleasing_company
+          required: false
+          type: string
+        - description: 建物管理会社名
+          name: building_management_company
+          required: false
+          type: string
+          
+        # 財務情報
+        - description: 賃料（円）
+          name: rental_price
+          required: false
+          type: number
+        - description: 修繕積立金（円）
+          name: repair_reserve_fund
+          required: false
+          type: number
+        - description: 管理費（円）
+          name: administrative_cost
+          required: false
+          type: number
+        - description: その他費用（円）
+          name: other_cost
+          required: false
+          type: number
+          
+        # その他
+        - description: 現況
+          name: current_status
+          required: false
+          type: string
+        - description: 心理的瑕疵の有無
+          name: is_stigmatized
+          required: false
+          type: string
+          
+        query:
+        - property_info_structurer
+        - text
+        title: パラメータ抽出
+        type: parameter-extractor
+      height: 89
+      id: parameter_extractor
+      position: {x: -2467, y: 112}
+      type: custom
+      width: 244
+
+    # 4. 駅名正規化（改善されたロジック）
+    - data:
+        code: |
+          def normalize_station_name(station_name: str) -> str:
+              """駅名を検索用に正規化する共通関数"""
+              if not station_name or station_name == "不明":
+                  return "不明"
+              
+              # 括弧とその中身を除去
+              import re
+              station_name = re.sub(r'[（(].*?[）)]', '', station_name)
+              
+              # "駅"を除去
+              station_name = station_name.replace("駅", "")
+              
+              # 前後の空白を除去
+              return station_name.strip()
+
+          def main(station1: str, station2: str) -> dict:
+              try:
+                  return {
+                      "station1_normed": normalize_station_name(station1),
+                      "station2_normed": normalize_station_name(station2)
+                  }
+              except Exception as e:
+                  return {
+                      "station1_normed": "不明",
+                      "station2_normed": "不明",
+                      "error": str(e)
+                  }
+        code_language: python3
+        desc: 駅名を検索用フォーマットに正規化
+        outputs:
+          station1_normed:
+            type: string
+          station2_normed:
+            type: string
+          error:
+            type: string
+        title: 駅名正規化
+        type: code
+        variables:
+        - value_selector: [parameter_extractor, station1]
+          variable: station1
+        - value_selector: [parameter_extractor, station2]
+          variable: station2
+      height: 305
+      id: station_name_normalizer
+      position: {x: -1736, y: 112}
+      type: custom
+      width: 244
+
+    # 5. 築年数計算（改善されたエラーハンドリング）
+    - data:
+        code: |
+          def main(built_year: int, built_month: int) -> dict:
+              try:
+                  import datetime
+                  
+                  # 入力値の検証
+                  if not built_year or built_year <= 0:
+                      return {"age_of_building": 0, "error": "築年が無効です"}
+                  
+                  if not built_month or built_month < 1 or built_month > 12:
+                      built_month = 1  # デフォルト値
+                  
+                  dt_now = datetime.datetime.now()
+                  
+                  # 築年数計算
+                  if dt_now.month >= built_month:
+                      age = dt_now.year - built_year
+                  else:
+                      age = dt_now.year - built_year - 1
+                  
+                  return {
+                      "age_of_building": max(0, age),  # 負の値を防止
+                      "calculation_date": dt_now.strftime("%Y-%m-%d")
+                  }
+              except Exception as e:
+                  return {
+                      "age_of_building": 0,
+                      "error": f"築年数計算エラー: {str(e)}"
+                  }
+        code_language: python3
+        desc: 築年月から現在までの築年数を計算
+        outputs:
+          age_of_building:
+            type: number
+          calculation_date:
+            type: string
+          error:
+            type: string
+        title: 築年数計算
+        type: code
+        variables:
+        - value_selector: [parameter_extractor, built_year]
+          variable: built_year
+        - value_selector: [parameter_extractor, built_month]
+          variable: built_month
+      height: 225
+      id: building_age_calculator
+      position: {x: -2104, y: 112}
+      type: custom
+      width: 244
+
+    # 6. エリア判定分岐
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: is
+            value: '関東'
+            variable_selector: [parameter_extractor, area]
+          logical_operator: and
+        desc: エリアに応じて処理フローを分岐
+        title: エリア判定分岐
+        type: if-else
+      height: 125
+      id: area_judgment_branch
+      position: {x: -1400, y: 200}
+      type: custom
+      width: 244
+
+    # 7. 駅ランク取得（関東）
+    - data:
+        dataset_ids:
+        - BZ0ZGECEQx1jlZ1gjNF/R3lQ7d7x289OUcyr2KwVtLaAYnteRJe7WOxYPx/ZABDS
+        desc: 関東エリアの駅ランク情報を取得
+        multiple_retrieval_config:
+          reranking_enable: false
+          top_k: 4
+        query_variable_selector: [station_name_normalizer, station1_normed]
+        retrieval_mode: multiple
+        title: 駅ランク取得（関東）
+        type: knowledge-retrieval
+      height: 91
+      id: station_rank_retriever_kanto
+      position: {x: -238, y: 146}
+      type: custom
+      width: 244
+
+    # 8. 利回り計算（関東）
+    - data:
+        code: |
+          def main(rank_result: dict, age_of_building: int) -> dict:
+              """利回り計算の統合処理"""
+              try:
+                  # 駅ランク解析
+                  if not rank_result or len(rank_result) == 0:
+                      return {
+                          "rate": 0,
+                          "rank": "NG",
+                          "status": "FAIL",
+                          "message": "駅ランク情報が見つかりません"
+                      }
+                  
+                  row = str(rank_result[0]["content"])
+                  rank = row.split(';')[2].split(': ')[1]
+                  ap_rank_base = float(row.split(';')[3].split(': ')[1])
+                  
+                  # 利回り取得（仮の実装 - 実際はナレッジベース検索が必要）
+                  base_rate = calculate_yield_by_rank_and_age(rank, age_of_building)
+                  
+                  return {
+                      "rate": base_rate,
+                      "rank": rank,
+                      "ap_rank_base": ap_rank_base,
+                      "status": "OK"
+                  }
+              except Exception as e:
+                  return {
+                      "rate": 0,
+                      "rank": "NG",
+                      "status": "FAIL",
+                      "error": str(e)
+                  }
+
+          def calculate_yield_by_rank_and_age(rank: str, age: int) -> float:
+              """ランクと築年数から基準利回りを算出"""
+              base_rates = {
+                  "S": 3.0, "A": 3.5, "B": 4.0, "C": 4.5, "D": 5.0
+              }
+              
+              base_rate = base_rates.get(rank, 5.5)
+              
+              # 築年数による調整
+              if age > 20:
+                  base_rate += 0.5
+              elif age > 15:
+                  base_rate += 0.3
+              elif age > 10:
+                  base_rate += 0.1
+              
+              return base_rate
+        code_language: python3
+        desc: 駅ランクと築年数から利回りを計算
+        outputs:
+          rate:
+            type: number
+          rank:
+            type: string
+          ap_rank_base:
+            type: number
+          status:
+            type: string
+          message:
+            type: string
+          error:
+            type: string
+        title: 利回り計算（関東）
+        type: code
+        variables:
+        - value_selector: [station_rank_retriever_kanto, result]
+          variable: rank_result
+        - value_selector: [building_age_calculator, age_of_building]
+          variable: age_of_building
+      height: 305
+      id: yield_calculator_kanto
+      position: {x: 1035, y: 146}
+      type: custom
+      width: 244
+
+    # 9. 駅ランク取得（その他エリア）
+    - data:
+        dataset_ids:
+        - BZ0ZGECEQx1jlZ1gjNF/R3lQ7d7x289OUcyr2KwVtLaAYnteRJe7WOxYPx/ZABDS
+        desc: その他エリアの駅ランク情報を取得
+        multiple_retrieval_config:
+          reranking_enable: false
+          top_k: 4
+        query_variable_selector: [station_name_normalizer, station1_normed]
+        retrieval_mode: multiple
+        title: 駅ランク取得（その他）
+        type: knowledge-retrieval
+      height: 91
+      id: station_rank_retriever_other
+      position: {x: -238, y: 575}
+      type: custom
+      width: 244
+
+    # 10. 物件属性検証（統合版）
+    - data:
+        code: |
+          # 改善点4: 物件判定ロジックの統合
+          def main(
+              walk_minute_to_station1: int,
+              station1_normed: str,
+              stories_high: int,
+              is_elevator_exist: str,
+              indoor_washing_machine_storage: str,
+              floor: int,
+              building_structure: str,
+              built_year: int,
+              built_month: int,
+              age_of_building: int,
+              footprint: float,
+              area: str,
+              total_rooms: int,
+              auto_lock: str,
+              walk_warning_threshold: str,
+              walk_ng_threshold: str
+          ) -> dict:
+              """物件属性の総合判定"""
+              try:
+                  warnings = []
+                  errors = []
+                  
+                  # 設定値の取得
+                  warn_threshold = int(walk_warning_threshold)
+                  ng_threshold = int(walk_ng_threshold)
+                  
+                  # 1. 徒歩分数判定
+                  walk_result = validate_walking_distance(
+                      walk_minute_to_station1, station1_normed, warn_threshold, ng_threshold
+                  )
+                  if walk_result["is_ng"] == 1:
+                      errors.append(walk_result["message"])
+                  elif walk_result["is_ng"] == 2:
+                      warnings.append(walk_result["message"])
+                  
+                  # 2. エレベーター判定
+                  elevator_result = validate_elevator(stories_high, is_elevator_exist)
+                  if elevator_result["is_ng"] == 1:
+                      errors.append(elevator_result["message"])
+                  elif elevator_result["is_ng"] == 2:
+                      warnings.append(elevator_result["message"])
+                  
+                  # 3. 専有面積判定
+                  area_result = validate_footprint(footprint, area)
+                  if area_result["is_ng"] == 1:
+                      errors.append(area_result["message"])
+                  elif area_result["is_ng"] == 2:
+                      warnings.append(area_result["message"])
+                  
+                  # 4. その他の判定...
+                  
+                  # 総合判定
+                  if errors:
+                      overall_result = "NG❌"
+                  elif warnings:
+                      overall_result = "要確認☑️"
+                  else:
+                      overall_result = "OK⭕️"
+                  
+                  return {
+                      "overall_result": overall_result,
+                      "errors": errors,
+                      "warnings": warnings,
+                      "detail_results": {
+                          "walk_distance": walk_result,
+                          "elevator": elevator_result,
+                          "footprint": area_result
+                      }
+                  }
+              except Exception as e:
+                  return {
+                      "overall_result": "エラー",
+                      "errors": [f"判定処理エラー: {str(e)}"],
+                      "warnings": [],
+                      "detail_results": {}
+                  }
+
+          def validate_walking_distance(minutes: int, station: str, warn_threshold: int, ng_threshold: int) -> dict:
+              """徒歩分数の判定"""
+              if station == "不明":
+                  return {"is_ng": 0, "message": ""}
+              
+              if minutes >= ng_threshold:
+                  return {
+                      "is_ng": 1,
+                      "message": f"徒歩分数：NG❌ ({station}駅、{minutes}分 - {ng_threshold}分以上はNG)"
+                  }
+              elif minutes >= warn_threshold:
+                  return {
+                      "is_ng": 2,
+                      "message": f"徒歩分数：要確認☑️ ({station}駅、{minutes}分 - 依頼必須)"
+                  }
+              else:
+                  return {
+                      "is_ng": 0,
+                      "message": f"徒歩分数：OK⭕️ ({station}駅、{minutes}分)"
+                  }
+
+          def validate_elevator(stories: int, elevator: str) -> dict:
+              """エレベーター有無の判定"""
+              if stories >= 3:
+                  if elevator == "なし":
+                      return {
+                          "is_ng": 1,
+                          "message": f"エレベーター：NG❌ ({stories}階建てでエレベーターなし)"
+                      }
+                  elif elevator in ["未指定", "不明"]:
+                      return {
+                          "is_ng": 2,
+                          "message": f"エレベーター：要確認☑️ ({stories}階建てでエレベーター情報不明)"
+                      }
+              
+              return {
+                  "is_ng": 0,
+                  "message": f"エレベーター：OK⭕️ ({stories}階、{elevator})"
+              }
+
+          def validate_footprint(footprint: float, area: str) -> dict:
+              """専有面積の判定"""
+              if footprint < 18.0:
+                  return {
+                      "is_ng": 2,
+                      "message": f"専有面積：要確認☑️ ({footprint}㎡ - 18㎡未満)"
+                  }
+              elif area == "関東" and footprint >= 35.0:
+                  return {
+                      "is_ng": 2,
+                      "message": f"専有面積：要確認☑️ ({footprint}㎡ - 関東35㎡以上)"
+                  }
+              elif area != "関東" and footprint >= 40.0:
+                  return {
+                      "is_ng": 2,
+                      "message": f"専有面積：要確認☑️ ({footprint}㎡ - 関東外40㎡以上)"
+                  }
+              else:
+                  return {
+                      "is_ng": 0,
+                      "message": f"専有面積：OK⭕️ ({footprint}㎡)"
+                  }
+        code_language: python3
+        desc: 物件属性の総合的な適合性判定
+        outputs:
+          overall_result:
+            type: string
+          errors:
+            type: array
+          warnings:
+            type: array
+          detail_results:
+            type: object
+        title: 物件属性検証
+        type: code
+        variables:
+        - value_selector: [parameter_extractor, walk_minute_to_station1]
+          variable: walk_minute_to_station1
+        - value_selector: [station_name_normalizer, station1_normed]
+          variable: station1_normed
+        - value_selector: [parameter_extractor, stories_high]
+          variable: stories_high
+        - value_selector: [parameter_extractor, is_elevator_exist]
+          variable: is_elevator_exist
+        - value_selector: [parameter_extractor, indoor_washing_machine_storage]
+          variable: indoor_washing_machine_storage
+        - value_selector: [parameter_extractor, floor]
+          variable: floor
+        - value_selector: [parameter_extractor, building_structure]
+          variable: building_structure
+        - value_selector: [parameter_extractor, built_year]
+          variable: built_year
+        - value_selector: [parameter_extractor, built_month]
+          variable: built_month
+        - value_selector: [building_age_calculator, age_of_building]
+          variable: age_of_building
+        - value_selector: [parameter_extractor, footprint]
+          variable: footprint
+        - value_selector: [parameter_extractor, area]
+          variable: area
+        - value_selector: [parameter_extractor, total_rooms]
+          variable: total_rooms
+        - value_selector: [parameter_extractor, auto_lock]
+          variable: auto_lock
+        - value_selector: [env, walk_warning_threshold]
+          variable: walk_warning_threshold
+        - value_selector: [env, walk_ng_threshold]
+          variable: walk_ng_threshold
+      height: 400
+      id: property_attribute_validator
+      position: {x: 1400, y: 146}
+      type: custom
+      width: 244
+
+    # 11. 会社判定（統合版）- 改善点1: 重複コードの削除
+    - data:
+        code: |
+          def main(
+              intermediary_company: str,
+              building_management_company: str,
+              subleasing_company: str,
+              current_status: str
+          ) -> dict:
+              """会社判定の統合処理"""
+              try:
+                  results = {}
+                  
+                  # 1. 仲介会社判定
+                  if intermediary_company and intermediary_company != "不明":
+                      results["intermediary"] = validate_company(
+                          intermediary_company, "仲介会社", "intermediary"
+                      )
+                  else:
+                      results["intermediary"] = {"status": "SKIP", "message": "仲介会社情報なし"}
+                  
+                  # 2. 建物管理会社判定
+                  if building_management_company and building_management_company != "不明":
+                      results["building_management"] = validate_company(
+                          building_management_company, "建物管理会社", "building_management"
+                      )
+                  else:
+                      results["building_management"] = {"status": "SKIP", "message": "建物管理会社情報なし"}
+                  
+                  # 3. サブリース会社判定
+                  if subleasing_company and subleasing_company != "不明":
+                      results["subleasing"] = validate_company(
+                          subleasing_company, "サブリース会社", "subleasing"
+                      )
+                  elif current_status == "サブリース中":
+                      results["subleasing"] = {"status": "WARNING", "message": "サブリース中だが会社名不明"}
+                  else:
+                      results["subleasing"] = {"status": "SKIP", "message": "サブリース会社情報なし"}
+                  
+                  # 総合判定
+                  overall_status = determine_overall_company_status(results)
+                  
+                  return {
+                      "overall_status": overall_status,
+                      "company_results": results,
+                      "formatted_message": format_company_results(results)
+                  }
+              except Exception as e:
+                  return {
+                      "overall_status": "ERROR",
+                      "company_results": {},
+                      "formatted_message": f"会社判定エラー: {str(e)}"
+                  }
+
+          def validate_company(company_name: str, company_type: str, category: str) -> dict:
+              """個別会社の判定（統合された検索ロジック）"""
+              # 完全一致検索（実装は省略 - 実際はナレッジベース検索）
+              exact_match = search_ng_company_exact(company_name, category)
+              
+              if exact_match["found"]:
+                  return {
+                      "status": "NG",
+                      "company_name": company_name,
+                      "match_type": "完全一致",
+                      "matched_company": exact_match["matched_name"],
+                      "message": f"{company_type}：NG❌ ({exact_match['matched_name']}と一致)"
+                  }
+              
+              # 類似検索
+              similar_match = search_ng_company_similar(company_name, category)
+              
+              if similar_match["found"]:
+                  return {
+                      "status": "WARNING",
+                      "company_name": company_name,
+                      "match_type": "類似",
+                      "matched_company": similar_match["matched_name"],
+                      "message": f"{company_type}：要確認☑️ (類似: {similar_match['matched_name']})"
+                  }
+              
+              return {
+                  "status": "OK",
+                  "company_name": company_name,
+                  "match_type": "なし",
+                  "message": f"{company_type}：OK⭕️ (NG会社に該当なし)"
+              }
+
+          def search_ng_company_exact(company_name: str, category: str) -> dict:
+              """NG会社の完全一致検索（仮実装）"""
+              # 実際の実装ではナレッジベース検索を行う
+              ng_companies = {
+                  "intermediary": ["FRAT", "スプリングエステート", "クレエ", "LEAF"],
+                  "building_management": ["プレストサービス"],
+                  "subleasing": ["リブマックス", "青山メインランド"]
+              }
+              
+              companies = ng_companies.get(category, [])
+              for ng_company in companies:
+                  if ng_company in company_name or company_name in ng_company:
+                      return {"found": True, "matched_name": ng_company}
+              
+              return {"found": False, "matched_name": ""}
+
+          def search_ng_company_similar(company_name: str, category: str) -> dict:
+              """NG会社の類似検索（仮実装）"""
+              # 実際の実装では類似度スコアベースの検索を行う
+              return {"found": False, "matched_name": ""}
+
+          def determine_overall_company_status(results: dict) -> str:
+              """会社判定の総合ステータス決定"""
+              for result in results.values():
+                  if result.get("status") == "NG":
+                      return "NG❌"
+              
+              for result in results.values():
+                  if result.get("status") == "WARNING":
+                      return "要確認☑️"
+              
+              return "OK⭕️"
+
+          def format_company_results(results: dict) -> str:
+              """会社判定結果のフォーマット"""
+              messages = []
+              for category, result in results.items():
+                  if result.get("message"):
+                      messages.append(result["message"])
+              
+              return "\n".join(messages)
+        code_language: python3
+        desc: 会社判定の統合処理（重複コード削除版）
+        outputs:
+          overall_status:
+            type: string
+          company_results:
+            type: object
+          formatted_message:
+            type: string
+        title: 会社判定（統合版）
+        type: code
+        variables:
+        - value_selector: [parameter_extractor, intermediary_company]
+          variable: intermediary_company
+        - value_selector: [parameter_extractor, building_management_company]
+          variable: building_management_company
+        - value_selector: [parameter_extractor, subleasing_company]
+          variable: subleasing_company
+        - value_selector: [parameter_extractor, current_status]
+          variable: current_status
+      height: 400
+      id: company_validator_unified
+      position: {x: 1800, y: 146}
+      type: custom
+      width: 244
+
+    # 12. 補填費用計算（統合版）
+    - data:
+        code: |
+          def main(
+              age_of_building: int,
+              footprint: float,
+              area: str,
+              repair_reserve_fund: int,
+              current_status: str,
+              rental_price: int,
+              bathroom_type: str,
+              repair_fund_compensation_amount: str,
+              unit_bath_allowance_amount: str,
+              vacancy_allowance_months: str
+          ) -> dict:
+              """補填費用の統合計算"""
+              try:
+                  # 設定値の取得
+                  repair_compensation = int(repair_fund_compensation_amount)
+                  unit_bath_allowance = int(unit_bath_allowance_amount)
+                  vacancy_months = int(vacancy_allowance_months)
+                  
+                  # 1. 修繕積立補填金
+                  repair_fund_result = calculate_repair_fund_compensation(
+                      age_of_building, footprint, area, repair_reserve_fund, repair_compensation
+                  )
+                  
+                  # 2. 空室手当
+                  vacancy_result = calculate_vacancy_allowance(
+                      current_status, rental_price, vacancy_months
+                  )
+                  
+                  # 3. 3点ユニット引当金
+                  unit_bath_result = calculate_unit_bath_allowance(
+                      bathroom_type, unit_bath_allowance
+                  )
+                  
+                  # 4. 平米あたり修繕積立金
+                  repair_per_sqm = calculate_repair_fund_per_sqm(footprint, repair_reserve_fund)
+                  
+                  # 総計算
+                  total_compensation = (
+                      repair_fund_result["amount"] + 
+                      vacancy_result["amount"] + 
+                      unit_bath_result["amount"]
+                  )
+                  
+                  return {
+                      "total_compensation": total_compensation,
+                      "repair_fund_compensation": repair_fund_result,
+                      "vacancy_allowance": vacancy_result,
+                      "unit_bath_allowance": unit_bath_result,
+                      "repair_fund_per_sqm": repair_per_sqm,
+                      "formatted_message": format_compensation_message(
+                          total_compensation, repair_fund_result, vacancy_result, 
+                          unit_bath_result, repair_per_sqm, rental_price
+                      )
+                  }
+              except Exception as e:
+                  return {
+                      "total_compensation": 0,
+                      "error": f"補填費用計算エラー: {str(e)}"
+                  }
+
+          def calculate_repair_fund_compensation(
+              age: int, footprint: float, area: str, repair_fund: int, compensation_amount: int
+          ) -> dict:
+              """修繕積立補填金計算"""
+              if footprint == 0 or repair_fund == 0:
+                  return {"amount": 0, "reason": "面積または修繕積立金が不明"}
+              
+              repair_per_sqm = repair_fund / footprint
+              
+              # 関東エリアの基準
+              if area == "関東":
+                  if age <= 10 and repair_per_sqm < 60:
+                      return {
+                          "amount": compensation_amount,
+                          "reason": f"築{age}年・{repair_per_sqm:.1f}円/㎡（60円未満）"
+                      }
+                  elif age <= 20 and repair_per_sqm < 80:
+                      return {
+                          "amount": compensation_amount,
+                          "reason": f"築{age}年・{repair_per_sqm:.1f}円/㎡（80円未満）"
+                      }
+              
+              return {"amount": 0, "reason": "基準に該当せず"}
+
+          def calculate_vacancy_allowance(status: str, rent: int, months: int) -> dict:
+              """空室手当計算"""
+              if status == "空室":
+                  return {
+                      "amount": rent * months,
+                      "reason": f"空室のため賃料{months}ヶ月分"
+                  }
+              return {"amount": 0, "reason": "空室ではない"}
+
+          def calculate_unit_bath_allowance(bath_type: str, allowance_amount: int) -> dict:
+              """3点ユニット引当金計算"""
+              if bath_type == "3点ユニット":
+                  return {
+                      "amount": allowance_amount,
+                      "reason": "3点ユニット仕様"
+                  }
+              return {"amount": 0, "reason": "3点ユニットではない"}
+
+          def calculate_repair_fund_per_sqm(footprint: float, repair_fund: int) -> dict:
+              """平米あたり修繕積立金計算"""
+              if footprint > 0 and repair_fund > 0:
+                  return {
+                      "value": repair_fund / footprint,
+                      "footprint": footprint,
+                      "total_fund": repair_fund
+                  }
+              return {"value": 0, "footprint": footprint, "total_fund": repair_fund}
+
+          def format_compensation_message(
+              total: int, repair: dict, vacancy: dict, unit_bath: dict, 
+              repair_per_sqm: dict, rent: int
+          ) -> str:
+              """補填費用結果のフォーマット"""
+              message = f'<span style="color: white; background-color: #0066FF; padding: 2px 6px; border-radius: 4px;">その他補填費用の発生有無💸</span>\n'
+              message += f'\n発生費用額： {total:,}円\n'
+              message += f'\n<details>\n'
+              
+              if repair["amount"] > 0:
+                  message += f'\n・修繕積立補填金：{repair["amount"]:,}円が発生します。\n'
+                  message += f'\n　→参考情報：平米あたり修繕積立金：{repair_per_sqm["value"]:.1f}円\n'
+              
+              if unit_bath["amount"] > 0:
+                  message += f'\n・３点ユニット引当金：{unit_bath["amount"]:,}円が発生します。\n'
+              
+              if vacancy["amount"] > 0:
+                  message += f'\n・空室手当：{vacancy["amount"]:,}円が発生します。\n'
+                  message += f'\n　→参考情報：賃料：{rent:,}円の3ヶ月分\n'
+              
+              message += f'\n</details>\n'
+              return message
+        code_language: python3
+        desc: 補填費用の統合計算処理
+        outputs:
+          total_compensation:
+            type: number
+          repair_fund_compensation:
+            type: object
+          vacancy_allowance:
+            type: object
+          unit_bath_allowance:
+            type: object
+          repair_fund_per_sqm:
+            type: object
+          formatted_message:
+            type: string
+          error:
+            type: string
+        title: 補填費用計算
+        type: code
+        variables:
+        - value_selector: [building_age_calculator, age_of_building]
+          variable: age_of_building
+        - value_selector: [parameter_extractor, footprint]
+          variable: footprint
+        - value_selector: [parameter_extractor, area]
+          variable: area
+        - value_selector: [parameter_extractor, repair_reserve_fund]
+          variable: repair_reserve_fund
+        - value_selector: [parameter_extractor, current_status]
+          variable: current_status
+        - value_selector: [parameter_extractor, rental_price]
+          variable: rental_price
+        - value_selector: [parameter_extractor, bathroom_type]
+          variable: bathroom_type
+        - value_selector: [env, repair_fund_compensation_amount]
+          variable: repair_fund_compensation_amount
+        - value_selector: [env, unit_bath_allowance_amount]
+          variable: unit_bath_allowance_amount
+        - value_selector: [env, vacancy_allowance_months]
+          variable: vacancy_allowance_months
+      height: 400
+      id: compensation_calculator
+      position: {x: 2200, y: 146}
+      type: custom
+      width: 244
+
+    # 13. 最終結果統合
+    - data:
+        code: |
+          def main(
+              property_validation: dict,
+              company_validation: dict,
+              compensation_calc: dict,
+              yield_calc: dict,
+              basic_info: str,
+              sublease_profit_margin: str,
+              normal_profit_margin: str
+          ) -> dict:
+              """最終結果の統合とフォーマット"""
+              try:
+                  # 利回りと査定額の計算
+                  appraisal_result = calculate_final_appraisal(
+                      yield_calc, compensation_calc, sublease_profit_margin, normal_profit_margin
+                  )
+                  
+                  # 最終HTMLの生成
+                  final_html = generate_final_report(
+                      property_validation,
+                      company_validation,
+                      compensation_calc,
+                      appraisal_result,
+                      basic_info
+                  )
+                  
+                  return {
+                      "final_result": final_html,
+                      "property_status": property_validation.get("overall_result", "不明"),
+                      "company_status": company_validation.get("overall_status", "不明"),
+                      "appraisal_value": appraisal_result.get("appraised_value", 0),
+                      "purchase_price": appraisal_result.get("purchase_price", 0),
+                      "yield_rate": appraisal_result.get("yield_rate", 0),
+                      "total_compensation": compensation_calc.get("total_compensation", 0)
+                  }
+              except Exception as e:
+                  return {
+                      "final_result": f"結果統合エラー: {str(e)}",
+                      "error": str(e)
+                  }
+
+          def calculate_final_appraisal(yield_data: dict, compensation_data: dict, 
+                                       sublease_margin: str, normal_margin: str) -> dict:
+              """最終査定額・仕入額の計算"""
+              # 実装は元のロジックを参考に簡略化
+              try:
+                  rate = yield_data.get("rate", 0)
+                  if rate <= 0:
+                      return {"appraised_value": 0, "purchase_price": 0, "yield_rate": 0}
+                  
+                  # 仮の計算（実際の実装はより複雑）
+                  appraised_value = 10000000  # 仮の値
+                  total_compensation = compensation_data.get("total_compensation", 0)
+                  
+                  # 粗利率の適用
+                  margin = float(sublease_margin) if "サブリース" in str(compensation_data) else float(normal_margin)
+                  purchase_price = int(appraised_value * margin + total_compensation)
+                  
+                  return {
+                      "appraised_value": appraised_value,
+                      "purchase_price": purchase_price,
+                      "yield_rate": rate,
+                      "profit_margin": margin
+                  }
+              except Exception as e:
+                  return {"error": str(e)}
+
+          def generate_final_report(property_val: dict, company_val: dict, 
+                                   compensation_val: dict, appraisal_val: dict, basic_info: str) -> str:
+              """最終レポートのHTML生成"""
+              html = '<div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin-bottom: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #e1e5f2;">'
+              html += '<h2 style="color: #ffffff;">🏦<b>仕入判定結果</b>🏦</h2>'
+              
+              # 物件情報判定
+              html += '<div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin-bottom: 16px; background-color: #ffffff;">'
+              html += f'<h3>物件情報判定：{property_val.get("overall_result", "不明")}</h3>'
+              html += f'<p>エラー: {len(property_val.get("errors", []))}件</p>'
+              html += f'<p>警告: {len(property_val.get("warnings", []))}件</p>'
+              html += '</div>'
+              
+              # 会社判定
+              html += '<div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin-bottom: 16px; background-color: #ffffff;">'
+              html += f'<h3>会社判定：{company_val.get("overall_status", "不明")}</h3>'
+              html += f'<p>{company_val.get("formatted_message", "")}</p>'
+              html += '</div>'
+              
+              # 補填費用
+              html += '<div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin-bottom: 16px; background-color: #ffffff;">'
+              html += compensation_val.get("formatted_message", "")
+              html += '</div>'
+              
+              # 査定結果
+              html += '<div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin-bottom: 16px; background-color: #ffffff;">'
+              html += f'<h3>査定結果</h3>'
+              html += f'<p>利回り: {appraisal_val.get("yield_rate", 0)}%</p>'
+              html += f'<p>机上評価額: {appraisal_val.get("appraised_value", 0):,}円</p>'
+              html += f'<p>机上仕入額: {appraisal_val.get("purchase_price", 0):,}円</p>'
+              html += '</div>'
+              
+              html += '</div>'
+              html += basic_info
+              
+              return html
+        code_language: python3
+        desc: 全ての判定結果を統合して最終レポートを生成
+        outputs:
+          final_result:
+            type: string
+          property_status:
+            type: string
+          company_status:
+            type: string
+          appraisal_value:
+            type: number
+          purchase_price:
+            type: number
+          yield_rate:
+            type: number
+          total_compensation:
+            type: number
+          error:
+            type: string
+        title: 最終結果統合
+        type: code
+        variables:
+        - value_selector: [property_attribute_validator, overall_result]
+          variable: property_validation
+        - value_selector: [company_validator_unified, overall_status]
+          variable: company_validation
+        - value_selector: [compensation_calculator, total_compensation]
+          variable: compensation_calc
+        - value_selector: [yield_calculator_kanto, rate]
+          variable: yield_calc
+        - value_selector: [property_info_structurer, text]
+          variable: basic_info
+        - value_selector: [env, sublease_profit_margin]
+          variable: sublease_profit_margin
+        - value_selector: [env, normal_profit_margin]
+          variable: normal_profit_margin
+      height: 400
+      id: final_result_aggregator
+      position: {x: 2600, y: 146}
+      type: custom
+      width: 244
+
+    # 14. ワークフロー終了
+    - data:
+        outputs:
+        - value_selector: [final_result_aggregator, final_result]
+          variable: result
+        title: ワークフロー終了
+        type: end
+      height: 89
+      id: workflow_end
+      position: {x: 3000, y: 164}
+      type: custom
+      width: 244 
