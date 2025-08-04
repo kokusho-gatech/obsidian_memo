@@ -239,8 +239,7 @@
       "templater-obsidian:Templater": false,
       "random-note:ランダムノートを開く": false,
       "marp-slides:Show Slide Preview": false,
-      "obsidian-memos:Thino": false,
-      "periodic-notes:Open today": false
+      "obsidian-memos:Thino": false
     }
   },
   "active": "fd48857172b23ae5",
