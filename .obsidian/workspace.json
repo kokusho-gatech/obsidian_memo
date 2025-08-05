@@ -229,6 +229,7 @@
   },
   "active": "f00394b8df6151cc",
   "lastOpenFiles": [
+    "ml_large_context.md",
     "large_test_context.md",
     "test_context.md",
     "Zettelkasten/40_Daily/Weekly/2025W32.md",
@@ -258,7 +259,6 @@
     "Zettelkasten/40_Daily/250731.md",
     "Zettelkasten/40_Daily/250801.md",
     "Zettelkasten/10_Parmanentnote/プロダクト総合説明書_作成ガイド.md",
-    "Zettelkasten/10_Parmanentnote/Confluence_MCP_Setup_Manual.md",
     "collected_data",
     "scripts/product_documentation_collector.py",
     "scripts",
