@@ -229,6 +229,7 @@
   },
   "active": "f00394b8df6151cc",
   "lastOpenFiles": [
+    "large_test_context.md",
     "test_context.md",
     "Zettelkasten/40_Daily/Weekly/2025W32.md",
     "Zettelkasten/40_Daily/250805.md",
@@ -261,7 +262,6 @@
     "collected_data",
     "scripts/product_documentation_collector.py",
     "scripts",
-    "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_プロダクト総合説明書.md",
     "~",
     "role.mdc",
     "Rules/TagRules.mdc",
