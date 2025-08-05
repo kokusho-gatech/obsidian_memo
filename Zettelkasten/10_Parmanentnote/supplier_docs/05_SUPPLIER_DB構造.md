@@ -163,26 +163,26 @@ erDiagram
 
 ### users テーブル
 
-| カラム名 | データ型 | 備考 |
-|---|---|---|
-| id | integer | 主キー |
-| email | string | null: false, default: "", コメント: メールアドレス |
-| encrypted_password | string | null: false, default: "", コメント: 暗号化パスワード |
-| sign_in_count | integer | null: false, default: 0, コメント: サインイン回数 |
-| current_sign_in_at | datetime | コメント: 現サインイン日時 |
-| last_sign_in_at | datetime | コメント: 前回サインイン日時 |
-| current_sign_in_ip | inet | コメント: 現サインインIP |
-| last_sign_in_ip | inet | コメント: 前回サインインIP |
-| name | string | コメント: 名前 |
-| created_at | datetime | null: false |
-| updated_at | datetime | null: false |
-| type | string | null: false, default: "Salesperson", コメント: タイプ |
-| chatwork_id | integer | コメント: チャットワークID |
-| department_id | integer | コメント: 使用していない |
-| mobile_phone | string | コメント: 携帯電話番号 |
-| authority | text[] | null: false, default: [], コメント: 権限管理用カラム |
-| business_partner_id | integer | コメント: ビジネスパートナーID |
-| leave | boolean | null: false, default: false, コメント: 退職フラグ |
+| カラム名                | データ型     | 備考                                             |
+| ------------------- | -------- | ---------------------------------------------- |
+| id                  | integer  | 主キー                                            |
+| email               | string   | null: false, default: "", コメント: メールアドレス        |
+| encrypted_password  | string   | null: false, default: "", コメント: 暗号化パスワード       |
+| sign_in_count       | integer  | null: false, default: 0, コメント: サインイン回数         |
+| current_sign_in_at  | datetime | コメント: 現サインイン日時                                 |
+| last_sign_in_at     | datetime | コメント: 前回サインイン日時                                |
+| current_sign_in_ip  | inet     | コメント: 現サインインIP                                 |
+| last_sign_in_ip     | inet     | コメント: 前回サインインIP                                |
+| name                | string   | コメント: 名前                                       |
+| created_at          | datetime | null: false                                    |
+| updated_at          | datetime | null: false                                    |
+| type                | string   | null: false, default: "Salesperson", コメント: タイプ |
+| chatwork_id         | integer  | コメント: チャットワークID                                |
+| department_id       | integer  | コメント: 使用していない                                  |
+| mobile_phone        | string   | コメント: 携帯電話番号                                   |
+| authority           | text[]   | null: false, default: [], コメント: 権限管理用カラム       |
+| business_partner_id | integer  | コメント: ビジネスパートナーID                              |
+| leave               | boolean  | null: false, default: false, コメント: 退職フラグ       |
 
 ---
 
