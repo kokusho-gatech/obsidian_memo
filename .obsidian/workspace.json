@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten/10_Parmanentnote/プロダクト総合説明書_作成ガイド.md",
+                "file": "TENTE_AI_kickoffMTG.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "プロダクト総合説明書_作成ガイド"
+              "title": "TENTE_AI_kickoffMTG"
             }
           }
         ]
@@ -97,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 334.5
+    "width": 274.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -227,9 +227,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "f2f6b064f72862b3",
+  "active": "f00394b8df6151cc",
   "lastOpenFiles": [
+    "Zettelkasten/40_Daily/250806.md",
+    "TENTE_AI_kickoffMTG.md",
     "Zettelkasten/10_Parmanentnote/プロダクト総合説明書_作成ガイド.md",
+    "無題のファイル.md",
     "Zettelkasten/30_Fleetingnote/20250806-LINE.md",
     "Zettelkasten/30_FleetingNote/20250806-LINE.md",
     "short_test_context.md",
@@ -248,7 +251,6 @@
     "Zettelkasten/10_Parmanentnote/supplier_docs/SUPPLIER_Wiki_トップページ.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/Dify_仕入判定アプリケーション_マニュアル.md",
     "Zettelkasten/10_Parmanentnote/supplier_docs/Dify_DSLリファクタリング_改善報告書.md",
-    "無題のファイル.md",
     "Zettelkasten/30_Fleetingnote/20250805-LINE_1.md",
     "Zettelkasten/30_Fleetingnote/20250805-LINE.md",
     "Zettelkasten/30_FleetingNote/20250805-LINE_1.md",
@@ -256,10 +258,8 @@
     "scripts/round_csv_rate.py",
     "【リファクタリング版】仕入判定_ver3.0_全国対応.yml",
     "Zettelkasten/30_Fleetingnote/ドラフトチェックページでPj達成を目指す場合の必要な要件.md",
-    "Zettelkasten/10_Parmanentnote/definitions/Dify_DSL_Format.md",
     "【開発中】仕入判定_ver2.1_全国対応.yml",
     "【開発中】仕入判定_ver2.1_全国対応 (1).yml",
-    "Zettelkasten/10_Parmanentnote/Dify_査定自動化アプリケーション_マニュアル.md",
     "collected_data",
     "scripts/product_documentation_collector.py",
     "scripts",
