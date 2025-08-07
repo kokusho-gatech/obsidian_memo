@@ -97,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5
+    "width": 423.5
   },
   "right": {
     "id": "55c16a31a964d9d6",
@@ -223,7 +223,8 @@
       "templater-obsidian:Templater": false,
       "random-note:ランダムノートを開く": false,
       "marp-slides:Show Slide Preview": false,
-      "obsidian-memos:Thino": false
+      "obsidian-memos:Thino": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "f00394b8df6151cc",
